@@ -1,0 +1,36 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/10/10 07:54:57 by ael-khni          #+#    #+#              #
+#    Updated: 2021/10/10 13:50:46 by ael-khni         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+CC 		= gcc
+FLAGS	= -Wall -Werror -Wextra -I./includes
+FILES 	= srcs/main srcs/ft_cat srcs/ft_putchar srcs/in_to_out srcs/ft_strcmp srcs/ft_putstr 
+SRC		= $(FILES:=.c)
+OBJ		= $(FILES:=.o)
+BIN		= ft_cat
+
+.PHONY: all clean fclean re all
+
+all: $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(FLAGS) -o $(BIN) $(OBJ)
+
+%.o: %.c
+	$(CC) $(FLAGS) -o $@ -c $<
+
+clean:
+	rm -f $(OBJ)
+
+fclean: clean
+	rm -f $(BIN)
+
+re: fclean all
