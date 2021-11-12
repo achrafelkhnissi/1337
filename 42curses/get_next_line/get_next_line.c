@@ -6,11 +6,16 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 06:08:05 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/11 06:34:01 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/11/12 10:41:53 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+/*
+ * get_next_line function:
+ * 
+ */
 
 char	*get_next_line(int find)
 {
