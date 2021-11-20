@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 06:08:05 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/20 14:17:31 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/11/20 15:11:50 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,7 @@ char	*get_next_line(int fd)
 		tmp = ft_strjoin(tmp, buff);
 		nl = check_newline(tmp);
 		if (nl != -1)
-		{
-			line = ft_substr(tmp, 0, nl + 1);
-			tmp = get_reminder(&tmp, nl + 1);
-			return (line);
-		}
+			return (func(&line, &tmp, nl));
 		if (!ret && !tmp[0])
 			break ;
 		if (!ret)
@@ -45,7 +41,12 @@ char	*get_next_line(int fd)
 	return (NULL);
 }
 
-
+char	*func(char **line, char **tmp, int nl)
+{
+	*line = ft_substr(*tmp, 0, nl + 1);
+	*tmp = get_reminder(tmp, nl + 1);
+	return (*line);
+}
 
 char	*get_reminder(char **str, int nl)
 {
