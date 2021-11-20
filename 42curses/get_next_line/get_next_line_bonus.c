@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 11:48:13 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/20 12:11:37 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/11/20 14:23:11 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,20 +31,13 @@ char	*get_next_line(int fd)
 		if (nl != -1)
 		{
 			line = ft_substr(tmp[fd], 0, nl + 1);
-			tmp[fd] = get_reminder(tmp[fd], nl + 1);
+			tmp[fd] = get_reminder(&tmp[fd], nl + 1);
 			return (line);
 		}
-		else
-		{
-			if (!ret && !tmp[fd][0])
-				break ;
-			if (!ret)
-			{
-				line = tmp[fd];
-				tmp[fd] = NULL;
-				return (line);
-			}
-		}
+		if (!ret && !tmp[fd][0])
+			break ;
+		if (!ret)
+			return (get_reminder(&tmp[fd], 0));
 		ret = read(fd, buff, BUFFER_SIZE);
 	}
 	free(tmp[fd]);
@@ -52,14 +45,15 @@ char	*get_next_line(int fd)
 	return (NULL);
 }
 
-char	*get_reminder(char *str, int nl)
+char	*get_reminder(char **str, int nl)
 {
 	char	*reminder;
 	int		rlen;
 
-	rlen = ft_strlen(str + nl);
-	reminder = ft_substr(str, nl, rlen);
-	free(str);
+	rlen = ft_strlen(*str + nl);
+	reminder = ft_substr(*str, nl, rlen);
+	free(*str);
+	*str = NULL;
 	return (reminder);
 }
 

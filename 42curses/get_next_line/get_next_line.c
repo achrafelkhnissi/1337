@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 06:08:05 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/20 13:59:43 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/11/20 14:17:31 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,17 +31,13 @@ char	*get_next_line(int fd)
 		if (nl != -1)
 		{
 			line = ft_substr(tmp, 0, nl + 1);
-			tmp = get_reminder(tmp, nl + 1);
+			tmp = get_reminder(&tmp, nl + 1);
 			return (line);
 		}
 		if (!ret && !tmp[0])
 			break ;
 		if (!ret)
-		{
-			line = tmp;
-			tmp = NULL;
-			return (line);
-		}
+			return (get_reminder(&tmp, 0));
 		ret = read(fd, buff, BUFFER_SIZE);
 	}
 	free(tmp);
@@ -49,14 +45,17 @@ char	*get_next_line(int fd)
 	return (NULL);
 }
 
-char	*get_reminder(char *str, int nl)
+
+
+char	*get_reminder(char **str, int nl)
 {
 	char	*reminder;
 	int		rlen;
 
-	rlen = ft_strlen(str + nl);
-	reminder = ft_substr(str, nl, rlen);
-	free(str);
+	rlen = ft_strlen(*str + nl);
+	reminder = ft_substr(*str, nl, rlen);
+	free(*str);
+	*str = NULL;
 	return (reminder);
 }
 
