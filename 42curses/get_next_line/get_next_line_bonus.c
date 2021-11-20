@@ -1,51 +1,54 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 06:08:05 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/20 13:59:43 by ael-khni         ###   ########.fr       */
+/*   Created: 2021/11/20 11:48:13 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/20 12:11:37 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*get_next_line(int fd)
 {
-	static char	*tmp;
+	static char	*tmp[8192];
 	char		buff[BUFFER_SIZE + 1];
 	char		*line;
 	int			ret;
 	int			nl;
 
-	if (!tmp)
-		tmp = ft_strdup("");
+	if (!tmp[fd])
+		tmp[fd] = ft_strdup("");
 	ret = read(fd, buff, BUFFER_SIZE);
 	while (ret >= 0)
 	{
 		buff[ret] = 0;
-		tmp = ft_strjoin(tmp, buff);
-		nl = check_newline(tmp);
+		tmp[fd] = ft_strjoin(tmp[fd], buff);
+		nl = check_newline(tmp[fd]);
 		if (nl != -1)
 		{
-			line = ft_substr(tmp, 0, nl + 1);
-			tmp = get_reminder(tmp, nl + 1);
+			line = ft_substr(tmp[fd], 0, nl + 1);
+			tmp[fd] = get_reminder(tmp[fd], nl + 1);
 			return (line);
 		}
-		if (!ret && !tmp[0])
-			break ;
-		if (!ret)
+		else
 		{
-			line = tmp;
-			tmp = NULL;
-			return (line);
+			if (!ret && !tmp[fd][0])
+				break ;
+			if (!ret)
+			{
+				line = tmp[fd];
+				tmp[fd] = NULL;
+				return (line);
+			}
 		}
 		ret = read(fd, buff, BUFFER_SIZE);
 	}
-	free(tmp);
-	tmp = NULL;
+	free(tmp[fd]);
+	tmp[fd] = NULL;
 	return (NULL);
 }
 

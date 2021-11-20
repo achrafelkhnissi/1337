@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/15 13:28:13 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/20 13:44:19 by ael-khni         ###   ########.fr       */
+/*   Created: 2021/11/20 11:53:57 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/20 13:47:50 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
