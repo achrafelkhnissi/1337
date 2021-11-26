@@ -12,6 +12,8 @@
 # **************************************************************************** #
 ```
 
+- Create a user with your login and add it to sudo && user42 group.
+
 ## VirtualBox 101
 
 
@@ -49,7 +51,11 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - What is a Device Mapper? (related to LVM)
 	- The Device Mapper is a framework provided by the Linux Kernel for mapping  physical block dvices
 	- You can view block devices informations with the lsblk command.
+	- Block Devices:
+	- Character Devices:
+	- Using the `ls -l /dev/` command: The first character in the first column, i.e 'c', tells an informed user the type of the file, in this case a character device. For 'b' for block devices, 'd' for directories, '-' for ordinary files, 'l' for Symbolic link files (links on any regular files), 'p' Named pipe (a mechanism for interprocess communication), 's' for socket (used for interprocess communication).
 - What is the differences between aptitude and apt?
+- What is APPArmor?
 - What is SSH?
 - What is ports?
 - What is UFW firewall?
@@ -68,6 +74,29 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 #### Extra
 
 - What is BIOS?
+- What is the kernel?
+	- The kernel is the heart of the operating system. It interacts with the hardware and most of the tasks like memory management, task scheduling and file management.
+- What is a FileSystem? (files and directoies)
+	- All the data of Unix is organized into files. All files are then organized into directories. These directories are further organized into a tree-like structure called filesystem.
+	- `/` : This is the root directory which should contain only the directories needed at the top level of the file structure.
+	- `/bin` : This is where the executable files are located. These files are available to all users.
+	- `/dev` : There are device drivers.
+	- `/etc` : Supervisor directory commands, configuration files, disk configuration files, valid user lists, groups, ethernet, hosts, where to send critical messages.
+	- `/lib` : Contains shared library files and sometimes other kernel-related files.
+	- `/boot` : Contains files for booting the system.
+	- `/home` : Contains the home directory for users and other accounts.
+	- `/mnt` : Used to mount other temporary files systems, such as `cdrom` and `floppy` for the `CD-ROM` drive and `floppy diskette drive`, respectively.
+	- `/proc` : Contains all processes marked as a file by `process number` or other information that is dynamic to the system.
+	- `/tmp` : Holds temporary files used between system boots.
+	- `/usr` : Used for miscellaneous purposes, and can be used by many users. Includes admninistrative commands, shared files, library files, and others.
+	- `/var` : Typically contains variable-length files such as log and print files and any other type of file that may contain a variable amount of data.
+	- `/sbin` : Contains binary (executable) files, usually for system administration. For example, `fdisk` and `ifconfig` utilities.
+	- `/kernel` : Contains kernel files.
+- What is SELinux and DNF? (related to CentOS)
+- What is mounting in linux?
+	- The mount command attaches the filesystem of an external device to the filesystem of a system. It instructs the operating system that filesystem is ready to use and associate it with a particular piont in the system's heirarchy. Mounting will make files, directories and devices available to the users.
+	- Mounting is the attaching of an additional filesystem to the currently accessible filesystem of a computer.
+- What is VFS (Virtual File System)?
 
 ## Notes
 
@@ -75,6 +104,8 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 
 ## Recourses
 
-- Using Disks and Other Storage Media: https://tldp.org/LDP/sag/html/partitions.html
-- 
+- Partitions: https://tldp.org/LDP/sag/html/partitions.html
+- Filesystems: https://tldp.org/LDP/sag/html/filesystems.html
+- Unix/Linux - User Administration: https://www.tutorialspoint.com/unix/unix-user-administration.htm
+- Mounting Definition: http://www.linfo.org/mounting.html
 
