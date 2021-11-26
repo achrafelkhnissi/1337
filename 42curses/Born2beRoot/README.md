@@ -94,6 +94,16 @@
 		- Choose "var" partition > how to use this partition? : Ext4 > Mount point: var > Done.
 		- Choose "var-log" partition > how to use this partition? : Ext4 > Mount point: Manually > var/log > Done.
 		- Finish partitioning and write changes to disk. > (yes)
+	- Scan extra installation media? (No)
+	- Choose software to install: "remove all"
+	- Install the GRUB boot loader to your primary drive? (yes)
+	- Device for boot loader installation: /dev/sda
+	- Installation complete
+3. Installing
+	- Installing sudo: `apt install sudo`
+	- Verify whether sudo was successfully installed: `dpkg -l | grep sudo`
+	- Installing SSH: `sudo apt install openssh-server`
+	- Verify whether ssh was successfully installed: `dpkg -l | grep ssh`
 
 
 #### Mandatory part:
