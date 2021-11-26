@@ -16,9 +16,85 @@
 
 ## VirtualBox 101
 
-
+1. New: To create a new virtual OS
+	- Name: descriptive name of the virtual machine
+	- Machine Folder: The destination folder for the new virtual machine image.
+	- Type: Linux
+	- Version: Debian (64-bit)
+2. Memory size: Select of RAM to be allocated.
+3. Hard disk:
+	- Create a virtual hard disk now.
+4. Hard disk file type:
+	- VDI (VirtualBox Disk Image) < choose this.
+	- VHD (Virtual Hard Disk)
+	- VMDK (Virtual Machine Disk)
+5. Storage on physical hard disk:
+	- Dynamically allocated: the new virtual hard disk file should grow as it is used
+	- Fixed size
+6. File location and size:
+	- Select the size of the virtual hard disk.
+7. Go to Settings > Storage > Controller: IDE > Empty > Attributes > Optical Drive
+	- & choose the iso file of the OS.
+8. Start.
+9. You can scale the screen from: View > Virtual Screen.
+10. Click the windows botton when u want to move the mouse from the virtual machine to your desktop.
 
 ## Born2beRoot
+
+1. Basic Configuration:
+	- Hotname: ael-khni42 (login42)
+	- Domain name: ael-khni1337.net
+	- Root password: theDARKsideofme4-
+	- Full name for the new user: Achraf El Khnissi
+	- Username for your account: ael-khni
+	- Password for the new user: Leet1337+
+2. Partition disks:
+	- Manual
+	- SCSI3 (0, 0, 0) (sda) - 32.2 GB ATA VBOX HARDDISK
+	- Create new empty partition table on this device? (yes)
+	- sda1: ?
+		- Select the FREE SPACE
+		- Create a new partition
+		- New partition size: 500M
+		- Type for the new partition: Primary
+		- Location for the new partition: Beginning
+		- Partition settings > Mount point > boot > done setting up the partition.
+	- sda5: ?
+		- Select the FREE SPACE
+		- Create a new partition
+		- New partition size: max 
+		- Type for the new partition: Logical
+		- Partition settings > Mount point > Do not mount it > done setting up the partition.
+	- Configure encrypted valumes:
+		- Write the changes to disk and configure encryptedd volumes? (yes)
+		- Create encrypted valumes
+		- Devices to encrypt: (sda5)
+		- Done setting up the partition
+		- Finish
+		- Really erase the data on sda5? (yes)
+		- Encryption passshrase: Born2beRoot
+	- Configure the Logical Volume Manager (LVM):
+		- Write the changes to disks and configure LVM? (yes)
+		- Create volume group
+		- Volume group name: LVMGroup 
+		- Devices for the new volume group: /dev/mapper/sda5_crypt
+		- LVM configuration action: Create logical volume > Volume group: LVMGroup > Logical volume name: root > size: 10GB 
+		- LVM configuration action: Create logical volume > Volume group: LVMGroup > Logical volume name: swap > size: 2.3GB 
+		- LVM configuration action: Create logical volume > Volume group: LVMGroup > Logical volume name: home > size: 5GB 
+		- LVM configuration action: Create logical volume > Volume group: LVMGroup > Logical volume name: var > size: 3GB 
+		- LVM configuration action: Create logical volume > Volume group: LVMGroup > Logical volume name: srv > size: 3GB 
+		- LVM configuration action: Create logical volume > Volume group: LVMGroup > Logical volume name: tmp > size: 3GB 
+		- LVM configuration action: Create logical volume > Volume group: LVMGroup > Logical volume name: var-log > size: 4GB 
+		- Finish
+	- Editing partitions:
+		- Choose "home" partition > how to use this partition? : Ext4 > Mount point: home > Done.
+		- Choose "root" partition > how to use this partition? : Ext4 > Mount point: root> Done.
+		- Choose "srv" partition > how to use this partition? : Ext4 > Mount point: srv> Done.
+		- Choose "swap" partition > how to use this partition? : Swap erea > done.
+		- Choose "var" partition > how to use this partition? : Ext4 > Mount point: var > Done.
+		- Choose "var-log" partition > how to use this partition? : Ext4 > Mount point: Manually > var/log > Done.
+		- Finish partitioning and write changes to disk. > (yes)
+
 
 #### Mandatory part:
 
@@ -61,6 +137,7 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - What is UFW firewall?
 - What is DNF? (to install UFW on CentOF)
 - What is cron?
+- In the network settings of the virtualbox! what is the difference between "NAT" and "Bridged Adapter"?
 
 #### Bonus part:
 
