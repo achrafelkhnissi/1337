@@ -1,0 +1,4 @@
+dn: uid=jpucelle,ou=2014,ou=people,dc=42,dc=fr
+changetype: modify
+add: mobile-phone
+mobile-phone: 0695380748

@@ -1,0 +1,20 @@
+# Exercise 01: Makefile
+- Create the `Makefile` that’ll compile a library `libft.a`.
+- Your `makefile` should print all the command it’s running.
+- Your `makefile` should not run any unnecessary command.
+- The `Makefile` will get its source files from the "srcs" directory.
+- Those files will be: `ft_putchar.c`, `ft_swap.c`, `ft_putstr.c`, `ft_strlen.c`, `ft_strcmp.c`
+- The `Makefile` will get its header files from the "includes" directory.
+- Those files will be: `ft.h`
+- It should compile the .c files with gcc and with `-Wall -Wextra -Werror` flags in that order.
+- The lib should be at the root of the exercise.
+- `.o` files should be near their `.c` file.
+- The `Makefile `should also implement the following rules: `clean`, `fclean`, `re`, `all` and of course `libft.a`.
+- Running just `make` should be equal to `make all`
+- The rule `all` should be equal to `make libft.a`.
+- The rule `clean` should remove all the temporary generated files.
+- The rule `fclean` should be like a `make clean` plus all the binary made with `make all`.
+- The rule `re` should be like a `make fclean` followed by `make all`.
+- Your `makefile` should not compile any file for nothing.
+- We’ll only fetch your `Makefile` and test it with our files.
+- NOTE!: Watch out for whildcards!

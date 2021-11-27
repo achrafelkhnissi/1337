@@ -1,0 +1,11 @@
+# LIST OF DAY08 EXERCISES
+
+|Exercise  |Description |Solution                     
+|----------|------------|---------
+|[ex00](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex00/) | [split whitespaces](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex00/README.md) | [ft_split_whitespaces.c](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex00/ft_split_whitespaces.c)
+|[ex01](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex01) | [ft.h](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex01/README.md) | [ft.c](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex01/ft.h)
+|[ex02](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex02) | [ft_boolean.h](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex02/README.md) | [ft_boolean.h](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex02/ft_boolean.h)
+|[ex03](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex03) | [ft_abs.h](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex03/README.md) | [ft_abs.h](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex03/ft_abs.h)
+|[ex04](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex04) | [ft_point.h](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex04/README.md) | [ft_point.h](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex04/ft_point.h)
+|[ex05](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex05) | [param to tab](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex05/README.md) | [ft_param_to_tab.c](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex05/ft_param_to_tab.c)
+|[ex06](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex06) | [show tab](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex06/README.md) | [ft_show_tab.c](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/ex06/ft_show_tab.c)

@@ -1,0 +1,2 @@
+- testing a while to compile multiple files at once
+- testing #include and compiling multiple *.c to *.o and then *.o to exec
