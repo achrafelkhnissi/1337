@@ -1,66 +1,34 @@
-## EXERCISE 07
+## EXERCISE 09
 
-* In a **midLS** file, place the command line that will list all files and directories in your current directory (except for hidden files or any file that starts by a dot - yes, that includes double-dots), separated by a comma, by order of creation date. Make sure directories' name are followed by a slash character.
+* Create a file **b**, so that:
+```
+%>cat -e a
+STARWARS$
+Episode IV, A NEW HOPE It is a period of civil war.$
+$
+Rebel spaceships, striking from a hidden base, have won their first victory against the evil
+Galactic Empire.$
+During the battle, Rebel spies managed to steal secret plans to the Empires ultimate weapon, the
+DEATH STAR,$
+an armored space station with enough power to destroy an entire planet.$
+$
+Pursued by the Empires sinister agents, Princess Leia races home aboard her starship, custodian of
+the stolen plans that can save her people and restore freedom to the galaxy...$ $
+%>diff a b > sw.diff
+```
 
-NOTE!: What has not been asked for should not be done!\
-HINT: RTFM!
+HINT: man patch
 
 ------------------------------------------
-## If we RTFM!(`man ls`) we will see that:
+#### If we RTFM!(`man diff`) we will see that:
 ```
--t:	sort by modification time, newest first
--r:	--reverse
-	reverse order while sorting
--h:	--human-readable
-	with -l and -s, print sizes like 1K 234M 2G etc.
--p:	--indicator-style=slash
-	append / indicator to directories
--m:	fill width with a comma separated list of entries
+DESCRIPTION
+		Compare FILES line by line.
 ```
 
-> Here we encounter a problem, because at least with the command `ls` we can't
-truly sort the results by creation date, so we need to create a script or use
-other methods to ensure we display the results in the desired manner. This is
-given because most UNIXes do not have a concept of file creation time, so we
-can't make `ls` print it because the information is not recorded.
+> And since there is no argument required for `diff a b > sw.diff` we just
+create a bile called `b` that is just different enough to file `a` so that the
+command may work correctly.
 
 ------------------------------------------
-### Going deeper into why we can't use `ls` to sort by date:
-
-The POSIX standard only defines
-[three distinct timestamps](http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html)
-to be stored for each file: *the time of last data access*, *the time of last
-data modification* and *the time the file status last changed*.
-
-That said, modern Linux filesystems, such as ext4, Btrfs and JFS, do store the
-file creation time (aka birth time), but use different names for the field in
-question:
-```
-ufs2   →  st_birthtime
-zfs    →  crtime
-ext4   →  crtime
-btrfs  →  otime
-jfs    →  di_otime
-```
-However
-, [currently Linux does not provide a kernel API for accessing the file creation times](https://lwn.net/Articles/397442/)
-, even on filesystems supporting them.
-
-------------------------------------------
-### As a note I did find this to be really useful:
-
-In `ext4` it is possible; because `ext4` file-system store the file creation
-time. But still you will find that the `stat` command is unable to show the
-date, this is because I think the kernel is still not having any APIs for the
-same.
-Anyway the file birth time is stored in `ext4` and you can find it out, although
-not a direct method, but using `debugfs`.
-
-```
-$ sudo debugfs -R "stat /ABSOLUTE/PATH" /dev/sdxX | grep crtime
-$ sudo fdisk -l ──────────────────────────────┘
-```
-
-For those looking for more go to my [sources](https://unix.stackexchange.com/questions/91197/how-to-find-creation-date-of-file)
-here.
 

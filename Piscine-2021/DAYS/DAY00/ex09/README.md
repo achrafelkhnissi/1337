@@ -1,34 +1,28 @@
-## EXERCISE 09
+## EXERCISE 11
 
-* Create a file **b**, so that:
-```
-%>cat -e a
-STARWARS$
-Episode IV, A NEW HOPE It is a period of civil war.$
-$
-Rebel spaceships, striking from a hidden base, have won their first victory against the evil
-Galactic Empire.$
-During the battle, Rebel spies managed to steal secret plans to the Empires ultimate weapon, the
-DEATH STAR,$
-an armored space station with enough power to destroy an entire planet.$
-$
-Pursued by the Empires sinister agents, Princess Leia races home aboard her starship, custodian of
-the stolen plans that can save her people and restore freedom to the galaxy...$ $
-%>diff a b > sw.diff
-```
+* Create a magic file called **ft_magic** that will be formatted appropriately to detect files of 42 file type, built with a "42" string at the 42nd byte.
 
-HINT: man patch
-
-------------------------------------------
-#### If we RTFM!(`man diff`) we will see that:
-```
-DESCRIPTION
-		Compare FILES line by line.
-```
-
-> And since there is no argument required for `diff a b > sw.diff` we just
-create a bile called `b` that is just different enough to file `a` so that the
-command may work correctly.
+HINT: man file
 
 ------------------------------------------
 
+## Summary:
+We can `man file` for a description for how to use your own magic files.
+First run `file -C -m <your magic file>` to compile it,
+and `file -m <your magic file>` to use it.
+
+### To create our magic file (ft_magic) we break down the requirements:
+* File has to be formatted appropriately to detect files of **42 file type**:
+* This file type is defined by having a *42 'string' at the 42nd byte*
+* If we go to `man magic` we can see the following break down:
+```
+42 string 42 magic 42 number found`
+└┬┘└─┬──┘ └──┬───┘ └──────┬──────┘
+ │   │       │            └─── Message
+ │   │       └──────────────── Test
+ │   └──────────────────────── Type
+ └──────────────────────────── Offset
+```
+> Feel free to modify it to fully comprehend it, if needed.
+
+------------------------------------------

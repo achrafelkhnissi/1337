@@ -1,20 +1,35 @@
-## EXERCISE 08
+## EXERCISE 10
 
-* Create a file called **z** that returns "Z", followed by a new line, whenever the command cat is used on it. 
+* In a file called **clear**, place the command line that will search for all files - in the current directory as well as in its sub-directories - end by ~, and/or all files that start or end by #
+* The command line will show and erase all files found.
+* Only one command is allowed: no ';' or '&&' or other shenanigans.
+
+HINT: man find
+
+------------------------------------------
+## If we STFE!(Search the Fuc***g Ethernet) we will see that:
+
+* `find` is the command that can address all the requirements.
+* so next we can `man find` and we can with the next solution:
+
 ```
-?>cat z Z
-?>
+$ find . -name "*~" -print -delete -o -name "*#" -print -delete -o -name "#*" -print -delete
+
+-name [pattern]
+		Base of file name (the path with the leading directories removed)
+		matches shell pattern.
+-print [format]
+-delete:
+		Delete  files;  true  if  removal succeeded.  If the removal failed,
+		an error message is issued.  If -delete fails, find's exit status will
+		be nonzero (when it eventually exits).  Use of -delete automatically
+		turns on the `-depth' option.
+-o:
+		Ensures that the right hand side is evaluated only for those directories
+		which didn't get deleted before.
 ```
+---------------------
 
-## Ok this Exercise is kind of a joke...
-
-Because if we read the `man cat` page we see that this command just
-*"concatenate files and print on the standard output"*. So is going to print
-whatever we put inside the target file **z**, and in this case is only needed to
-put a simple '**Z**' inside our file, using vim or nano.
-You can also use echo command and redirection to redirect the character z inside the file Z.
-
-Example:
-```sh
-echo "Z" > z
+```bash
+find . -type f \( -name "#*#" -o -name "*~" \) -delete
 ```
