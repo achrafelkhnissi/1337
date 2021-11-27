@@ -253,8 +253,15 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 	- Mounting is the attaching of an additional filesystem to the currently accessible filesystem of a computer.
 - What is VFS (Virtual File System)?
 - What is a Device File:
+	- Represent Hardware devices to User-Mode applications. Look it a normal files at first glance. Do not contain any data - they are used for communications only. in 'ls -l', the first letter is either 'c' or 'b', depending on the device type. Have a major number, describe the type fo the Device. Have a minor number, describing the instance of the Device (allows several Devices of the same type)
 	- Block Device:
+		- A Block Device is a device whose driver communicates by sending entire blocks of data. Example - hard disks, USB cameras, Disk-On-Key. (Note: Filesystems can only be mounted if they are on block devices.)
 	- Character Device:
+		- A Character Device is a device whose driver communicates by sending and receiving single characters (bytes, octets). Example - serial ports, parallel ports, sound cards, keyboard.
+	- 3 differences between character devices and block devices:
+		- Character devices can only be accessed in bytes, while block devices are accessed in blocks, such as 512 bytes, 1024 bytes, etc.
+		- Block devices can be accessed randomly, but character devices cannot.
+		- There are no restrictions on the size of character and blocks, and blocks also can be accessed in bytes.
 
 ## Notes
 
@@ -275,4 +282,7 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - Filesystems: https://tldp.org/LDP/sag/html/filesystems.html
 - Unix/Linux - User Administration: https://www.tutorialspoint.com/unix/unix-user-administration.htm
 - Mounting Definition: http://www.linfo.org/mounting.html
-
+- Linux Partitions and Directories: https://www.dell.com/support/kbdoc/en-uk/000131456/the-types-and-definitions-of-ubuntu-linux-partitions-and-directories-explained
+- Device Driver Basics: https://tldp.org/LDP/khg/HyperNews/get/devices/basics.html
+- LVM HOWTO: https://tldp.org/HOWTO/LVM-HOWTO/
+- The Linux System Administrator's Guide: The Linux System Administrator's Guide
