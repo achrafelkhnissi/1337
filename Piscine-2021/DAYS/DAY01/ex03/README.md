@@ -8,8 +8,6 @@ $>./count_files.sh | cat -e
 $>
 ```
 
-## [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day01/files/ex03)
-
 ------------------------------------------
 ## Using your favorite search engine go for:
 `Recursively counting files in a Linux directory`

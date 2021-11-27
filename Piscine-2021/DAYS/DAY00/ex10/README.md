@@ -6,8 +6,6 @@
 
 HINT: man find
 
-## [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00/files/ex10)
-
 ------------------------------------------
 ## If we STFE!(Search the Fuc***g Ethernet) we will see that:
 

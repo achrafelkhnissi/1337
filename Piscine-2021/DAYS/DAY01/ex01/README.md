@@ -16,8 +16,6 @@
 HINT: `man groups`
 files to turn in: print_groups.sh
 
-## [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day01/files/ex01)
-
 ------------------------------------------
 ## If we `man groups` we will see that:
 ```
@@ -79,6 +77,3 @@ We can now use this past three elements to create the solution as follows:
 ```
 $ groups $FT_USER | tr ' ' ',' | tr -d '\n'
 ```
-
-------------------------------------------
-### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day01/files/ex01)

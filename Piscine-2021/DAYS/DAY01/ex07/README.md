@@ -11,8 +11,6 @@ sstq_, sorebrek_brk_, soibten_, sergtsop_, scodved_, rlaxcm_, rgmecived_, revres
 
 HINT: Rigorously follow the order indicated in the instructions.
 
-## [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day01/files/ex07)
-
 ------------------------------------------
 ## Pending:
 * Looking inside 'cat /etc/passwd':

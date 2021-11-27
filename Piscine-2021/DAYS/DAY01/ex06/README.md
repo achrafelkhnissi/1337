@@ -2,8 +2,6 @@
 
 - Write a command line that displays every other line for the command ls -l, starting from the first line.
 
-## [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day01/files/ex06)
-
 ------------------------------------------
 ## We can use `ls` in combination with `awk` for this:
 * First we use the command `ls -l` to display all contents on the current

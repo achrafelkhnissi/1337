@@ -19,8 +19,6 @@ the stolen plans that can save her people and restore freedom to the galaxy...$ 
 
 HINT: man patch
 
-### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00/files/ex09)
-
 ------------------------------------------
 #### If we RTFM!(`man diff`) we will see that:
 ```

@@ -5,8 +5,6 @@
 NOTE!: What has not been asked for should not be done!\
 HINT: RTFM!
 
-### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00/files/ex07)
-
 ------------------------------------------
 ## If we RTFM!(`man ls`) we will see that:
 ```
@@ -66,5 +64,3 @@ $ sudo fdisk -l ─────────────────────�
 For those looking for more go to my [sources](https://unix.stackexchange.com/questions/91197/how-to-find-creation-date-of-file)
 here.
 
-------------------------------------------
-### [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day00/files/ex07)

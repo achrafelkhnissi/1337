@@ -74,9 +74,7 @@ touch -h -a -m -t 201806012220.00 test6
 > Use `man touch` for more info.
 
 ------------------------------------------
-### Change the FILE SIZE + timestamp + permissions
-Go here for the __previous__**
-[answer](https://github.com/Alaamimi/1337-piscine/blob/master/Piscine_Shell/Day00/ex02/notes.md)
+
 > But is better to leave it to the end, and for now focus on how to create all
 the folders and files accordingly with the requirements and come back to it
 latter.

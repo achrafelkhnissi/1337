@@ -19,5 +19,3 @@ int	ft_iterative_power(int nb, int power);
 - [Example](https://www.mathsisfun.com/exponent.html)
 - [Laws of Exponents](https://www.mathsisfun.com/algebra/exponent-laws.html)
 - [Negative Exponents Explained! - YouTube](https://www.youtube.com/watch?v=TKj8kEofbAw)
-
-

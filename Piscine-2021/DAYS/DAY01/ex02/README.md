@@ -18,9 +18,6 @@ $>
 - basename takes the string path and return the name of the file.
 >basename is a standard computer program on Unix and Unix-like operating systems. When basename is given a pathname, it will delete any prefix up to the last slash ( '/' ) character and return the result. basename is described in the Single UNIX Specification and is primarily used in shell scripts.
 
-
-## [back](https://github.com/idevHive/42/tree/master/Piscines/C/Day01/files/ex02)
-
 ------------------------------------------
 ## Using your favorite search engine go for:
 `command line that searches for all file names that end with ".sh"`
