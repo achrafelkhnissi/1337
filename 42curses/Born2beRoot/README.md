@@ -12,9 +12,8 @@
 # **************************************************************************** #
 ```
 
-- Create a user with your login and add it to sudo && user42 group.
-
 ## Evaluation
+
 ### Project overview
 1. How the virtual machine work?
 2. What is the basic differences between CentOS and Debian?
@@ -30,12 +29,14 @@
 3. Check that the SSH service is started.
 4. Check that the chosen OS is Debian or CentOS.
 5. Check that a user with your login is present on the VM.
-6. Check that the user has been added and it belongs to the "sudo" and "user42" groups.
-7. Create a new user. Assign it a password of your choice, respecting the subject rules.
-8. Explain how you were able to set up the rules resquested.
-9. Create a group named "evaluating" & add the new user to this group.
-10. Check if that user belongs to the "evaluating" group.
-11. Explain the advantages of this password policy as well as the advantages and disadvantages of its implementation.
+
+### User
+1. Check that the user has been added and it belongs to the "sudo" and "user42" groups.
+2. Create a new user. Assign it a password of your choice, respecting the subject rules.
+3. Explain how you were able to set up the rules resquested.
+4. Create a group named "evaluating" & add the new user to this group.
+5. Check if that user belongs to the "evaluating" group.
+6. Explain the advantages of this password policy as well as the advantages and disadvantages of its implementation.
 
 ### Hostname and partitions
 1. Check that the hostname of the machine is correctly formatted.
