@@ -285,4 +285,4 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - Linux Partitions and Directories: https://www.dell.com/support/kbdoc/en-uk/000131456/the-types-and-definitions-of-ubuntu-linux-partitions-and-directories-explained
 - Device Driver Basics: https://tldp.org/LDP/khg/HyperNews/get/devices/basics.html
 - LVM HOWTO: https://tldp.org/HOWTO/LVM-HOWTO/
-- The Linux System Administrator's Guide: The Linux System Administrator's Guide
+- The Linux System Administrator's Guide: https://tldp.org/LDP/sag/html/index.html 
