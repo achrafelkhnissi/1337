@@ -80,8 +80,6 @@
 
 ### BONUS
 
-
-
 ## VirtualBox 101
 
 1. New: To create a new virtual OS
@@ -230,7 +228,6 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - What is a signature.txt file?
 - What is sha1 format?
 
-
 #### Extra
 
 - What is BIOS?
@@ -281,8 +278,16 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 	- `/etc/group` - This file contains the group information for each account.
 	- `/etc/gshadow` - This file contains secure group account information.
 
+## Answers
+
+1. How to get the hostname:
+	- `hostname`
+	- `cat /proc/sys/kernel/hostname`
+	- `hostnamectl`
+
 ## Recourses
 
+- LVM: https://wiki.ubuntu.com/Lvm
 - Partitions: https://tldp.org/LDP/sag/html/partitions.html
 - Filesystems: https://tldp.org/LDP/sag/html/filesystems.html
 - Unix/Linux - User Administration: https://www.tutorialspoint.com/unix/unix-user-administration.htm
