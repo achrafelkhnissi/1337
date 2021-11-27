@@ -14,6 +14,73 @@
 
 - Create a user with your login and add it to sudo && user42 group.
 
+## Evaluation
+### Project overview
+1. How the virtual machine work?
+2. What is the basic differences between CentOS and Debian?
+3. What is the purpose of virtual machines?
+4. If you chose CentOS, Then what is SELinux and DNF are?
+5. If you chose Debian, Then what is the difference between aptitude and apt?
+6. What APPArmor is?
+7. The script must display information all every 10 minutes.
+
+### Simple setup
+1. Pay attention to the password chosen, it must follow the rules imposed in the subject.
+2. Check that the UFW service is started.
+3. Check that the SSH service is started.
+4. Check that the chosen OS is Debian or CentOS.
+5. Check that a user with your login is present on the VM.
+6. Check that the user has been added and it belongs to the "sudo" and "user42" groups.
+7. Create a new user. Assign it a password of your choice, respecting the subject rules.
+8. Explain how you were able to set up the rules resquested.
+9. Create a group named "evaluating" & add the new user to this group.
+10. Check if that user belongs to the "evaluating" group.
+11. Explain the advantages of this password policy as well as the advantages and disadvantages of its implementation.
+
+### Hostname and partitions
+1. Check that the hostname of the machine is correctly formatted.
+2. Modify this hostname then restart the machine. The hostname should be updated.
+3. Restore the machine to its original hostname.
+4. View the partitions for this VM.
+5. Compare the output with the example given in the subject.
+6. Briefly explain how LVM works and what it is all about.  
+
+### SUDO
+1. Check that the "sudo" program is properly installed on the VM.
+2. Assign the new user to the sudo group.
+3. The subject imposes strict rules for sudo. Explain the value and operation of sudo.
+4. Show the implementation of the rules imposed by the subject.
+5. Verify that "/var/log/sudo/" forlder exists and has at least one file.
+6. Check the contents of the files in this folder. (you should see a history of the commands used with sudo)
+7. Run a command via sudo & and see if the file(s) in the "/var/log/sudo/" folder have been updated.
+
+### UFW
+1. Check that the "UFW" program is properly installed on the VM.
+2. Check that it is working properly.
+3. Explain what is UFW and the value of using it.
+4. List the active rules in UFW. A rule must exist for port 4242
+5. Add a new rules to open port 8080. Check that this one has been added by listing the active rules.
+6. Delete the new rule.
+
+### SSH
+1. Check that the "SSH" service is properly installed on the VM.
+2. Check that it is working properly.
+3. Explain what is SSH and the value of using it.
+4. Verify that the SSH service only uses port 4242.
+5. Log in with the newly created user using SSH.
+6. Make sure that you cannot use SSH with the "root" user.
+
+### Script monitoring
+1. Explain how the script works by showing the code.
+2. Explain what "corn" is.
+3. Explain how you set up the script so that it runs every 10 minutes from when the server starts.
+4. Ensure that this script runs every minute.
+5. Make the script stop running when the server has started up. (without modifying the script itself)
+
+### BONUS
+
+
+
 ## VirtualBox 101
 
 1. New: To create a new virtual OS
@@ -184,10 +251,22 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 	- The mount command attaches the filesystem of an external device to the filesystem of a system. It instructs the operating system that filesystem is ready to use and associate it with a particular piont in the system's heirarchy. Mounting will make files, directories and devices available to the users.
 	- Mounting is the attaching of an additional filesystem to the currently accessible filesystem of a computer.
 - What is VFS (Virtual File System)?
+- What is a Device File:
+	- Block Device:
+	- Character Device:
 
 ## Notes
 
 - MBR (Master Boot Record)
+- Root account: This is also called `superuser` and would have complete and unfettered control of the system.
+- System accounts: System accounts are those needed for the operation of system-specific components for example mail accounts and the `sshd` accounts. These accounts are usually needed for some specific function on your system, and any modification to them could adversely affect the system.
+- User accounts: User accounts provide interactive access to the system for users and groups of users. General users are typically assigned to these accounts and usually have limited access to critical system files and directories.
+- Unix supports a concept of `Group Account` which logically groups a number of accounts. Every account would be a part of another group account. A unix group plays important role in handling file permissions and process management.
+- There are four main user  administration files:
+	- `/etc/passwd` - Keeps the user account and password information. This file holds the majority of information about accounts on the Unix System.
+	- `/etc/shadow` - Holds the encrypted password of the corresponding account. Not all the systems support this file.
+	- `/etc/group` - This file contains the group information for each account.
+	- `/etc/gshadow` - This file contains secure group account information.
 
 ## Recourses
 
