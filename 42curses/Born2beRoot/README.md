@@ -190,7 +190,12 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - What is the difference between Debian and CentOS?
 - What is SELinux? (for CentOS)
 - What is AppArmor? (for Debian)
-- What is LVM? (Logical Valume Manager)
+- What is LVM? (Logical Valume Manager) and what its uses?
+	- Creating single logical valumes off multiple physical volumes or entire hard disks, allowing for dynamic volume resizing.
+	- Managing large hard disk farms by allowing disks to be added and replaced iwhtout downtime or service disruption.
+	- On small systems (like a desktop), instead of having to estimate at installation time how big a partition might need to be, LVM allows filesystems to be esily resized as needed.
+	- Performing consistent backups by taking snapshots of the logical volumes.
+	- Encrypting multiple physical partitions with one password.
 	- In Linux, LVM is a device mapper framework that provides logical valume managment for the linux kernel.
 	- https://tldp.org/HOWTO/LVM-HOWTO/
 	- https://en.wikipedia.org/wiki/Logical\_Volume\_Manager\_(Linux)
