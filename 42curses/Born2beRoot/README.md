@@ -284,6 +284,10 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 	- `hostname`
 	- `cat /proc/sys/kernel/hostname`
 	- `hostnamectl`
+2. Check os version in Linux
+	- `cat /etc/os-release`
+	- `hostnamectl`
+3. 
 
 ## Recourses
 
