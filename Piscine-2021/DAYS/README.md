@@ -4,7 +4,7 @@
 
 + Shell
 	- [d00](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/README.md)
-	- [d01](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell01/README.md))
+	- [d01](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell01/README.md)
 - C
 	- [d02]() - [C basics](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C00/README.md)
 	- [d03]() - [Pointers](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C01/README.md)
