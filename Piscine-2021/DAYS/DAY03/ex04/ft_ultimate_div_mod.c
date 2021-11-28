@@ -1,58 +1,20 @@
-#include <unistd.h>
-
-void	ft_putnbr(int n);
-void	ft_putchar(char c);
-void	ft_ultimate_div_mod(int *a, int *b);
-int	main(void)
-{
-	int	i, j;
-
-	i = 1337;
-	j = 10;
-
-	ft_putnbr(i);
-	ft_putchar(',');
-	ft_putchar(' ');
-	ft_putnbr(j);
-	ft_putchar('\n');
-
-	ft_ultimate_div_mod(&i, &j);
-
-	ft_putnbr(i);
-	ft_putchar(',');
-	ft_putchar(' ');
-	ft_putnbr(j);
-	ft_putchar('\n');
-
-	return (0);
-}
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/24 07:27:52 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/28 10:38:42 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
 	int	tmp;
-	tmp = *a;
 
-	*a = *a / *b;
-	*b = tmp % *b;
-}
-
-void	ft_putnbr(int n)
-{
-	if (n < 0)
-	{
-		ft_putchar('-');
-		n = -n;
-	}
-
-	if (n > 9)
-	{
-		ft_putnbr(n / 10);
-	}
-
-	ft_putchar((n % 10) + '0');
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
+	tmp = *a / *b;
+	*b = *a % *b;
+	*a = tmp;
 }

@@ -1,19 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/24 07:31:11 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/28 10:39:42 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
-
-void	ft_putstr(char *str);
-int	main(void)
-{
-	ft_putstr("Future is loading, 1337!\n");
-
-	return (0);
-}
 
 void	ft_putstr(char *str)
 {
-	int	i;
-	i = 0;
-	while(str[i] != '\0')
-	{
-		write(1, &str[i++], 1);
-	}
+	while (*str)
+		write(1, str++, 1);
 }

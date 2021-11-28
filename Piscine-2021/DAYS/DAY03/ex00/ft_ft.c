@@ -1,44 +1,16 @@
-#include <unistd.h>
-
-void	ft_putchar(char c);
-void	ft_putnbr(int n);
-void	ft_ft(int *nbr);
-int	main(void)
-{
-	int	n;
-	int	*p;
-
-	n = 1337;
-	p = &n;
-
-	ft_ft(p);
-	ft_putchar('\n');
-
-	return (0);
-}
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/23 17:00:45 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/28 10:36:06 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 void	ft_ft(int *nbr)
 {
-	ft_putnbr(*nbr);
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void	ft_putnbr(int n)
-{
-	if (n < 0)
-	{
-		ft_putchar('-');
-		n = -n;
-	}
-	
-	if (n > 9)
-	{
-		ft_putnbr(n / 10);
-	}
-
-	ft_putchar((n % 10) + '0');
+	*nbr = 42;
 }

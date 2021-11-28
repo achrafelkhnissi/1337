@@ -1,53 +1,21 @@
-#include <unistd.h>
-
-void	ft_putnbr(int n);
-void	ft_putchar(char c);
-int	ft_strlen(char *str);
-int	main(void)
-{
-	char	*string;
-	int	length;
-
-	string = "Future is loading, 1337!";
-	length = ft_strlen(string);
-
-	ft_putnbr(length);
-	ft_putchar('\n');
-
-	return (0);
-}
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/24 10:12:08 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/28 10:40:04 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
-
-	while (str[i] != '\0')
-	{
+	while (str[i])
 		i++;
-	}
-
 	return (i);
-}
-
-void	ft_putnbr(int n)
-{
-	if (n < 0)
-	{
-		ft_putchar('-');
-		n = -n;
-	}
-
-	if (n > 9)
-	{
-		ft_putnbr(n / 10);
-	}
-
-	ft_putchar((n % 10) + '0');
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
 }

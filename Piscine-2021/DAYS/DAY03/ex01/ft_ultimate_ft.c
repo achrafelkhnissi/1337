@@ -1,3 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/23 17:06:08 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/28 10:37:10 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	ft_ultimate_ft(int *********nbr)
+{
+	*********nbr = 42;
+}
+
+/*
 #include <unistd.h>
 
 void	ft_putnbr(int n);
@@ -32,11 +50,6 @@ int	main(void)
 	ft_putchar('\n');
 
 	return (0);
-}
-
-void	ft_ultimate_ft(int *********nbr)
-{
-	ft_putnbr(*********nbr);
 }
 
 void	ft_putnbr(int n)
