@@ -1,17 +1,17 @@
-# LIST OF DAY00 EXERCISES
+# LIST OF Shell00 EXERCISES
 
 |Exercise        |Description                    |Solution                     |
 |-------------|-------------------------------|-----------------------------|
-|ex00         | [Z](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex00/README.md)              | [echo](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex00/z.sh)|
-|ex01         | [testDay00](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex01/README.md)                      | [mkfile/touch/chmod](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex01/testDay00.sh)                |
-|ex02         | [Oh yea, mooore...](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex02/README.md)             | [mkfile/touch/chmod](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex02/exo2.sh)|
-|ex03         |[Connet me!](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex03/README.md)              | [klist](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex03/exo3.sh)|
-|ex04         |[midLS](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex04/README.md)              | [ls](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex04/exo7.sh)|
-|ex05         |[git commit](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex05/README.md)| [git log](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex05/README.md)|
-|ex06         |[git ignore](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex06/README.md)| [git-clean](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex06/README.md)|
-|ex07         |[diff](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex07/README.md)              |[readme](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex07/README.md)|
-|ex08         |[clean](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex08/README.md)              |[find](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex08/clean.sh)|
-|ex09         |[magic](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex09/README.md)             |[ft_magic](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY00/ex09/ft_magic)|
+
+|ex01         | [testDay00](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex01/README.md)                      | [mkfile/touch/chmod](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex01/testDay00.sh)                |
+|ex02         | [Oh yea, mooore...](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex02/README.md)             | [mkfile/touch/chmod](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex02/exo2.sh)|
+|ex03         |[Connet me!](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex03/README.md)              | [klist](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex03/exo3.sh)|
+|ex04         |[midLS](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex04/README.md)              | [ls](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex04/exo7.sh)|
+|ex05         |[git commit](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex05/README.md)| [git log](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex05/README.md)|
+|ex06         |[git ignore](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex06/README.md)| [git-clean](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex06/README.md)|
+|ex07         |[diff](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex07/README.md)              |[readme](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex07/README.md)|
+|ex08         |[clean](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex08/README.md)              |[find](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex08/clean.sh)|
+|ex09         |[magic](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex09/README.md)             |[ft_magic](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex09/ft_magic)|
 
 ## Skippable content
 
