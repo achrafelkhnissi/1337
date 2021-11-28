@@ -1,7 +1,7 @@
 # Exercise 05: Can you create it?
 
 - Create a file containing only "42", and NOTHING else.
-- Its name will be: `"\?$*KwaMe*$?\"`
+- Its name will be: `"\?$*MaRViN*$?\"`
 - Example:
 ```
 $>ls -lRa *waM* | cat -e
@@ -16,7 +16,7 @@ specify the name like this:
 	touch \"\\\?\$\*'KwaMe'\*\$\?\\\"
 	```
 * And the other way is just to create a temp file with whichever name you want
-and rename it to "\?$*'KwaMe'*$?\"
+and rename it to "\?$*'MaRViN'*$?\"
 
 > Let's not forget to include the '42' inside that file after completing the
 previous steps.

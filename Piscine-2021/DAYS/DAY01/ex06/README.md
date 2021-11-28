@@ -8,7 +8,7 @@
 directory in a list format, then pass the results forward using pipe `|` for
 `awk` with the option:
 NR → The total number of input records seen so far.
-And the `% 2 == 0` to print every second line counting from line 0.
+And the `% 2 == 1` to print every second line counting from line 0.
 	```
-	ls -l | awk 'NR % 2 == 0'
+	ls -l | awk 'NR % 2 == 1'
 	```

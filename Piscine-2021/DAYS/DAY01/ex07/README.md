@@ -11,17 +11,3 @@ sstq_, sorebrek_brk_, soibten_, sergtsop_, scodved_, rlaxcm_, rgmecived_, revres
 
 HINT: Rigorously follow the order indicated in the instructions.
 
-------------------------------------------
-## Pending:
-* Looking inside 'cat /etc/passwd':
-We still need to deconstruct the problem and explain the solution for...
-	```
-	cat /etc/passwd | sed -e 's/#.*//' -e 's/[ ^I]*$//' -e '/^$/ d' -e 's/:.*//g' \
-	| tr '\n' ',' | rev | tr "," "\n" | sort -r | tr "\n" ","  \
-	| sed -e 's/, */, /g' -e 's/.$//' -e 's/.\{3\}$//'
-	```
-
-> This answer is still missing the ending with a dot (.)
-
-## Notes
-- To add `.` to the end of the output: `sed 's/,$/./'`. 
