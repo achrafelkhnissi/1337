@@ -1,0 +1,26 @@
+CC=gcc
+AR=ar crs
+RM=rm -rf
+FLAG=-Wall -Wextra -Werror
+HEADER=-I includes
+SRC=$(wildcard srcs/*)
+OBJ=$(notdir $(SRC:.c=.o))
+LIB=libft.a
+
+.PHONY: all clean fclean re
+
+all: $(LIB)
+
+$(LIB): $(OBJ)
+	$(AR) $@ $^
+
+$(OBJ): $(SRC) 
+	$(CC) $(HEADER) $(FLAG) -c $^
+
+clean:
+	$(RM) $(OBJ)
+
+fclean: clean
+	$(RM) $(LIB)
+
+re: fclean all
