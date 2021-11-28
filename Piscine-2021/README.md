@@ -12,7 +12,7 @@
 	  /* ********************************************************************************* */
 ```
 ---
-![1337](https://github.com/achrafelkhnissi/CS/blob/master/1337/imgs/1337.jpg)
+![1337](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/1337.jpg)
 ---
 ## About 42 && 1337 School :
 
@@ -35,10 +35,10 @@ students, without teachers. It can be done, and it works.
 	+ [Education Program](#education-program)
 	+ [Piscine | Typical Week](#pool--typical-week)
 - [Exercises](#exercises)
-	+ [Days](https://github.com/achrafelkhnissi/CS/tree/master/1337/DAYS)
-		* [00](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY00/README.md), [01](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY01/README.md), [02](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY02/README.md), [03](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY03/README.md), [04](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY04/README.md), [05](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY05/README.md), [06](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY06/README.md), [07](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY07/README.md), [08](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/README.md), [09](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/README.md), [10](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY10/README.md), [11](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY11/README.md), [12](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY12/README.md), [13](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY13/README.md)
-	+ [Exames](https://github.com/achrafelkhnissi/CS/tree/master/1337/EXAMES)
-		* [00](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam00), [01](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam01), [02](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam02), [03](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam03), [04](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam04), [05](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam05)
+	+ [Days](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS)
+		* [00](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY00/README.md), [01](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY01/README.md), [02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY02/README.md), [03](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY03/README.md), [04](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY04/README.md), [05](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY05/README.md), [06](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/README.md), [07](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY07/README.md), [08](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY08/README.md), [09](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/README.md), [10](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY10/README.md), [11](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY11/README.md), [12](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY12/README.md), [13](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY13/README.md)
+	+ [Exames](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES)
+		* [00](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam00), [01](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam01), [02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam02), [03](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam03), [04](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam04), [05](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam05)
 - [Sauce Needed](#sauce-needed)
 	+ [C Knowledge](#c-knowledge-)
 	+ [Lectures [Vidoes]](#videos)
@@ -53,7 +53,7 @@ students, without teachers. It can be done, and it works.
 ## Education Program
 </p>
 <p align="center">  
-<img src ="https://github.com/achrafelkhnissi/CS/blob/master/1337/imgs/3y_edu_program.png" width="800">
+<img src ="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/3y_edu_program.png" width="800">
 </p>
 
 ---
@@ -61,15 +61,14 @@ students, without teachers. It can be done, and it works.
 ## Pool | Typical Week
 </p>
 <p align="center">  
-<img src ="https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/imgs/piscine_typical_week.png" width="800">
+<img src ="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/piscine_typical_week.png" width="800">
 </p>
 
 ---
-[//]: # ( ## Holy graph: </p> <p align="center"> <img src ="https://github.com/Alaamimi/Piscine-42/blob/master/ressources/map_of_the_Piscine_C.png" width="800"> </p> --- )
 
 </p>
 <p align="center">  
-<img src ="https://github.com/achrafelkhnissi/CS/blob/master/1337/imgs/aye-aye-capitain.gif" width="600">
+<img src ="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/aye-aye-capitain.gif" width="600">
 </p>
 
 ---
@@ -77,8 +76,8 @@ students, without teachers. It can be done, and it works.
 ## EXERCISES
 |	|	|
 |-----------|-------------------------------------|
-|[DAYS](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS) | [00](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY00/README.md), [01](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY01/README.md), [02](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY02/README.md), [03](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY03/README.md), [04](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY04/README.md), [05](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY05/README.md), [06](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY06/README.md), [07](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY07/README.md), [08](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY08/README.md), [09](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/README.md), [10](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY10/README.md), [11](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY11/README.md), [12](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY12/README.md), [13](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY13/README.md) | 
-|[EXAMS](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES) | [00](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam00), [01](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam01), [02](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam02), [03](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam03), [04](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam04), [05](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/EXAMES/exam05) |
+|[DAYS](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS) | [00](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY00/README.md), [01](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY01/README.md), [02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY02/README.md), [03](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY03/README.md), [04](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY04/README.md), [05](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY05/README.md), [06](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/README.md), [07](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY07/README.md), [08](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY08/README.md), [09](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/README.md), [10](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY10/README.md), [11](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY11/README.md), [12](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY12/README.md), [13](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY13/README.md) | 
+|[EXAMS](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES) | [00](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam00), [01](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam01), [02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam02), [03](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam03), [04](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam04), [05](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/EXAMES/exam05) |
 
 [//]: # (This is a comment, it will not be included)
 
