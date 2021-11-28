@@ -3,9 +3,9 @@
 
 |Exercise  |Description |Solution                     
 |----------|------------|---------
-|[ex00](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/ex00/) | [libft](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/ex00/README.md) | [libft_creator.sh](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/ex00/libft_creator.sh)
-|[ex01](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/ex01) | [Makefile](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/ex01/README.md) | [Makefile](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/ex01/makefile)
-|[ex02](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/ex02) | [strjoin](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/ex02/README.md) | [ft_strjoin.c](https://github.com/achrafelkhnissi/Computer-Science/tree/master/1337/DAYS/DAY09/ex02/ft_strjoin.c)
+|[ex00](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex00/) | [libft](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex00/README.md) | [libft_creator.sh](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex00/libft_creator.sh)
+|[ex01](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex01) | [Makefile](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex01/README.md) | [Makefile](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex01/makefile)
+|[ex02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex02) | [strjoin](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex02/README.md) | [ft_strjoin.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex02/ft_strjoin.c)
 
 ## Makefile
 ### Useful sources
@@ -160,4 +160,4 @@ Otherwise, if somebody creates an `install` directory, `make` will silently fail
 
 ### cheatsheet
 
-[Make Cheat Sheet [pdf]](https://github.com/achrafelkhnissi/CS/blob/master/1337/PDF/make_cheatsheet.pdf)
+[Make Cheat Sheet [pdf]](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/PDF/make_cheatsheet.pdf)

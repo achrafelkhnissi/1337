@@ -2,16 +2,16 @@
 
 |Exercise        |Description                    |Solution                     |
 |-------------|-------------------------------|-----------------------------|
-|[ex00](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex00)      |[Makefile](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex00/README.md)          |[Makefile](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex00/Makefile) |
-|[ex01](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex01)     |[foreach](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex01/README.md)  |[ft_foreach.c](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex01/ft_foreach.c)  |
-|[ex02](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex02)   |[map](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex02/README.md)           |[ft_map.c](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex02/ft_map.c)         |
-|[ex03](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex03)   |[any](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex03/README.md)           |[ft_any.c](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex03/ft_any.c)      |
-|[ex04](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex04)   |[count if](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex04/README.md)        |[ft_count_if.c](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex04/ft_count_if.c)  |
-|[ex05](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex05)   |[is sort](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex05/README.md)       |[ft_is_sort.c](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex05/ft_is_sort.c)       |
-|[ex06](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex06)   |[do-op](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex06/README.md)           |[ft_do-op.c](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex06/srcs/main.c) |
-|[ex07](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex07)   |[sort word tab](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex07/README.md)        |[ft_sort_wordtab.c](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex07/ft_sort_wordtab.c)       |
-|[ex08](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex08)   |[advanced sort word tab](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex08/README.md)     |[ft_advanced_sort_wordtab.c](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex08/ft_advanced_sort_wordtab.c)|
-|[ex09](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex09)   |[advanced do-op](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex09/README.md) |[ft_advanced_do-op.c](https://github.com/achrafelkhnissi/Computer-Science/blob/master/1337/DAYS/DAY10/ex09/srcs/main.c)
+|[ex00](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex00)      |[Makefile](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex00/README.md)          |[Makefile](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex00/Makefile) |
+|[ex01](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex01)     |[foreach](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex01/README.md)  |[ft_foreach.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex01/ft_foreach.c)  |
+|[ex02](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex02)   |[map](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex02/README.md)           |[ft_map.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex02/ft_map.c)         |
+|[ex03](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex03)   |[any](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex03/README.md)           |[ft_any.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex03/ft_any.c)      |
+|[ex04](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex04)   |[count if](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex04/README.md)        |[ft_count_if.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex04/ft_count_if.c)  |
+|[ex05](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex05)   |[is sort](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex05/README.md)       |[ft_is_sort.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex05/ft_is_sort.c)       |
+|[ex06](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex06)   |[do-op](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex06/README.md)           |[ft_do-op.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex06/srcs/main.c) |
+|[ex07](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex07)   |[sort word tab](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex07/README.md)        |[ft_sort_wordtab.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex07/ft_sort_wordtab.c)       |
+|[ex08](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex08)   |[advanced sort word tab](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex08/README.md)     |[ft_advanced_sort_wordtab.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex08/ft_advanced_sort_wordtab.c)|
+|[ex09](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex09)   |[advanced do-op](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex09/README.md) |[ft_advanced_do-op.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY10/ex09/srcs/main.c)
 
 
 > Main (d09) Topic: Pointers to functions (intro & syntax)\
@@ -115,8 +115,8 @@ int	main(void)
 - We can say that `ptr` is an array of 10 pointers pointing to integers.
 
 <p float="center">
-  <img src="https://github.com/achrafelkhnissi/CS/blob/master/1337/imgs/ptr_arr1.png" width="35%"/>
-  <img src="https://github.com/achrafelkhnissi/CS/blob/master/1337/imgs/ptr_arr2.png" width="42%"/> 
+  <img src="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/ptr_arr1.png" width="35%"/>
+  <img src="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/ptr_arr2.png" width="42%"/> 
 </p>
 
 - if we want a pointer which point to an array we need to declare it like this: 
@@ -133,8 +133,8 @@ int	main(void)
 - Add `()` makes the __precedence__ of `*` higher than `[]`
 
 <p float="center">
-  <img src="https://github.com/achrafelkhnissi/CS/blob/master/1337/imgs/ptr_arr3.png" width="35%"/>
-  <img src="https://github.com/achrafelkhnissi/CS/blob/master/1337/imgs/ptr-arr4.png" width="42%"/> 
+  <img src="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/ptr_arr3.png" width="35%"/>
+  <img src="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/ptr-arr4.png" width="42%"/> 
 </p>
 
 - `int (*ptr)[10]` means that `ptr` is a pointer which points to 10 integers.

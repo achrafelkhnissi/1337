@@ -2,11 +2,11 @@
 
 |Exercise        |Description                    |Solution                     |
 |-------------|-------------------------------|-----------------------------|
-|[ex00](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex00)      |[display file](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex00/README.md)          |[display_file.c](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex00/srcs/display_file.c) |
-|[ex01](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex01)     |[cat](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex01/README.md)  |[ft_cat.c](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex01/srcs/ft_cat.c)  |
-|[ex02](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex02)   |[tail](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex02/README.md)           |[ft_tail.c](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex02/srcs/ft_tail.c)         |
-|[ex03](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex03)   |[hexdump](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex03/README.md)           |[ft_hexdump.c](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex03/srcs/ft_hexdump.c)      |
-|[ex04](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex04)   |[last](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex04/README.md)        |[ft_last.c](https://github.com/achrafelkhnissi/CS/blob/master/1337/DAYS/DAY12/ex04/srcs/ft_last.c)  |
+|[ex00](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex00)      |[display file](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex00/README.md)          |[display_file.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex00/srcs/display_file.c) |
+|[ex01](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex01)     |[cat](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex01/README.md)  |[ft_cat.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex01/srcs/ft_cat.c)  |
+|[ex02](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex02)   |[tail](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex02/README.md)           |[ft_tail.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex02/srcs/ft_tail.c)         |
+|[ex03](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex03)   |[hexdump](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex03/README.md)           |[ft_hexdump.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex03/srcs/ft_hexdump.c)      |
+|[ex04](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex04)   |[last](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex04/README.md)        |[ft_last.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex04/srcs/ft_last.c)  |
 
 
 ## System Calls
@@ -16,7 +16,7 @@
 
 </p>
 <p align="center">  
-<img src ="https://github.com/achrafelkhnissi/CS/blob/master/1337/imgs/user-kernel-mode.png">
+<img src ="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/user-kernel-mode.png">
 </p>
 
 - The `user mode` is more safe and because of that most of the programs they execute mostly in user mode. But when a program is executing in user mode it may need access to some of the resources, like your memory or your hardware and so on.. So when the program needs access to these resources, it makes a call to your operating system telling that I need access to certain resources. So it makes a `call`, when it makes that call what happens is that for an instant the program is switched from `user mode` to `kernel mode` so that it can use those resources. When a program switches from `user mode` to `kernel mode` or vice-versa that is known as `context switching`. So when the program makes a call to the operating system saying I need to user this particular resource the `context swtich` happens when the `user mode` is switched to `kernel mode` so that the program can use those resources and then the `call` that the program makes in order to access those resources or to go into kernel mode. That call is known as the `System call`..
