@@ -1,26 +1,24 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/22 07:33:51 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/28 09:26:22 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void    ft_putchar(char c)
-{
-        write(1, &c, 1);
-}
+#include <unistd.h>
 
 void	ft_print_numbers(void)
 {
-	char	l;
+	char	n;
 
-	l = '0';
-
-	while (l <= '9')
+	n = '0';
+	while (n <= '9')
 	{
-		ft_putchar(l++);
+		write(1, &n, 1);
+		n++;
 	}
-}
-
-int     main(void)
-{
-	ft_print_numbers();
-        ft_putchar('\n');
-
-        return 0;
-}

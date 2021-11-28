@@ -1,51 +1,50 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/23 07:21:36 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/28 09:28:23 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
-
-void	ft_putchar(char c);
-void	ft_print_comb2(void);
-void	ft_print_numbers(int x, int y);
-
-int	main(void)
-{
-	ft_print_comb2();
-
-	return 0;
-}
 
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_print_numbers(int x, int y)
+void	print_numbers(int n1, int n2)
 {
-	ft_putchar((x / 10) + '0');
-	ft_putchar((x % 10) + '0');
+	ft_putchar((n1 / 10) + '0');
+	ft_putchar((n1 % 10) + '0');
 	ft_putchar(' ');
-	ft_putchar((y / 10) + '0');
-	ft_putchar((y % 10) + '0');
+	ft_putchar((n2 / 10) + '0');
+	ft_putchar((n2 % 10) + '0');
+	if (n1 < 98)
+	{
+		ft_putchar(',');
+		ft_putchar(' ');
+	}
 }
 
 void	ft_print_comb2(void)
 {
-	int	i;
-	int	j;
+	int	n1;
+	int	n2;
 
-	i = 0;
-
-	while(i <= 98)
+	n1 = 0;
+	while (n1 <= 98)
 	{
-		j = i + 1;
-		while (j <= 99)
+		n2 = n1 + 1;
+		while (n2 <= 99)
 		{
-			ft_print_numbers(i, j);
-			if(i != 98)
-			{	
-				ft_putchar(',');
-				ft_putchar(' ');
-			}
-			j++;
+			print_numbers(n1, n2);
+			n2++;
 		}
-		i++;
+		n1++;
 	}
-	ft_putchar('\n');
 }

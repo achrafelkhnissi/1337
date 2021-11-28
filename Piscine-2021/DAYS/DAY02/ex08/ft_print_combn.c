@@ -1,95 +1,87 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_combn.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/09/23 12:54:11 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/28 09:30:20 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-void	ft_putchar(char c);
-void    ft_print_combn(int nb);
-void	print_array(int arr[], int size);
-int     check_array(int arr[], int size);
-void	reset_array(int arr[], int size, int index);
-
-int	main(void)
+void	ft_putchar(char c)
 {
-	ft_print_combn(9);
-	return 0;
+	write(1, &c, 1);
 }
 
-void    ft_print_combn(int nb)
-{
-	int size = nb;
-	int arr[size];
-	int index = size - 1;
-	while(index >= 0)
-	{
-		arr[index] = index;
-		index--;
-	}
-
-	index = 0;
-	print_array(arr, size);
-	while(arr[0] <= (10 - nb))
-	{
-		if(arr[size - 1] < 9)
-		{
-			arr[size - 1]++;
-			print_array(arr, size);        
-		}
-		else
-		{
-			index = check_array(arr, size);
-			if (index <= 0) break;
-			reset_array(arr, size, index);
-			print_array(arr, size);
-		}
-	}
-	ft_putchar('\n');
-}
-
-void	print_array(int arr[], int size)
+int	check(int arr[], int size)
 {
 	int	i;
-	i = 0;
-	while(i < size)
+
+	i = size - 1;
+	while (i)
 	{
-		ft_putchar(arr[i] + '0');
-		i++;
+		if (arr[i] == arr[i - 1] + 1)
+			i--;
+		else
+			break ;
 	}
-	if (check_array(arr, size) > 0)
+	return (i - 1);
+}
+
+void	reset(int arr[], int size, int index)
+{
+	arr[index]++;
+	index++;
+	while (index < size)
+	{
+		arr[index] = arr[index - 1] + 1;
+		index++;
+	}
+}
+
+void	print_numbers(int arr[], int size)
+{
+	int	i;
+
+	i = 0;
+	while (i < size)
+		ft_putchar(arr[i++] + '0');
+	if (arr[0] < 10 - size)
 	{
 		ft_putchar(',');
 		ft_putchar(' ');
 	}
 }
 
-int 	check_array(int arr[], int size)
+void	ft_print_combn(int n)
 {
-	int	index;
-	index = size - 1;
-	while (index >= 0 && arr[size - 1] == 9)
+	int	i;
+	int	arr[10];
+
+	i = 0;
+	while (i < n)
 	{
-		if (arr[index] == (arr[index - 1] + 1))
+		arr[i] = i;
+		i++;
+	}
+	while (arr[0] <= 10 - n)
+	{
+		if (arr[n - 1] < 9)
 		{
-			index--;
+			print_numbers(arr, n);
+			arr[n - 1]++;
 		}
 		else
 		{
-		    break;
+			print_numbers(arr, n);
+			i = check(arr, n);
+			if (i < 0)
+				break ;
+			reset(arr, n, i);
 		}
 	}
-	return index;
-}
-
-void	reset_array(int arr[], int size, int index)
-{
-	int i;
-	i = index - 1;
-	arr[i]++;
-	while (i < size - 1)
-	{
-		arr[i + 1] = arr[i] + 1;
-		i++;
-	}
-}
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
 }
