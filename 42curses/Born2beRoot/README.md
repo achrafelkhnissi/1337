@@ -12,6 +12,9 @@
 # **************************************************************************** #
 ```
 
+- Wordpress login: ael-khni
+- pass: `oPni$pdb)al*wyP!nI`
+
 ## Evaluation
 
 ### Project overview
@@ -228,71 +231,65 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - What is a signature.txt file?
 - What is sha1 format?
 
-
-```bash
-ael-khni@ael-khni42:~$ sudo mysql_secure_installation
-
-NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
-      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
-
-In order to log into MariaDB to secure it, we'll need the current
-password for the root user. If you've just installed MariaDB, and
-haven't set the root password yet, you should just press enter here.
-
-Enter current password for root (enter for none):
-OK, successfully used password, moving on...
-
-Setting the root password or using the unix_socket ensures that nobody
-can log into the MariaDB root user without the proper authorisation.
-
-You already have your root account protected, so you can safely answer 'n'.
-
-Switch to unix_socket authentication [Y/n] n
- ... skipping.
-
-You already have your root account protected, so you can safely answer 'n'.
-
-Change the root password? [Y/n] n
- ... skipping.
-
-By default, a MariaDB installation has an anonymous user, allowing anyone
-to log into MariaDB without having to have a user account created for
-them.  This is intended only for testing, and to make the installation
-go a bit smoother.  You should remove them before moving into a
-production environment.
-
-Remove anonymous users? [Y/n] Y
- ... Success!
-
-Normally, root should only be allowed to connect from 'localhost'.  This
-ensures that someone cannot guess at the root password from the network.
-
-Disallow root login remotely? [Y/n] Y
- ... Success!
-
-By default, MariaDB comes with a database named 'test' that anyone can
-access.  This is also intended only for testing, and should be removed
-before moving into a production environment.
-
-Remove test database and access to it? [Y/n] Y
- - Dropping test database...
- ... Success!
- - Removing privileges on test database...
- ... Success!
-
-Reloading the privilege tables will ensure that all changes made so far
-will take effect immediately.
-
-Reload privilege tables now? [Y/n] Y
- ... Success!
-
-Cleaning up...
-
-All done!  If you've completed all of the above steps, your MariaDB
-installation should now be secure.
-
-Thanks for using MariaDB!
-```
+##### Linux Lighttpd MariaDB PHP (LLMP) Stack
+1. Lighttpd
+	- Install lighttpd: `sudo apt install lighttpd`
+	- Verify installation: `dpkg -l | grep lighttpd`
+	- Allow incoming connections using port 80: `sudo ufw allow 80`
+	- Configure Lighttpd: Enable below modules
+	```
+	$ sudo lighty-enable-mod fastcgi
+	$ sudo lighty-enable-mod fastcgi-php
+	$ sudo service lighttpd force-reload
+	``` 
+2. MariaDB 
+	- install mariadb: `sudo apt install mariadb-server`
+	- verify installation: `dpkg -l | grep mariadb-server`
+	- start intractive script to remove insecure default settings:
+	```
+	$ sudo mysql_secure_installation
+	Enter current password for root (enter for none): #Just press Enter (do not confuse database root with system root)
+	Set root password? [Y/n] n
+	Remove anonymous users? [Y/n] Y
+	Disallow root login remotely? [Y/n] Y
+	Remove test database and access to it? [Y/n] Y
+	Reload privilege tables now? [Y/n] Y
+	```
+	- Log in to MariaDB console: `sudo mariadb`
+	- Create new database: `CREATE DATABASE <database-name>;`
+	- Create new database user and grant them full privileges on the newly-created database: ` GRANT ALL PRIVILEGES ON database-name.* to 'username'@'localhost' IDENTIFIED BY 'password';`
+	- Flush the privileges: `FLUSH PRIVILEGES;`
+	- Exit MariaDB shell: `exit`
+	- Verify whether database user was successfully created: `mariadb -u <username> ] -p` (then enter the password from previous step)
+	- Confirm whether database user has access to the database: `SHOW DATABASES;`
+	```
+	MariaDB [(none)]> SHOW DATABASES;
+	+--------------------+
+	| Database           |
+	+--------------------+
+	| <database-name>    |
+	| information_schema |
+	+--------------------+
+	```
+	- Exit the MariaDB shell: `exit`
+3. PHP
+	- Install: `sudo apt install php-cgi php-mysql php7.4`
+	- Verify installation: `dpkg -l | grep php`
+4. WordPress
+	- Install wget: `sudo apt install wget`
+	- Download WordPress to `/var/www/html`: `sudo wget http://wordpress.org/lastest.tart.gz -P /var/www/html`
+	- Extract downloaded content: `sudo tar -xzvf /var/www/html/lastest.tar.gz`
+	- Remove tarball: `sudo rm /var/www/html/lastest.tar.gz`
+	- Copy content of `/var/www/html/wordpress` to `/var/www/html`: `sudo cp -r /var/www/html/wordpress/* /var/www/html`
+	- Remove wordpress directory: `sudo rm -rf /var/www/html/wordpress`
+	- Create WordPress configuration file from its sample: `sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
+	- Configure WordPress to reference previously-created MariaDB database & user: `sudo vim /var/www/html/wp-config.php`
+	- Add your prevously created database:
+	```
+	23 define( 'DB_NAME', 'database_name_here' );^M
+	26 define( 'DB_USER', 'username_here' );^M
+	29 define( 'DB_PASSWORD', 'password_here' );^M
+	```
 
 #### Extra
 
@@ -367,3 +364,20 @@ Thanks for using MariaDB!
 - LVM HOWTO: https://tldp.org/HOWTO/LVM-HOWTO/
 - The Linux System Administrator's Guide: https://tldp.org/LDP/sag/html/index.html 
 - How to change visudo editor from nano to vim?: https://askubuntu.com/questions/539243/how-to-change-visudo-editor-from-nano-to-vim
+
+## creating a database
+- log in to the mariaDB console via `sudo mariadb`
+- create new database `CREATE DATABASE b2rDB
+```
+MariaDB [(none)]> CREATE DATABASE Born2beRootDB;
+Query OK, 1 row affected (0.000 sec)
+
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON Born2beRootDB.\* TO 'ael-khni'@'10.0.2.15' IDENTIFIED BY 'Leet1337+' WITH GRANT OPTION;
+Query OK, 0 rows affected (0.007 sec)
+
+MariaDB [(none)]> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.000 sec)
+
+MariaDB [(none)]> exit
+Bye
+```
