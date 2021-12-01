@@ -42,7 +42,7 @@ ip=$(hostname -I)
 mac=$(ip link | awk '$1 == "link/ether" {print $2}')
 
 # The number of commands executed with the sudo program.
-Sudo=$(grep "COMMAND" /var/log/sudo.log | wc -l)
+Sudo=$(grep "COMMAND" /var/log/sudo/sudo.log | wc -l)
 
 wall "
 	#Architecture	: $Architecture
