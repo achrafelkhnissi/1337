@@ -272,6 +272,7 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 	+--------------------+
 	```
 	- Exit the MariaDB shell: `exit`
+	- Note: In case you want to remove MariaDB -> https://askubuntu.com/questions/806107/remove-mariadb-mysql-databases/806441#806441
 3. PHP
 	- Install: `sudo apt install php-cgi php-mysql php7.4`
 	- Verify installation: `dpkg -l | grep php`
@@ -364,20 +365,3 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - LVM HOWTO: https://tldp.org/HOWTO/LVM-HOWTO/
 - The Linux System Administrator's Guide: https://tldp.org/LDP/sag/html/index.html 
 - How to change visudo editor from nano to vim?: https://askubuntu.com/questions/539243/how-to-change-visudo-editor-from-nano-to-vim
-
-## creating a database
-- log in to the mariaDB console via `sudo mariadb`
-- create new database `CREATE DATABASE b2rDB
-```
-MariaDB [(none)]> CREATE DATABASE Born2beRootDB;
-Query OK, 1 row affected (0.000 sec)
-
-MariaDB [(none)]> GRANT ALL PRIVILEGES ON Born2beRootDB.\* TO 'ael-khni'@'10.0.2.15' IDENTIFIED BY 'Leet1337+' WITH GRANT OPTION;
-Query OK, 0 rows affected (0.007 sec)
-
-MariaDB [(none)]> FLUSH PRIVILEGES;
-Query OK, 0 rows affected (0.000 sec)
-
-MariaDB [(none)]> exit
-Bye
-```
