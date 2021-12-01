@@ -50,14 +50,14 @@
 	- Manual
 	- SCSI3 (0, 0, 0) (sda) - 32.2 GB ATA VBOX HARDDISK
 	- Create new empty partition table on this device? (yes)
-	- sda1: ?
+	- sda1:
 		- Select the FREE SPACE
 		- Create a new partition
 		- New partition size: 500M
 		- Type for the new partition: Primary
 		- Location for the new partition: Beginning
 		- Partition settings > Mount point > boot > done setting up the partition.
-	- sda5: ?
+	- sda5:
 		- Select the FREE SPACE
 		- Create a new partition
 		- New partition size: max
@@ -97,6 +97,87 @@
 	- Install the GRUB boot loader to your primary drive? (yes)
 	- Device for boot loader installation: /dev/sda
 	- Installation complete
+
+
+## Installation & Configuration
+
+### Sudo
+- Switch to root and its enviroment: `su root` or `su -`
+- Install sudo: `apt install sudo`
+- Verify installation: `dpkg -l | grep sudo`
+- Add 'user' to sudo group: `adduser <username> sudo`
+- Verify whether user was added: `getent group sudo`
+- `reboot` for changes to take effect
+- Verify sudopowers: `sudo -v`
+- From here on out, run root-privileged commands via prefix `sudo`
+- Configuring sudo: `sudo visudo`:
+	- To limit authentication using sudo to 3 attempts in the event of an incorrect password: `Defaults	passwd_tries=3`
+	- To add a custom error message in the event of an incorrect password: `Defaults badpass_message="<custo-error-message>"`
+	- To archive all sudo inputs & outputs to `/var/log/sudo`: `Defaults	log_input, log_output` && `Defaults	logfile=/var/log/sudo/sudo.log` && `Defaults iolog_dir="/var/log/sudo"`
+	- To require TTV: `Defaults requiretty`
+	- To set sudo paths: `Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"`
+
+### SSH
+- Install openssh-server: `sudo apt install openssh-server`
+- Verify installation: `dpkg -l | grep ssh`
+- Configure SSH: `sudo vim /etc/ssh/sshd_config`
+	- To set up SSH using Port 4242 replace the following like with 4242: `13 #Port 22` with `13 Port 4242`
+	- To disable SSH login as root irregardless of authentication mechanism replace: `32 #PermitRootLogin prohibit-password` with `32 PermitRootLogin no`
+	- Check SSH status: `sudo service ssh status` or `systemctl status ssh`
+
+### UFW
+- Install ufw: `sudo apt install ufw`
+- Verify installaiton: `dpkg -l | grep ufw`
+- Enabe FireWall: `sudo ufw enable`
+- Allowing incomming connections using Port 4242: `sudo ufw allow 4242`
+- Check UFW status: `sudo ufw status`
+
+### Connecting to Server via SSH
+- SSH into your virtual machine using Port 4242: `ssh <username>@<ip> -p 4242`
+- Terminate SSH session at any time with: `logout` or `exit`
+
+## User Management
+
+###Setting up a Strong 
+
+#### Password Age
+
+- Configure password age policy: `sudo vim /etc/login.defs`
+- To set password to expire every 30 days replace `160 PASS_MAX_DAYS 99999` with `160 PASS_MAX_DAYS 30`
+- To set minimum number of days between password changes to 2 days replace `161 PASS_MIN_DAYS 0` with `161 PASS_MAX_DAYS 2`
+- To send user a warning message 7 days before password expire: `162 PASS_WARN_AGE 7`
+
+#### Password Strength
+- To set up policies in relation to password strength, install: `sudo apt install libpam-pwquality`
+- Verify installation: `dpkg -l | grep libmap-pwquality`
+- Configure password strength policy via: `sudo vim /etc/pam.d/common-password`
+- Specifically the followin line: `25 password		requisite	pam_pwquality.so rety=3`
+- To set password minimum length to 10 characters, add the following option to the above line: `minlen=10`
+- To require password to contain at least an uppercase character and a numeric character: `ucredit=-1 dcredit=-1`
+- To set a maximum of 3 consecutive identical characters: `maxrepeat=3`
+- To reject the password if it contains <username> in some form: `reject_username`
+- To set the number of changes required in the new password from the old password to 7: `difok=7`
+- To implement the same policy on root: `enforce_for_root`
+- Finally, it should look like the bellow:
+```
+password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+```
+
+#### Creating a new user
+- Create a new user: `sudo adduser <username>`
+- Verify whether user was successfully created: `getent passwd <username>`
+- Verify newly-created user's password expire information: `sudo chage -l <username>`
+
+#### Creating a new group
+- Create new user42 group: `sudo addgroup user42`
+- Add user to user42 group: `sudo adduser <username> user42`
+- Verify whether user was successfully added to user42 group: `getent group user42`
+
+#### Setting up a cron job
+- Configure cron as root: `sudo crontab -u root -e`
+- To schedule a shell script to run every 10 minutes replace: `23 # m h dom mon dow command` with `23 */10 * * * * sh /path/to/script`
+- Check root's scheduled cron jobs: `sudo crontab -u root -l`
+
 
 ## Linux Lighttpd MariaDB PHP (LLMP) Stack
 
@@ -166,3 +247,5 @@ MariaDB [(none)]> SHOW DATABASES;
 26 define( 'DB_USER', 'username_here' );^M
 29 define( 'DB_PASSWORD', 'password_here' );^M
 ```
+- Wordpress login: ael-khni
+- pass: `oPni$pdb)al*wyP!nI`
