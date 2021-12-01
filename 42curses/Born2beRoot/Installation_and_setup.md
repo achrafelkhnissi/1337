@@ -101,61 +101,68 @@
 ## Linux Lighttpd MariaDB PHP (LLMP) Stack
 
 ### Lighttpd
-	- Install lighttpd: `sudo apt install lighttpd`
-	- Verify installation: `dpkg -l | grep lighttpd`
-	- Allow incoming connections using port 80: `sudo ufw allow 80`
-	- Configure Lighttpd: Enable below modules
-	```
-	$ sudo lighty-enable-mod fastcgi
-	$ sudo lighty-enable-mod fastcgi-php
-	$ sudo service lighttpd force-reload
-	``` 
+
+- Install lighttpd: `sudo apt install lighttpd`
+- Verify installation: `dpkg -l | grep lighttpd`
+- Allow incoming connections using port 80: `sudo ufw allow 80`
+- Configure Lighttpd: Enable below modules
+```
+$ sudo lighty-enable-mod fastcgi
+$ sudo lighty-enable-mod fastcgi-php
+$ sudo service lighttpd force-reload
+``` 
+
 ### MariaDB 
-	- install mariadb: `sudo apt install mariadb-server`
-	- verify installation: `dpkg -l | grep mariadb-server`
-	- start intractive script to remove insecure default settings:
-	```
-	$ sudo mysql_secure_installation
-	Enter current password for root (enter for none): #Just press Enter (do not confuse database root with system root)
-	Set root password? [Y/n] n
-	Remove anonymous users? [Y/n] Y
-	Disallow root login remotely? [Y/n] Y
-	Remove test database and access to it? [Y/n] Y
-	Reload privilege tables now? [Y/n] Y
-	```
-	- Log in to MariaDB console: `sudo mariadb`
-	- Create new database: `CREATE DATABASE <database-name>;`
-	- Create new database user and grant them full privileges on the newly-created database: ` GRANT ALL PRIVILEGES ON database-name.* to 'username'@'localhost' IDENTIFIED BY 'password';`
-	- Flush the privileges: `FLUSH PRIVILEGES;`
-	- Exit MariaDB shell: `exit`
-	- Verify whether database user was successfully created: `mariadb -u <username> ] -p` (then enter the password from previous step)
-	- Confirm whether database user has access to the database: `SHOW DATABASES;`
-	```
-	MariaDB [(none)]> SHOW DATABASES;
-	+--------------------+
-	| Database           |
-	+--------------------+
-	| <database-name>    |
-	| information_schema |
-	+--------------------+
-	```
-	- Exit the MariaDB shell: `exit`
-	- Note: In case you want to remove MariaDB -> https://askubuntu.com/questions/806107/remove-mariadb-mysql-databases/806441#806441
+
+- install mariadb: `sudo apt install mariadb-server`
+- verify installation: `dpkg -l | grep mariadb-server`
+- start intractive script to remove insecure default settings:
+```
+$ sudo mysql_secure_installation
+Enter current password for root (enter for none): #Just press Enter (do not confuse database root with system root)
+Set root password? [Y/n] n
+Remove anonymous users? [Y/n] Y
+Disallow root login remotely? [Y/n] Y
+Remove test database and access to it? [Y/n] Y
+Reload privilege tables now? [Y/n] Y
+```
+- Log in to MariaDB console: `sudo mariadb`
+- Create new database: `CREATE DATABASE <database-name>;`
+- Create new database user and grant them full privileges on the newly-created database: ` GRANT ALL PRIVILEGES ON database-name.* to 'username'@'localhost' IDENTIFIED BY 'password';`
+- Flush the privileges: `FLUSH PRIVILEGES;`
+- Exit MariaDB shell: `exit`
+- Verify whether database user was successfully created: `mariadb -u <username> ] -p` (then enter the password from previous step)
+- Confirm whether database user has access to the database: `SHOW DATABASES;`
+```
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| <database-name>    |
+| information_schema |
++--------------------+
+```
+- Exit the MariaDB shell: `exit`
+- Note: In case you want to remove MariaDB -> https://askubuntu.com/questions/806107/remove-mariadb-mysql-databases/806441#806441
+
 ###  PHP
-	- Install: `sudo apt install php-cgi php-mysql php7.4`
-	- Verify installation: `dpkg -l | grep php`
+
+- Install: `sudo apt install php-cgi php-mysql php7.4`
+- Verify installation: `dpkg -l | grep php`
+
 ### WordPress
-	- Install wget: `sudo apt install wget`
-	- Download WordPress to `/var/www/html`: `sudo wget http://wordpress.org/lastest.tart.gz -P /var/www/html`
-	- Extract downloaded content: `sudo tar -xzvf /var/www/html/lastest.tar.gz`
-	- Remove tarball: `sudo rm /var/www/html/lastest.tar.gz`
-	- Copy content of `/var/www/html/wordpress` to `/var/www/html`: `sudo cp -r /var/www/html/wordpress/* /var/www/html`
-	- Remove wordpress directory: `sudo rm -rf /var/www/html/wordpress`
-	- Create WordPress configuration file from its sample: `sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
-	- Configure WordPress to reference previously-created MariaDB database & user: `sudo vim /var/www/html/wp-config.php`
-	- Add your prevously created database:
-	```
-	23 define( 'DB_NAME', 'database_name_here' );^M
-	26 define( 'DB_USER', 'username_here' );^M
-	29 define( 'DB_PASSWORD', 'password_here' );^M
-	```
+
+- Install wget: `sudo apt install wget`
+- Download WordPress to `/var/www/html`: `sudo wget http://wordpress.org/lastest.tart.gz -P /var/www/html`
+- Extract downloaded content: `sudo tar -xzvf /var/www/html/lastest.tar.gz`
+- Remove tarball: `sudo rm /var/www/html/lastest.tar.gz`
+- Copy content of `/var/www/html/wordpress` to `/var/www/html`: `sudo cp -r /var/www/html/wordpress/* /var/www/html`
+- Remove wordpress directory: `sudo rm -rf /var/www/html/wordpress`
+- Create WordPress configuration file from its sample: `sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
+- Configure WordPress to reference previously-created MariaDB database & user: `sudo vim /var/www/html/wp-config.php`
+- Add your prevously created database:
+```
+23 define( 'DB_NAME', 'database_name_here' );^M
+26 define( 'DB_USER', 'username_here' );^M
+29 define( 'DB_PASSWORD', 'password_here' );^M
+```
