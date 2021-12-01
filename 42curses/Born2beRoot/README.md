@@ -26,7 +26,7 @@
 	- [Creating a new user](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#creating-a-new-user)
 	- [Creating a new group](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#creating-a-new-group)
 	- [Setting up a cron job](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#setting-up-a-cron-job)
-3. [Linux Lighttpd MariaDB PHP (LLMP) Stack](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#inux-lighttpd-mariadb-php-llmp-stack)
+3. [Linux Lighttpd MariaDB PHP (LLMP) Stack](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#linux-lighttpd-mariadb-php-llmp-stack)
 	- [Lighttpd](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#lightthpd)
 	- [MariaDB](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#mariadb)
 	- [PHP](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#php)
