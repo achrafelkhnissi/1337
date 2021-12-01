@@ -141,7 +141,7 @@
 	```
 	- Exit the MariaDB shell: `exit`
 	- Note: In case you want to remove MariaDB -> https://askubuntu.com/questions/806107/remove-mariadb-mysql-databases/806441#806441
-3. PHP
+###  PHP
 	- Install: `sudo apt install php-cgi php-mysql php7.4`
 	- Verify installation: `dpkg -l | grep php`
 ### WordPress
