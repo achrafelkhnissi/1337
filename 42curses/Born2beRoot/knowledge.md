@@ -194,7 +194,7 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 	- `hostnamectl`
 3. 
 
-## Recourses
+## Resources
 
 - LVM: https://wiki.ubuntu.com/Lvm
 - Partitions: https://tldp.org/LDP/sag/html/partitions.html

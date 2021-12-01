@@ -13,6 +13,9 @@
 ```
 
 # Table of Contents
+
+## Installation & Setup
+
 1. [Installation & setup](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md)
 	- [VirtualBox 101](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#virtualbox-101)
 	- [Setting up LVM & Partitions](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#born2beroot)
@@ -31,3 +34,19 @@
 	- [MariaDB](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#mariadb)
 	- [PHP](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#php)
 	- [WordPress](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#wordpress)
+
+## Knowledge
+
+1. [Evaluation](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#evaluation)
+	- [Project overview](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#project-overview)
+	- [Simple setup](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#simple-setup)
+	- [User](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#user)
+	- [Hostname and partitions](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#hostname-and-partitions)
+	- [SUDO](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#sudo)
+	- [UFW](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#ufw)
+	- [SSH](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#ssh)
+	- [Script monitoring](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#script-monitoring)
+	- [BONUS](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#bonus)
+2. [Extra](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#extra)
+2. [Notes](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#notes)
+2. [Resources](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#resources)
