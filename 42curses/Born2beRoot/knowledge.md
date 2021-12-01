@@ -135,6 +135,54 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - What is a signature.txt file?
 - What is sha1 format?
 
+- What is BIOS?
+- What is the kernel?
+	- The kernel is the heart of the operating system. It interacts with the hardware and most of the tasks like memory management, task scheduling and file management.
+- What is a FileSystem? (files and directoies)
+	- All the data of Unix is organized into files. All files are then organized into directories. These directories are further organized into a tree-like structure called filesystem.
+	- `/` : This is the root directory which should contain only the directories needed at the top level of the file structure.
+	- `/bin` : This is where the executable files are located. These files are available to all users.
+	- `/dev` : There are device drivers.
+	- `/etc` : Supervisor directory commands, configuration files, disk configuration files, valid user lists, groups, ethernet, hosts, where to send critical messages.
+	- `/lib` : Contains shared library files and sometimes other kernel-related files.
+	- `/boot` : Contains files for booting the system.
+	- `/home` : Contains the home directory for users and other accounts.
+	- `/mnt` : Used to mount other temporary files systems, such as `cdrom` and `floppy` for the `CD-ROM` drive and `floppy diskette drive`, respectively.
+	- `/proc` : Contains all processes marked as a file by `process number` or other information that is dynamic to the system.
+	- `/tmp` : Holds temporary files used between system boots.
+	- `/usr` : Used for miscellaneous purposes, and can be used by many users. Includes admninistrative commands, shared files, library files, and others.
+	- `/var` : Typically contains variable-length files such as log and print files and any other type of file that may contain a variable amount of data.
+	- `/sbin` : Contains binary (executable) files, usually for system administration. For example, `fdisk` and `ifconfig` utilities.
+	- `/kernel` : Contains kernel files.
+- What is SELinux and DNF? (related to CentOS)
+- What is mounting in linux?
+	- The mount command attaches the filesystem of an external device to the filesystem of a system. It instructs the operating system that filesystem is ready to use and associate it with a particular piont in the system's heirarchy. Mounting will make files, directories and devices available to the users.
+	- Mounting is the attaching of an additional filesystem to the currently accessible filesystem of a computer.
+- What is VFS (Virtual File System)?
+- What is a Device File:
+	- Represent Hardware devices to User-Mode applications. Look it a normal files at first glance. Do not contain any data - they are used for communications only. in 'ls -l', the first letter is either 'c' or 'b', depending on the device type. Have a major number, describe the type fo the Device. Have a minor number, describing the instance of the Device (allows several Devices of the same type)
+	- Block Device:
+		- A Block Device is a device whose driver communicates by sending entire blocks of data. Example - hard disks, USB cameras, Disk-On-Key. (Note: Filesystems can only be mounted if they are on block devices.)
+	- Character Device:
+		- A Character Device is a device whose driver communicates by sending and receiving single characters (bytes, octets). Example - serial ports, parallel ports, sound cards, keyboard.
+	- 3 differences between character devices and block devices:
+		- Character devices can only be accessed in bytes, while block devices are accessed in blocks, such as 512 bytes, 1024 bytes, etc.
+		- Block devices can be accessed randomly, but character devices cannot.
+		- There are no restrictions on the size of character and blocks, and blocks also can be accessed in bytes.
+
+## Notes
+
+- MBR (Master Boot Record)
+- Root account: This is also called `superuser` and would have complete and unfettered control of the system.
+- System accounts: System accounts are those needed for the operation of system-specific components for example mail accounts and the `sshd` accounts. These accounts are usually needed for some specific function on your system, and any modification to them could adversely affect the system.
+- User accounts: User accounts provide interactive access to the system for users and groups of users. General users are typically assigned to these accounts and usually have limited access to critical system files and directories.
+- Unix supports a concept of `Group Account` which logically groups a number of accounts. Every account would be a part of another group account. A unix group plays important role in handling file permissions and process management.
+- There are four main user  administration files:
+	- `/etc/passwd` - Keeps the user account and password information. This file holds the majority of information about accounts on the Unix System.
+	- `/etc/shadow` - Holds the encrypted password of the corresponding account. Not all the systems support this file.
+	- `/etc/group` - This file contains the group information for each account.
+	- `/etc/gshadow` - This file contains secure group account information.
+
 ## Answers
 
 1. How to get the hostname:
