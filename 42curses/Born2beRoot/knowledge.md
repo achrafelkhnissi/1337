@@ -81,33 +81,35 @@
 
 ## Q&A
 
-- What is VirtualBox?
+### What is VirtualBox?
 VirtualBox is designed to run virtual machines on your physical machine without reinstalling your OS that is running on a physical machine.
-- What is a VM?
+### What is a VM?
 A virtual machine (VM) is a virtual environment that works like a computer inside of a computer. It will run on an isolated partition of its host computer with its own resources of CPU power, memory, an operating system, and other resources.
-- What's the purpose of virtual machines & how does it work?
+### What's the purpose of virtual machines & how does it work?
 	- operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units.
 	- Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
-- What is a hypervisor?
+### What is a hypervisor?
 	- A hypervisor is software that creates and runs virtual machines (VMs). A hypervisor, sometimes called a virtual machine monitor (VMM), isolates the hypervisor operating system and resources from the virtual machines and enables the creation and management of those VMs.
-- How does a hypervisor work? 
+### How does a hypervisor work? 
 	- Hypervisors support the creation and management of virtual machines (VMs) by abstracting a computer's software from its hardware. Hypervisors make virtualization possible by translating requests between the physical and virtual resources.
 <!--
 - What is UTM?
 -->
-- What is a server?
+### What is a server?
 	-  a server is a piece of computer hardware or software (computer program) that provides functionality for other programs or devices, called "clients". This architecture is called the client–server model. Servers can provide various functionalities, often called "services", such as sharing data or resources among multiple clients, or performing computation for a client. 
 	- A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network.
-- What is a web server?
+### What is a web server?
 	-  On the hardware side, a web server is a computer that stores web server software and a website's component files.
-- What is Debian?
-- What is CentOS?
-- Why debian?
-- What is KDump? (for CentOS)
-- What is the difference between Debian and CentOS?
-- What is SELinux? (for CentOS)
-- What is AppArmor? (for Debian)
-- What is LVM? (Logical Valume Manager) and what its uses?
+### What is Debian?
+### What is CentOS?
+### Why debian?
+#### What is APPArmor?
+	- AppArmor provides Mandatory Access Control (MAC) security. In fact, AppAmor allows the system administrator to restrict the actions that processes can perform. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system.
+In AppArmor, processes are restricted by profiles. Profiles can work in complain-mode and in enforce-mode. In enforce mode, AppArmor prohibits applications from performing restricted tasks. In complain-mode, AppArmor allows applications to do these tasks, but creates a registry entry to display the complaint.
+### What is KDump? (for CentOS)
+## What is the difference between Debian and CentOS?
+### What is SELinux? (for CentOS)
+### What is LVM? (Logical Valume Manager) and what its uses?
 	- Creating single logical valumes off multiple physical volumes or entire hard disks, allowing for dynamic volume resizing.
 	- Managing large hard disk farms by allowing disks to be added and replaced iwhtout downtime or service disruption.
 	- On small systems (like a desktop), instead of having to estimate at installation time how big a partition might need to be, LVM allows filesystems to be esily resized as needed.
@@ -121,7 +123,7 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 		- Physical Volume (PV): physical storage device. It can be a hard disk, an SD card, a floppy disk, etc. This device provides us with storage available to use.
 		- Volume Group (VG): to use the space provided by a PV, it must be allocated in a volume group. It is like a virtual storage disk that will be used by logical volumes. VGs can grow over time by adding new VPs.
 		- Logical volume (LV): these devices will be the ones we will use to create file systems, swaps, virtual machines, etc. If the VG is the storage disk, the LV are the partitions that are made on this disk.
-- What is partitioning in Linux? (related to LVM)
+### What is partitioning in Linux? (related to LVM)
 	- Partitioning also allows you to divide your hard drive into isolated sections, where each section behaves as its own hard drive.
 	- The idea is that if you have one hard disk, and want to have, say, two operating systems on it, you can divide the disk into two patitions. Each operating system uses its partition as it wishes and doesn't touch the other one. This way the two operating sysytems can co-exist peacefully on the same hard disk. Without partitions one would have to buy a hard disk for each operating sysytem.
 	- Logical Partitions:
@@ -129,24 +131,21 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 	- Primary Partitions:
 	- Sub-Partitions:
 	- Each partition and extended partition has its own device file. The naming convention for these fles is that a partition's number is appended after the name of the whole disk, with the convention that 1-4 are primary partitions(regardless of how mamy primary partitions there are) and number greater than 5 are logical partitions (regardless of within which primary partition they reside). For example, `dev/hda1` is the first primary partition on the first IDE hard disk, and `/dev/sdb7` is the third extended partition on the second SCSI hard disk.
-- What is a Device Mapper? (related to LVM)
+### What is a Device Mapper? (related to LVM)
 	- The Device Mapper is a framework provided by the Linux Kernel for mapping  physical block dvices
 	- You can view block devices informations with the lsblk command.
 	- Block Devices:
 	- Character Devices:
 	- Using the `ls -l /dev/` command: The first character in the first column, i.e 'c', tells an informed user the type of the file, in this case a character device. For 'b' for block devices, 'd' for directories, '-' for ordinary files, 'l' for Symbolic link files (links on any regular files), 'p' Named pipe (a mechanism for interprocess communication), 's' for socket (used for interprocess communication).
-- What is the differences between aptitude and apt?
+### What is the differences between aptitude and apt?
 	- In Debian-based OS distributions, the default package manager we can use is dpkg. This tool allows us to install, remove and manage programs on our operating system. However, in most cases, these programs come with a list of dependencies that must be installed for the main program to function properly. One option is to manually install these dependencies. However, APT (Advanced Package Tool), which is a tool that uses dpkg, can be used to install all the necessary dependencies when installing a program. So now we can install a useful program with a single command.
 APT can work with different back-ends and fron-ends to make use of its services. One of them is apt-get, which allows us to install and remove packages. Along with apt-get, there are also many tools like apt-cache to manage programs. In this case, apt-get and apt-cache are used by apt. Thanks to apt we can install .deb programs easily and without worrying about dependencies. But in case we want to use a graphical interface, we will have to use aptitude. Aptitude also does better control of dependencies, allowing the user to choose between different dependencies when installing a program.
-- What is APPArmor?
-	- AppArmor provides Mandatory Access Control (MAC) security. In fact, AppAmor allows the system administrator to restrict the actions that processes can perform. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system.
-In AppArmor, processes are restricted by profiles. Profiles can work in complain-mode and in enforce-mode. In enforce mode, AppArmor prohibits applications from performing restricted tasks. In complain-mode, AppArmor allows applications to do these tasks, but creates a registry entry to display the complaint.
-- What is SSH?
-- What is ports?
-- What is UFW firewall?
+### What is SSH?
+### What is ports?
+### What is UFW firewall?
 	- FW (Uncomplicated Firewall) is a software application responsible for ensuring that the system administrator can manage iptables in a simple way. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device (netfilter) without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices.
-- What is DNF? (to install UFW on CentOF)
-- What is a cron job?
+### What is DNF? (to install UFW on CentOF)
+### What is a cron job?
 	- Linux task manager that allows us to execute commands at a certain time. We can automate some tasks just by telling cron what command we want to run at a specific time. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
 	- The cron command line utility, also known as cron job is a job scheduler on unix-like operating systems.
 	```
@@ -159,18 +158,18 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 	| ----------- Hour (0 - 23)
 	------------- Minute (0 - 59)
 	```
-- What is `wall` command?
+### What is `wall` command?
 	- command used by the root user to send a message to all users currently connected to the server. If the system administrator wants to alert about a major server change that could cause users to log out, the root user could alert them with wall.
-- In the network settings of the virtualbox! what is the difference between "NAT" and "Bridged Adapter"?
-- What is WordPress?
-- What is lighttpd, MariaDB, and PHP?
-- What is NGINX / Apache2? and what can i use as thier alternative?
-- What is a signature.txt file?
-- What is sha1 format?
-- What is BIOS?
-- What is the kernel?
+### In the network settings of the virtualbox! what is the difference between "NAT" and "Bridged Adapter"?
+### What is WordPress?
+### What is lighttpd, MariaDB, and PHP?
+### What is NGINX / Apache2? and what can i use as thier alternative?
+### What is a signature.txt file?
+### What is sha1 format?
+### What is BIOS?
+### What is the kernel?
 	- The kernel is the heart of the operating system. It interacts with the hardware and most of the tasks like memory management, task scheduling and file management.
-- What is a FileSystem? (files and directoies)
+### What is a FileSystem? (files and directoies)
 	- All the data of Unix is organized into files. All files are then organized into directories. These directories are further organized into a tree-like structure called filesystem.
 	- `/` : This is the root directory which should contain only the directories needed at the top level of the file structure.
 	- `/bin` : This is where the executable files are located. These files are available to all users.
@@ -186,12 +185,12 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 	- `/var` : Typically contains variable-length files such as log and print files and any other type of file that may contain a variable amount of data.
 	- `/sbin` : Contains binary (executable) files, usually for system administration. For example, `fdisk` and `ifconfig` utilities.
 	- `/kernel` : Contains kernel files.
-- What is SELinux and DNF? (related to CentOS)
-- What is mounting in linux?
+### What is SELinux and DNF? (related to CentOS)
+### What is mounting in linux?
 	- The mount command attaches the filesystem of an external device to the filesystem of a system. It instructs the operating system that filesystem is ready to use and associate it with a particular piont in the system's heirarchy. Mounting will make files, directories and devices available to the users.
 	- Mounting is the attaching of an additional filesystem to the currently accessible filesystem of a computer.
-- What is VFS (Virtual File System)?
-- What is a Device File:
+### What is VFS (Virtual File System)?
+### What is a Device File:
 	- Represent Hardware devices to User-Mode applications. Look it a normal files at first glance. Do not contain any data - they are used for communications only. in 'ls -l', the first letter is either 'c' or 'b', depending on the device type. Have a major number, describe the type fo the Device. Have a minor number, describing the instance of the Device (allows several Devices of the same type)
 	- Block Device:
 		- A Block Device is a device whose driver communicates by sending entire blocks of data. Example - hard disks, USB cameras, Disk-On-Key. (Note: Filesystems can only be mounted if they are on block devices.)
