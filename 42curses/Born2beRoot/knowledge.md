@@ -116,6 +116,11 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 	- In Linux, LVM is a device mapper framework that provides logical valume managment for the linux kernel.
 	- https://tldp.org/HOWTO/LVM-HOWTO/
 	- https://en.wikipedia.org/wiki/Logical\_Volume\_Manager\_(Linux)
+	- LVM (Logical Volume Manager) is an abstraction layer between a storage device and a file system. We get many advantages from using LVM, but the main advantage is that we have much more flexibility when it comes to managing partitions. Suppose we create four partitions on our storage disk. If for any reason we need to expand the storage of the first three partitions, we will not be able to because there is no space available next to them. In case we want to extend the last partition, we will always have the limit imposed by the disk. In other words, we will not be able to manipulate partitions in a friendly way. Thanks to LVM, all these problems are solved.
+By using LVM, we can expand the storage of any partition (now known as a logical volume) whenever we want without worrying about the contiguous space available on each logical volume. We can do this with available storage located on different physical disks (which we cannot do with traditional partitions). We can also move different logical volumes between physical devices. Of course, services and processes will work the same way they always have. But to understand all this, we have to know:	
+		- Physical Volume (PV): physical storage device. It can be a hard disk, an SD card, a floppy disk, etc. This device provides us with storage available to use.
+		- Volume Group (VG): to use the space provided by a PV, it must be allocated in a volume group. It is like a virtual storage disk that will be used by logical volumes. VGs can grow over time by adding new VPs.
+		- Logical volume (LV): these devices will be the ones we will use to create file systems, swaps, virtual machines, etc. If the VG is the storage disk, the LV are the partitions that are made on this disk.
 - What is partitioning in Linux? (related to LVM)
 	- Partitioning also allows you to divide your hard drive into isolated sections, where each section behaves as its own hard drive.
 	- The idea is that if you have one hard disk, and want to have, say, two operating systems on it, you can divide the disk into two patitions. Each operating system uses its partition as it wishes and doesn't touch the other one. This way the two operating sysytems can co-exist peacefully on the same hard disk. Without partitions one would have to buy a hard disk for each operating sysytem.
@@ -139,8 +144,10 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 - What is SSH?
 - What is ports?
 - What is UFW firewall?
+	- FW (Uncomplicated Firewall) is a software application responsible for ensuring that the system administrator can manage iptables in a simple way. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device (netfilter) without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices.
 - What is DNF? (to install UFW on CentOF)
 - What is a cron job?
+	- Linux task manager that allows us to execute commands at a certain time. We can automate some tasks just by telling cron what command we want to run at a specific time. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
 	- The cron command line utility, also known as cron job is a job scheduler on unix-like operating systems.
 	```
 	* * * * * command to be executed
@@ -152,6 +159,8 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 	| ----------- Hour (0 - 23)
 	------------- Minute (0 - 59)
 	```
+- What is `wall` command?
+	- command used by the root user to send a message to all users currently connected to the server. If the system administrator wants to alert about a major server change that could cause users to log out, the root user could alert them with wall.
 - In the network settings of the virtualbox! what is the difference between "NAT" and "Bridged Adapter"?
 - What is WordPress?
 - What is lighttpd, MariaDB, and PHP?
@@ -230,3 +239,4 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 - The Linux System Administrator's Guide: https://tldp.org/LDP/sag/html/index.html
 - How to change visudo editor from nano to vim?: https://askubuntu.com/questions/539243/how-to-change-visudo-editor-from-nano-to-vim
 - How to add jobs to cron: https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
+- 42cursus - Born2beRoot: https://github.com/ayoub0x1/born2beroot
