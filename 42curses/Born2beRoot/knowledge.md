@@ -149,26 +149,26 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 
 ### What is partitioning in Linux? (related to LVM)
 
-	- Partitioning also allows you to divide your hard drive into isolated sections, where each section behaves as its own hard drive.
-	- The idea is that if you have one hard disk, and want to have, say, two operating systems on it, you can divide the disk into two patitions. Each operating system uses its partition as it wishes and doesn't touch the other one. This way the two operating sysytems can co-exist peacefully on the same hard disk. Without partitions one would have to buy a hard disk for each operating sysytem.
-	- Logical Partitions:
-	- Extended Partitions:
-	- Primary Partitions:
-	- Sub-Partitions:
-	- Each partition and extended partition has its own device file. The naming convention for these fles is that a partition's number is appended after the name of the whole disk, with the convention that 1-4 are primary partitions(regardless of how mamy primary partitions there are) and number greater than 5 are logical partitions (regardless of within which primary partition they reside). For example, `dev/hda1` is the first primary partition on the first IDE hard disk, and `/dev/sdb7` is the third extended partition on the second SCSI hard disk.
+- Partitioning also allows you to divide your hard drive into isolated sections, where each section behaves as its own hard drive.
+- The idea is that if you have one hard disk, and want to have, say, two operating systems on it, you can divide the disk into two patitions. Each operating system uses its partition as it wishes and doesn't touch the other one. This way the two operating sysytems can co-exist peacefully on the same hard disk. Without partitions one would have to buy a hard disk for each operating sysytem.
+- Logical Partitions:
+- Extended Partitions:
+- Primary Partitions:
+- Sub-Partitions:
+- Each partition and extended partition has its own device file. The naming convention for these fles is that a partition's number is appended after the name of the whole disk, with the convention that 1-4 are primary partitions(regardless of how mamy primary partitions there are) and number greater than 5 are logical partitions (regardless of within which primary partition they reside). For example, `dev/hda1` is the first primary partition on the first IDE hard disk, and `/dev/sdb7` is the third extended partition on the second SCSI hard disk.
 
 ### What is a Device Mapper? (related to LVM)
 
-	- The Device Mapper is a framework provided by the Linux Kernel for mapping  physical block dvices
-	- You can view block devices informations with the lsblk command.
-	- Block Devices:
-	- Character Devices:
-	- Using the `ls -l /dev/` command: The first character in the first column, i.e 'c', tells an informed user the type of the file, in this case a character device. For 'b' for block devices, 'd' for directories, '-' for ordinary files, 'l' for Symbolic link files (links on any regular files), 'p' Named pipe (a mechanism for interprocess communication), 's' for socket (used for interprocess communication).
+- The Device Mapper is a framework provided by the Linux Kernel for mapping  physical block dvices
+- You can view block devices informations with the lsblk command.
+- Block Devices:
+- Character Devices:
+- Using the `ls -l /dev/` command: The first character in the first column, i.e 'c', tells an informed user the type of the file, in this case a character device. For 'b' for block devices, 'd' for directories, '-' for ordinary files, 'l' for Symbolic link files (links on any regular files), 'p' Named pipe (a mechanism for interprocess communication), 's' for socket (used for interprocess communication).
 
 ### What is the differences between aptitude and apt?
 
-	- In Debian-based OS distributions, the default package manager we can use is dpkg. This tool allows us to install, remove and manage programs on our operating system. However, in most cases, these programs come with a list of dependencies that must be installed for the main program to function properly. One option is to manually install these dependencies. However, APT (Advanced Package Tool), which is a tool that uses dpkg, can be used to install all the necessary dependencies when installing a program. So now we can install a useful program with a single command.
-APT can work with different back-ends and fron-ends to make use of its services. One of them is apt-get, which allows us to install and remove packages. Along with apt-get, there are also many tools like apt-cache to manage programs. In this case, apt-get and apt-cache are used by apt. Thanks to apt we can install .deb programs easily and without worrying about dependencies. But in case we want to use a graphical interface, we will have to use aptitude. Aptitude also does better control of dependencies, allowing the user to choose between different dependencies when installing a program.
+- In Debian-based OS distributions, the default package manager we can use is dpkg. This tool allows us to install, remove and manage programs on our operating system. However, in most cases, these programs come with a list of dependencies that must be installed for the main program to function properly. One option is to manually install these dependencies. However, APT (Advanced Package Tool), which is a tool that uses dpkg, can be used to install all the necessary dependencies when installing a program. So now we can install a useful program with a single command. 
+- APT can work with different back-ends and fron-ends to make use of its services. One of them is apt-get, which allows us to install and remove packages. Along with apt-get, there are also many tools like apt-cache to manage programs. In this case, apt-get and apt-cache are used by apt. Thanks to apt we can install .deb programs easily and without worrying about dependencies. But in case we want to use a graphical interface, we will have to use aptitude. Aptitude also does better control of dependencies, allowing the user to choose between different dependencies when installing a program.
 
 ### What is SSH?
 
@@ -176,28 +176,28 @@ APT can work with different back-ends and fron-ends to make use of its services.
 
 ### What is UFW firewall?
 
-	- FW (Uncomplicated Firewall) is a software application responsible for ensuring that the system administrator can manage iptables in a simple way. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device (netfilter) without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices.
+- FW (Uncomplicated Firewall) is a software application responsible for ensuring that the system administrator can manage iptables in a simple way. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device (netfilter) without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices.
 
 ### What is DNF? (to install UFW on CentOF)
 
 ### What is a cron job?
 
-	- Linux task manager that allows us to execute commands at a certain time. We can automate some tasks just by telling cron what command we want to run at a specific time. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
-	- The cron command line utility, also known as cron job is a job scheduler on unix-like operating systems.
-	```
-	* * * * * command to be executed
-	- - - - -
-	| | | | |
-	| | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
-	| | | ------- Month (1 - 12)
-	| | --------- Day of month (1 - 31)
-	| ----------- Hour (0 - 23)
-	------------- Minute (0 - 59)
-	```
+- Linux task manager that allows us to execute commands at a certain time. We can automate some tasks just by telling cron what command we want to run at a specific time. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
+- The cron command line utility, also known as cron job is a job scheduler on unix-like operating systems.
+```
+* * * * * command to be executed
+- - - - -
+| | | | |
+| | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
+| | | ------- Month (1 - 12)
+| | --------- Day of month (1 - 31)
+| ----------- Hour (0 - 23)
+------------- Minute (0 - 59)
+```
 
 ### What is `wall` command?
 
-	- command used by the root user to send a message to all users currently connected to the server. If the system administrator wants to alert about a major server change that could cause users to log out, the root user could alert them with wall.
+- command used by the root user to send a message to all users currently connected to the server. If the system administrator wants to alert about a major server change that could cause users to log out, the root user could alert them with wall.
 
 ### In the network settings of the virtualbox! what is the difference between "NAT" and "Bridged Adapter"?
 
@@ -215,32 +215,32 @@ APT can work with different back-ends and fron-ends to make use of its services.
 
 ### What is the kernel?
 
-	- The kernel is the heart of the operating system. It interacts with the hardware and most of the tasks like memory management, task scheduling and file management.
+- The kernel is the heart of the operating system. It interacts with the hardware and most of the tasks like memory management, task scheduling and file management.
 
 ### What is a FileSystem? (files and directoies)
 
-	- All the data of Unix is organized into files. All files are then organized into directories. These directories are further organized into a tree-like structure called filesystem.
-	- `/` : This is the root directory which should contain only the directories needed at the top level of the file structure.
-	- `/bin` : This is where the executable files are located. These files are available to all users.
-	- `/dev` : There are device drivers.
-	- `/etc` : Supervisor directory commands, configuration files, disk configuration files, valid user lists, groups, ethernet, hosts, where to send critical messages.
-	- `/lib` : Contains shared library files and sometimes other kernel-related files.
-	- `/boot` : Contains files for booting the system.
-	- `/home` : Contains the home directory for users and other accounts.
-	- `/mnt` : Used to mount other temporary files systems, such as `cdrom` and `floppy` for the `CD-ROM` drive and `floppy diskette drive`, respectively.
-	- `/proc` : Contains all processes marked as a file by `process number` or other information that is dynamic to the system.
-	- `/tmp` : Holds temporary files used between system boots.
-	- `/usr` : Used for miscellaneous purposes, and can be used by many users. Includes admninistrative commands, shared files, library files, and others.
-	- `/var` : Typically contains variable-length files such as log and print files and any other type of file that may contain a variable amount of data.
-	- `/sbin` : Contains binary (executable) files, usually for system administration. For example, `fdisk` and `ifconfig` utilities.
-	- `/kernel` : Contains kernel files.
+- All the data of Unix is organized into files. All files are then organized into directories. These directories are further organized into a tree-like structure called filesystem.
+- `/` : This is the root directory which should contain only the directories needed at the top level of the file structure.
+- `/bin` : This is where the executable files are located. These files are available to all users.
+- `/dev` : There are device drivers.
+- `/etc` : Supervisor directory commands, configuration files, disk configuration files, valid user lists, groups, ethernet, hosts, where to send critical messages.
+- `/lib` : Contains shared library files and sometimes other kernel-related files.
+- `/boot` : Contains files for booting the system.
+- `/home` : Contains the home directory for users and other accounts.
+- `/mnt` : Used to mount other temporary files systems, such as `cdrom` and `floppy` for the `CD-ROM` drive and `floppy diskette drive`, respectively.
+- `/proc` : Contains all processes marked as a file by `process number` or other information that is dynamic to the system.
+- `/tmp` : Holds temporary files used between system boots.
+- `/usr` : Used for miscellaneous purposes, and can be used by many users. Includes admninistrative commands, shared files, library files, and others.
+- `/var` : Typically contains variable-length files such as log and print files and any other type of file that may contain a variable amount of data.
+- `/sbin` : Contains binary (executable) files, usually for system administration. For example, `fdisk` and `ifconfig` utilities.
+- `/kernel` : Contains kernel files.
 
 ### What is SELinux and DNF? (related to CentOS)
 
 ### What is mounting in linux?
 
-	- The mount command attaches the filesystem of an external device to the filesystem of a system. It instructs the operating system that filesystem is ready to use and associate it with a particular piont in the system's heirarchy. Mounting will make files, directories and devices available to the users.
-	- Mounting is the attaching of an additional filesystem to the currently accessible filesystem of a computer.
+- The mount command attaches the filesystem of an external device to the filesystem of a system. It instructs the operating system that filesystem is ready to use and associate it with a particular piont in the system's heirarchy. Mounting will make files, directories and devices available to the users.
+- Mounting is the attaching of an additional filesystem to the currently accessible filesystem of a computer.
 
 ### What is VFS (Virtual File System)?
 
