@@ -91,28 +91,28 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 
 ### What's the purpose of virtual machines & how does it work?
 
-operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units.
-	- Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
+operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. \
+Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
 
 ### What is a hypervisor?
 
-	- A hypervisor is software that creates and runs virtual machines (VMs). A hypervisor, sometimes called a virtual machine monitor (VMM), isolates the hypervisor operating system and resources from the virtual machines and enables the creation and management of those VMs.
+A hypervisor is software that creates and runs virtual machines (VMs). A hypervisor, sometimes called a virtual machine monitor (VMM), isolates the hypervisor operating system and resources from the virtual machines and enables the creation and management of those VMs.
 
 ### How does a hypervisor work? 
 
-	- Hypervisors support the creation and management of virtual machines (VMs) by abstracting a computer's software from its hardware. Hypervisors make virtualization possible by translating requests between the physical and virtual resources.
+Hypervisors support the creation and management of virtual machines (VMs) by abstracting a computer's software from its hardware. Hypervisors make virtualization possible by translating requests between the physical and virtual resources.
 <!--
 - What is UTM?
 -->
 
 ### What is a server?
 
-	-  a server is a piece of computer hardware or software (computer program) that provides functionality for other programs or devices, called "clients". This architecture is called the client–server model. Servers can provide various functionalities, often called "services", such as sharing data or resources among multiple clients, or performing computation for a client. 
-	- A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network.
+A server is a piece of computer hardware or software (computer program) that provides functionality for other programs or devices, called "clients". This architecture is called the client–server model. Servers can provide various functionalities, often called "services", such as sharing data or resources among multiple clients, or performing computation for a client. \
+A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network.
 
 ### What is a web server?
 
-	-  On the hardware side, a web server is a computer that stores web server software and a website's component files.
+On the hardware side, a web server is a computer that stores web server software and a website's component files.
 
 ### What is Debian?
 
@@ -122,7 +122,7 @@ operating systems at the same time, from the same piece of hardware. Without vir
 
 #### What is APPArmor?
 
-	- AppArmor provides Mandatory Access Control (MAC) security. In fact, AppAmor allows the system administrator to restrict the actions that processes can perform. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system.
+AppArmor provides Mandatory Access Control (MAC) security. In fact, AppAmor allows the system administrator to restrict the actions that processes can perform. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system.
 In AppArmor, processes are restricted by profiles. Profiles can work in complain-mode and in enforce-mode. In enforce mode, AppArmor prohibits applications from performing restricted tasks. In complain-mode, AppArmor allows applications to do these tasks, but creates a registry entry to display the complaint.
 
 ### What is KDump? (for CentOS)
@@ -133,9 +133,9 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 
 ### What is LVM? (Logical Valume Manager) and what its uses?
 
-	- Creating single logical valumes off multiple physical volumes or entire hard disks, allowing for dynamic volume resizing.
-	- Managing large hard disk farms by allowing disks to be added and replaced iwhtout downtime or service disruption.
-	- On small systems (like a desktop), instead of having to estimate at installation time how big a partition might need to be, LVM allows filesystems to be esily resized as needed.
+Creating single logical valumes off multiple physical volumes or entire hard disks, allowing for dynamic volume resizing. \
+Managing large hard disk farms by allowing disks to be added and replaced iwhtout downtime or service disruption.\
+On small systems (like a desktop), instead of having to estimate at installation time how big a partition might need to be, LVM allows filesystems to be esily resized as needed.
 	- Performing consistent backups by taking snapshots of the logical volumes.
 	- Encrypting multiple physical partitions with one password.
 	- In Linux, LVM is a device mapper framework that provides logical valume managment for the linux kernel.
