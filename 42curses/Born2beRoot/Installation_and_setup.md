@@ -247,5 +247,8 @@ MariaDB [(none)]> SHOW DATABASES;
 26 define( 'DB_USER', 'username_here' );^M
 29 define( 'DB_PASSWORD', 'password_here' );^M
 ```
+<!--
 - Wordpress login: ael-khni
 - pass: `oPni$pdb)al*wyP!nI`
+-->
+

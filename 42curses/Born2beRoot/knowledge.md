@@ -81,18 +81,18 @@
 
 ### BONUS
 
-## Extra 
+## Q&A
 
 - What is VirtualBox?
 VirtualBox is designed to run virtual machines on your physical machine without reinstalling your OS that is running on a physical machine.
-
 - What is a VM?
 A virtual machine (VM) is a virtual environment that works like a computer inside of a computer. It will run on an isolated partition of its host computer with its own resources of CPU power, memory, an operating system, and other resources.
-
+- What's the purpose of virtual machines & how does it work?
 - What is UTM?
 - What is a server?
 - What is Debian?
 - What is CentOS?
+- Why debian?
 - What is KDump? (for CentOS)
 - What is the difference between Debian and CentOS?
 - What is SELinux? (for CentOS)
@@ -192,8 +192,8 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 2. Check os version in Linux
 	- `cat /etc/os-release`
 	- `hostnamectl`
-3. 
-
+3. How to change hostname?
+	- `sudo vim /etc/hostname` 
 ## Resources
 
 - LVM: https://wiki.ubuntu.com/Lvm
@@ -206,3 +206,4 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 - LVM HOWTO: https://tldp.org/HOWTO/LVM-HOWTO/
 - The Linux System Administrator's Guide: https://tldp.org/LDP/sag/html/index.html
 - How to change visudo editor from nano to vim?: https://askubuntu.com/questions/539243/how-to-change-visudo-editor-from-nano-to-vim
+- How to add jobs to cron: https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
