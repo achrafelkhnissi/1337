@@ -91,7 +91,7 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 
 ### What's the purpose of virtual machines & how does it work?
 
-	- operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units.
+operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units.
 	- Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
 
 ### What is a hypervisor?
