@@ -79,8 +79,6 @@
 4. Ensure that this script runs every minute.
 5. Make the script stop running when the server has started up. (without modifying the script itself)
 
-### BONUS
-
 ## Q&A
 
 - What is VirtualBox?
@@ -88,8 +86,20 @@ VirtualBox is designed to run virtual machines on your physical machine without 
 - What is a VM?
 A virtual machine (VM) is a virtual environment that works like a computer inside of a computer. It will run on an isolated partition of its host computer with its own resources of CPU power, memory, an operating system, and other resources.
 - What's the purpose of virtual machines & how does it work?
+	- operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units.
+	- Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
+- What is a hypervisor?
+	- A hypervisor is software that creates and runs virtual machines (VMs). A hypervisor, sometimes called a virtual machine monitor (VMM), isolates the hypervisor operating system and resources from the virtual machines and enables the creation and management of those VMs.
+- How does a hypervisor work? 
+	- Hypervisors support the creation and management of virtual machines (VMs) by abstracting a computer's software from its hardware. Hypervisors make virtualization possible by translating requests between the physical and virtual resources.
+<!--
 - What is UTM?
+-->
 - What is a server?
+	-  a server is a piece of computer hardware or software (computer program) that provides functionality for other programs or devices, called "clients". This architecture is called the client–server model. Servers can provide various functionalities, often called "services", such as sharing data or resources among multiple clients, or performing computation for a client. 
+	- A server is a computer or system that provides resources, data, services, or programs to other computers, known as clients, over a network.
+- What is a web server?
+	-  On the hardware side, a web server is a computer that stores web server software and a website's component files.
 - What is Debian?
 - What is CentOS?
 - Why debian?
@@ -121,20 +131,33 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 	- Character Devices:
 	- Using the `ls -l /dev/` command: The first character in the first column, i.e 'c', tells an informed user the type of the file, in this case a character device. For 'b' for block devices, 'd' for directories, '-' for ordinary files, 'l' for Symbolic link files (links on any regular files), 'p' Named pipe (a mechanism for interprocess communication), 's' for socket (used for interprocess communication).
 - What is the differences between aptitude and apt?
+	- In Debian-based OS distributions, the default package manager we can use is dpkg. This tool allows us to install, remove and manage programs on our operating system. However, in most cases, these programs come with a list of dependencies that must be installed for the main program to function properly. One option is to manually install these dependencies. However, APT (Advanced Package Tool), which is a tool that uses dpkg, can be used to install all the necessary dependencies when installing a program. So now we can install a useful program with a single command.
+APT can work with different back-ends and fron-ends to make use of its services. One of them is apt-get, which allows us to install and remove packages. Along with apt-get, there are also many tools like apt-cache to manage programs. In this case, apt-get and apt-cache are used by apt. Thanks to apt we can install .deb programs easily and without worrying about dependencies. But in case we want to use a graphical interface, we will have to use aptitude. Aptitude also does better control of dependencies, allowing the user to choose between different dependencies when installing a program.
 - What is APPArmor?
+	- AppArmor provides Mandatory Access Control (MAC) security. In fact, AppAmor allows the system administrator to restrict the actions that processes can perform. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system.
+In AppArmor, processes are restricted by profiles. Profiles can work in complain-mode and in enforce-mode. In enforce mode, AppArmor prohibits applications from performing restricted tasks. In complain-mode, AppArmor allows applications to do these tasks, but creates a registry entry to display the complaint.
 - What is SSH?
 - What is ports?
 - What is UFW firewall?
 - What is DNF? (to install UFW on CentOF)
-- What is cron?
+- What is a cron job?
+	- The cron command line utility, also known as cron job is a job scheduler on unix-like operating systems.
+	```
+	* * * * * command to be executed
+	- - - - -
+	| | | | |
+	| | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
+	| | | ------- Month (1 - 12)
+	| | --------- Day of month (1 - 31)
+	| ----------- Hour (0 - 23)
+	------------- Minute (0 - 59)
+	```
 - In the network settings of the virtualbox! what is the difference between "NAT" and "Bridged Adapter"?
-
 - What is WordPress?
 - What is lighttpd, MariaDB, and PHP?
 - What is NGINX / Apache2? and what can i use as thier alternative?
 - What is a signature.txt file?
 - What is sha1 format?
-
 - What is BIOS?
 - What is the kernel?
 	- The kernel is the heart of the operating system. It interacts with the hardware and most of the tasks like memory management, task scheduling and file management.
