@@ -246,15 +246,14 @@ APT can work with different back-ends and fron-ends to make use of its services.
 
 ### What is a Device File:
 
-	- Represent Hardware devices to User-Mode applications. Look it a normal files at first glance. Do not contain any data - they are used for communications only. in 'ls -l', the first letter is either 'c' or 'b', depending on the device type. Have a major number, describe the type fo the Device. Have a minor number, describing the instance of the Device (allows several Devices of the same type)
-	- Block Device:
-		- A Block Device is a device whose driver communicates by sending entire blocks of data. Example - hard disks, USB cameras, Disk-On-Key. (Note: Filesystems can only be mounted if they are on block devices.)
-	- Character Device:
-		- A Character Device is a device whose driver communicates by sending and receiving single characters (bytes, octets). Example - serial ports, parallel ports, sound cards, keyboard.
-	- 3 differences between character devices and block devices:
-		- Character devices can only be accessed in bytes, while block devices are accessed in blocks, such as 512 bytes, 1024 bytes, etc.
-		- Block devices can be accessed randomly, but character devices cannot.
-		- There are no restrictions on the size of character and blocks, and blocks also can be accessed in bytes.
+- Represent Hardware devices to User-Mode applications. Look it a normal files at first glance. Do not contain any data - they are used for communications only. in 'ls -l', the first letter is either 'c' or 'b', depending on the device type. Have a major number, describe the type fo the Device. Have a minor number, describing the instance of the Device (allows several Devices of the same type)
+- Block Device: A Block Device is a device whose driver communicates by sending entire blocks of data. Example - hard disks, USB cameras, Disk-On-Key. (Note: Filesystems can only be mounted if they are on block devices.)
+- Character Device:
+	- A Character Device is a device whose driver communicates by sending and receiving single characters (bytes, octets). Example - serial ports, parallel ports, sound cards, keyboard.
+- 3 differences between character devices and block devices:
+	- Character devices can only be accessed in bytes, while block devices are accessed in blocks, such as 512 bytes, 1024 bytes, etc.
+	- Block devices can be accessed randomly, but character devices cannot.
+	- There are no restrictions on the size of character and blocks, and blocks also can be accessed in bytes.
 
 ## Notes
 
