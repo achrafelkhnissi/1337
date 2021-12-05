@@ -128,7 +128,9 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 
 ## SUDO
 #### 1. Check that the "sudo" program is properly installed on the VM.
+- `dpkg -l | grep sudo`
 #### 2. Assign the new user to the sudo group.
+- Assign new user to sudo group: `sudo adduser <username> sudo`
 #### 3. The subject imposes strict rules for sudo. Explain the value and operation of sudo.
 #### 4. Show the implementation of the rules imposed by the subject.
 #### 5. Verify that "/var/log/sudo/" forlder exists and has at least one file.
@@ -137,16 +139,30 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 
 ## UFW
 #### 1. Check that the "UFW" program is properly installed on the VM.
+- `dpkg -l | grep ufw`
 #### 2. Check that it is working properly.
+- `sudo service ufw status`
 #### 3. Explain what is UFW and the value of using it.
+FW (Uncomplicated Firewall) is a software application responsible for ensuring that the system administrator can manage iptables in a simple way. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device (netfilter) without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices.
 #### 4. List the active rules in UFW. A rule must exist for port 4242
+- `sudo ufw status`
 #### 5. Add a new rules to open port 8080. Check that this one has been added by listing the active rules.
+- `sudo ufw allow 8080`
 #### 6. Delete the new rule.
+- `sudo ufw delete allow/deny 8080`
 
 ## SSH
 #### 1. Check that the "SSH" service is properly installed on the VM.
-#### 2. Check that it is working properly.
+- `dpkg -l | grep ssh`
+#### 2. Check that it is working properly
+- `sudo service ssh status`
 #### 3. Explain what is SSH and the value of using it.
+SSH or Secure Shell is a remote administration protocol that allows users to control and modify their servers over the Internet thanks to an authentication mechanism. Provides a mechanism to authenticate a user remotely, transfer data from the client to the host, and return a response to the request made by the client. \
+SSH was created as an alternative to Telnet, which does not encrypt the information that is sent. SSH uses encryption techniques to ensure that all client-to-host and host-to-client communications are done in encrypted form. One of the advantages of SSH is that a user using Linux or MacOS can use SSH on their server to communicate with it remotely through their computer's terminal. Once authenticated, that user will be able to use the terminal to work on the server.\
+There are three different techniques that SSH uses to encrypt:
+- Symmetric encryption: a method that uses the same secret key for both encryption and decryption of a message, for both the client and the host. Anyone who knows the password can access the message that has been transmitted.
+- Asymmetric encryption: uses two separate keys for encryption and decryption. These are known as the public key and the private key. Together, they form the public-private key pair.
+- Hashing: another form of cryptography used by SSH. Hash functions are made in a way that they don't need to be decrypted. If a client has the correct input, they can create a cryptographic hash and SSH will check if both hashes are the same.
 #### 4. Verify that the SSH service only uses port 4242.
 #### 5. Log in with the newly created user using SSH.
 #### 6. Make sure that you cannot use SSH with the "root" user.
@@ -154,6 +170,18 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 ## Script monitoring
 #### 1. Explain how the script works by showing the code.
 #### 2. Explain what "corn" is.
+- Linux task manager that allows us to execute commands at a certain time. We can automate some tasks just by telling cron what command we want to run at a specific time. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
+- The cron command line utility, also known as cron job is a job scheduler on unix-like operating systems.
+```
+* * * * * command to be executed
+- - - - -
+| | | | |
+| | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
+| | | ------- Month (1 - 12)
+| | --------- Day of month (1 - 31)
+| ----------- Hour (0 - 23)
+------------- Minute (0 - 59)
+```
 #### 3. Explain how you set up the script so that it runs every 10 minutes from when the server starts.
 #### 4. Ensure that this script runs every minute.
 #### 5. Make the script stop running when the server has started up. (without modifying the script itself)
@@ -219,37 +247,9 @@ This can prevent certain kinds of escalation attacks. For example, if I have a w
 - Character Devices:
 - Using the `ls -l /dev/` command: The first character in the first column, i.e 'c', tells an informed user the type of the file, in this case a character device. For 'b' for block devices, 'd' for directories, '-' for ordinary files, 'l' for Symbolic link files (links on any regular files), 'p' Named pipe (a mechanism for interprocess communication), 's' for socket (used for interprocess communication).
 
-### What is SSH?
-
-SSH or Secure Shell is a remote administration protocol that allows users to control and modify their servers over the Internet thanks to an authentication mechanism. Provides a mechanism to authenticate a user remotely, transfer data from the client to the host, and return a response to the request made by the client. \
-SSH was created as an alternative to Telnet, which does not encrypt the information that is sent. SSH uses encryption techniques to ensure that all client-to-host and host-to-client communications are done in encrypted form. One of the advantages of SSH is that a user using Linux or MacOS can use SSH on their server to communicate with it remotely through their computer's terminal. Once authenticated, that user will be able to use the terminal to work on the server.\
-There are three different techniques that SSH uses to encrypt:
-- Symmetric encryption: a method that uses the same secret key for both encryption and decryption of a message, for both the client and the host. Anyone who knows the password can access the message that has been transmitted.
-- Asymmetric encryption: uses two separate keys for encryption and decryption. These are known as the public key and the private key. Together, they form the public-private key pair.
-- Hashing: another form of cryptography used by SSH. Hash functions are made in a way that they don't need to be decrypted. If a client has the correct input, they can create a cryptographic hash and SSH will check if both hashes are the same.
-
 ### What is ports?
 
 A port is a virtual point where network connections start and end. Ports are software-based and managed by a computer's operating system. Each port is associated with a specific process or service.
-
-### What is UFW firewall?
-
-- FW (Uncomplicated Firewall) is a software application responsible for ensuring that the system administrator can manage iptables in a simple way. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device (netfilter) without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices.
-
-### What is a cron job?
-
-- Linux task manager that allows us to execute commands at a certain time. We can automate some tasks just by telling cron what command we want to run at a specific time. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
-- The cron command line utility, also known as cron job is a job scheduler on unix-like operating systems.
-```
-* * * * * command to be executed
-- - - - -
-| | | | |
-| | | | ----- Day of week (0 - 7) (Sunday=0 or 7)
-| | | ------- Month (1 - 12)
-| | --------- Day of month (1 - 31)
-| ----------- Hour (0 - 23)
-------------- Minute (0 - 59)
-```
 
 ### What is `wall` command?
 
