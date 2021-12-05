@@ -83,10 +83,19 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 ## User
 
 #### 1. Check that the user has been added and it belongs to the "sudo" and "user42" groups.
+- Sudo group users: `getent group sudo`
+- User42 group users: `getent group user42`
 #### 2. Create a new user. Assign it a password of your choice, respecting the subject rules.
+- Creating new user: `sudo adduser <username>`
+- Verify password expire info for new user: `sudo chage -l <username>`
+- Assign new user to sudo group: `sudo adduser <username> sudo`
+- Assign new user to user42 group: `sudo adduser <username> user42`
 #### 3. Explain how you were able to set up the rules resquested.
 #### 4. Create a group named "evaluating" & add the new user to this group.
+- Creating new group: `sudo groupadd <groupname>`
+- Add the new user to the new group: `sudo adduser <username> <groupname>`
 #### 5. Check if that user belongs to the "evaluating" group.
+- `sudo getent group evaluating`
 #### 6. Explain the advantages of this password policy as well as the advantages and disadvantages of its implementation.
 
 ## Hostname and partitions
