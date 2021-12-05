@@ -49,7 +49,6 @@
 	- [UFW](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#ufw)
 	- [SSH](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#ssh)
 	- [Script monitoring](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#script-monitoring)
-	- [BONUS](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#bonus)
-2. [Extra](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#extra)
+2. [Q&A](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#q&a)
 2. [Notes](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#notes)
 2. [Resources](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/knowledge.md#resources)

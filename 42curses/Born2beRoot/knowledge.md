@@ -120,6 +120,8 @@ On the hardware side, a web server is a computer that stores web server software
 
 ### What is the difference between Debian and CentOS?
 
+CentOS is a free downstream rebuild of the commercial Red Hat Enterprise Linux distribution where, in contrast, Debian is the free upstream distribution that is the base for other distributions, including the Ubuntu Linux distribution.
+
 ### What is APPArmor?
 
 AppArmor provides Mandatory Access Control (MAC) security. In fact, AppAmor allows the system administrator to restrict the actions that processes can perform. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system.
@@ -131,6 +133,8 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 ### What is KDump? (for CentOS)
 
 ### What is SELinux and DNF? (related to CentOS)
+
+### What is a signature.txt file?
 
 -->
 
@@ -175,13 +179,20 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 
 ### What is SSH?
 
+SSH or Secure Shell is a remote administration protocol that allows users to control and modify their servers over the Internet thanks to an authentication mechanism. Provides a mechanism to authenticate a user remotely, transfer data from the client to the host, and return a response to the request made by the client. \
+SSH was created as an alternative to Telnet, which does not encrypt the information that is sent. SSH uses encryption techniques to ensure that all client-to-host and host-to-client communications are done in encrypted form. One of the advantages of SSH is that a user using Linux or MacOS can use SSH on their server to communicate with it remotely through their computer's terminal. Once authenticated, that user will be able to use the terminal to work on the server.\
+There are three different techniques that SSH uses to encrypt:
+- Symmetric encryption: a method that uses the same secret key for both encryption and decryption of a message, for both the client and the host. Anyone who knows the password can access the message that has been transmitted.
+- Asymmetric encryption: uses two separate keys for encryption and decryption. These are known as the public key and the private key. Together, they form the public-private key pair.
+- Hashing: another form of cryptography used by SSH. Hash functions are made in a way that they don't need to be decrypted. If a client has the correct input, they can create a cryptographic hash and SSH will check if both hashes are the same.
+
 ### What is ports?
+
+A port is a virtual point where network connections start and end. Ports are software-based and managed by a computer's operating system. Each port is associated with a specific process or service.
 
 ### What is UFW firewall?
 
 - FW (Uncomplicated Firewall) is a software application responsible for ensuring that the system administrator can manage iptables in a simple way. Since it is very difficult to work with iptables, UFW provides us with an interface to modify the firewall of our device (netfilter) without compromising security. Once we have UFW installed, we can choose which ports we want to allow connections, and which ports we want to close. This will also be very useful with SSH, greatly improving all security related to communications between devices.
-
-### What is DNF? (to install UFW on CentOF)
 
 ### What is a cron job?
 
@@ -204,17 +215,29 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 
 ### In the network settings of the virtualbox! what is the difference between "NAT" and "Bridged Adapter"?
 
+NAT mode will mask all network activity as if it came from your Host OS, although the VM can access external resources. Bridged mode replicates another node on the physical network and your VM will receive it's own IP address if DHCP is enabled in the network.
+
 ### What is WordPress?
 
-### What is lighttpd, MariaDB, and PHP?
+WordPress is a content management system (CMS) that allows you to host and build websites. WordPress contains plugin architecture and a template system, so you can customize any website to fit your business, blog, portfolio, or online store.
 
 ### What is NGINX / Apache2? and what can i use as thier alternative?
 
-### What is a signature.txt file?
+- NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. It started out as a web server designed for maximum performance and stability.
+
+- Apache2 Web Server. Apache is the most commonly used Web server on Linux systems. Web servers are used to serve Web pages requested by client computers. Clients typically request and view Web pages using Web browser applications such as Firefox, Opera, Chromium, or Internet Explorer.
+
+- Lighttpd
+
+### What is lighttpd, MariaDB, and PHP?
 
 ### What is sha1 format?
 
+n cryptography, SHA-1 is a cryptographic hash function which takes an input and produces a 160-bit hash value known as a message digest – typically rendered as a hexadecimal number, 40 digits long. It was designed by the United States National Security Agency, and is a U.S. Federal Information Processing Standard.
+
 ### What is BIOS?
+
+BIOS (basic input/output system) is the program a computer's microprocessor uses to start the computer system after it is powered on. It also manages data flow between the computer's operating system (OS) and attached devices, such as the hard disk, video adapter, keyboard, mouse and printer.
 
 ### What is the kernel?
 
@@ -245,6 +268,8 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 - Mounting is the attaching of an additional filesystem to the currently accessible filesystem of a computer.
 
 ### What is VFS (Virtual File System)?
+
+A virtual file system or virtual filesystem switch is an abstract layer on top of a more concrete file system. The purpose of a VFS is to allow client applications to access different types of concrete file systems in a uniform way. 
 
 ### What is a Device File:
 
