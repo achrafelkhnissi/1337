@@ -114,22 +114,25 @@ A server is a computer or system that provides resources, data, services, or pro
 
 On the hardware side, a web server is a computer that stores web server software and a website's component files.
 
-### What is Debian?
+### What is Debian & Why choosing it?
 
-### What is CentOS?
+- It's easier to install and configure than CentOS (and i haven't use CentOS befoe)
 
-### Why debian?
+### What is the difference between Debian and CentOS?
 
-#### What is APPArmor?
+### What is APPArmor?
 
 AppArmor provides Mandatory Access Control (MAC) security. In fact, AppAmor allows the system administrator to restrict the actions that processes can perform. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system.
 In AppArmor, processes are restricted by profiles. Profiles can work in complain-mode and in enforce-mode. In enforce mode, AppArmor prohibits applications from performing restricted tasks. In complain-mode, AppArmor allows applications to do these tasks, but creates a registry entry to display the complaint.
 
+<!--
+### What is CentOS?
+
 ### What is KDump? (for CentOS)
 
-## What is the difference between Debian and CentOS?
+### What is SELinux and DNF? (related to CentOS)
 
-### What is SELinux? (for CentOS)
+-->
 
 ### What is LVM? (Logical Valume Manager) and what its uses?
 
@@ -235,7 +238,6 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 - `/sbin` : Contains binary (executable) files, usually for system administration. For example, `fdisk` and `ifconfig` utilities.
 - `/kernel` : Contains kernel files.
 
-### What is SELinux and DNF? (related to CentOS)
 
 ### What is mounting in linux?
 
@@ -267,6 +269,7 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 	- `/etc/shadow` - Holds the encrypted password of the corresponding account. Not all the systems support this file.
 	- `/etc/group` - This file contains the group information for each account.
 	- `/etc/gshadow` - This file contains secure group account information.
+- `man pam_pwquality`
 
 ## Answers
 

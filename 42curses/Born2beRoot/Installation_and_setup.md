@@ -234,9 +234,9 @@ MariaDB [(none)]> SHOW DATABASES;
 ### WordPress
 
 - Install wget: `sudo apt install wget`
-- Download WordPress to `/var/www/html`: `sudo wget http://wordpress.org/lastest.tart.gz -P /var/www/html`
-- Extract downloaded content: `sudo tar -xzvf /var/www/html/lastest.tar.gz`
-- Remove tarball: `sudo rm /var/www/html/lastest.tar.gz`
+- Download WordPress to `/var/www/html`: `sudo wget http://wordpress.org/latest.tar.gz -P /var/www/html`
+- Extract downloaded content: `sudo tar -xzvf /var/www/html/latest.tar.gz`
+- Remove tarball: `sudo rm /var/www/html/latest.tar.gz`
 - Copy content of `/var/www/html/wordpress` to `/var/www/html`: `sudo cp -r /var/www/html/wordpress/* /var/www/html`
 - Remove wordpress directory: `sudo rm -rf /var/www/html/wordpress`
 - Create WordPress configuration file from its sample: `sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php`
@@ -247,6 +247,46 @@ MariaDB [(none)]> SHOW DATABASES;
 26 define( 'DB_USER', 'username_here' );^M
 29 define( 'DB_PASSWORD', 'password_here' );^M
 ```
+
+## File Transfer Protocol (FTP)
+
+### Installing & Configuring FTP
+
+- Install FTP: `sudo apt install vsftpd`
+- Verify installation: `dpkg -l | grep vsftpd`
+- Allow incomming connections using Port 21: `sudo ufw allow 21`
+- Configure vsftpd: `sudo vim /etc/vsftpd.conf`
+- To enable any form of FTP write command, uncomment `31 #write_enable=YES`
+- To set root folder for FTP-connected user to `/home/<username>/ftp` add below lines:
+
+```
+$ sudo mkdir /home/<username>/ftp
+$ sudo mkdir /home/<username>/ftp/files
+$ sudo chown nobody:nogroup /home/<username>/ftp
+$ sudo chmod a-w /home/<username>/ftp
+<~~~>
+user_sub_token=$USER
+local_root=/home/$USER/ftp
+<~~~>
+```
+
+- To prevent user from accessing files or using commands outside the directory tree, uncomment: `114 $chroot_local_user=YES`
+- To whitelist FTP, add below lines:
+```
+$ sudo vi /etc/vsftpd.userlist
+$ echo <username> | sudo tee -a /etc/vsftpd.userlist
+<~~~>
+userlist_enable=YES
+userlist_file=/etc/vsftpd.userlist
+userlist_deny=NO
+<~~~>
+```
+
+### Connecting to Server via FTP
+
+- FTP into your virtual machine: `ftp <ip-address>`
+- Or: `sftp -P <port> <username>@<ip-address>`
+
 <!--
 - Wordpress login: ael-khni
 - pass: `oPni$pdb)al*wyP!nI`
