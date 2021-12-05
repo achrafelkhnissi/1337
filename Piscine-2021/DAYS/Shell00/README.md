@@ -2,7 +2,6 @@
 
 |Exercise        |Description                    |Solution                     |
 |-------------|-------------------------------|-----------------------------|
-
 |ex01         | [testDay00](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex01/README.md)                      | [mkfile/touch/chmod](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex01/testDay00.sh)                |
 |ex02         | [Oh yea, mooore...](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex02/README.md)             | [mkfile/touch/chmod](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex02/exo2.sh)|
 |ex03         |[Connet me!](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex03/README.md)              | [klist](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/Shell00/ex03/exo3.sh)|
