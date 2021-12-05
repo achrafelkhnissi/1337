@@ -13,29 +13,32 @@
 ```
 
 
-## Evaluation
+# Evaluation
 
-### Project overview
-1. How the virtual machine work?
-2. What is the basic differences between CentOS and Debian?
-#### 3. What is the purpose of virtual machines?
+## Project overview
 
-The main purpose of VMs is to operate multiple operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. \
+### 1. How the virtual machine work?
+
 Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
 
-4. If you chose CentOS, Then what is SELinux and DNF are?
-5. If you chose Debian, Then what is the difference between aptitude and apt?
-6. What APPArmor is?
-7. The script must display information all every 10 minutes.
+### 2. What is the basic differences between CentOS and Debian?
+### 3. What is the purpose of virtual machines?
 
-### Simple setup
+The main purpose of VMs is to operate multiple operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. \
+
+### 4. If you chose CentOS, Then what is SELinux and DNF are?
+### 5. If you chose Debian, Then what is the difference between aptitude and apt?
+### 6. What APPArmor is?
+### 7. The script must display information all every 10 minutes.
+
+## Simple setup
 1. Pay attention to the password chosen, it must follow the rules imposed in the subject.
 2. Check that the UFW service is started.
 3. Check that the SSH service is started.
 4. Check that the chosen OS is Debian or CentOS.
 5. Check that a user with your login is present on the VM.
 
-### User
+## User
 1. Check that the user has been added and it belongs to the "sudo" and "user42" groups.
 2. Create a new user. Assign it a password of your choice, respecting the subject rules.
 3. Explain how you were able to set up the rules resquested.
@@ -43,7 +46,7 @@ Virtualization uses software to simulate virtual hardware that allows multiple V
 5. Check if that user belongs to the "evaluating" group.
 6. Explain the advantages of this password policy as well as the advantages and disadvantages of its implementation.
 
-### Hostname and partitions
+## Hostname and partitions
 1. Check that the hostname of the machine is correctly formatted.
 2. Modify this hostname then restart the machine. The hostname should be updated.
 3. Restore the machine to its original hostname.
@@ -51,7 +54,7 @@ Virtualization uses software to simulate virtual hardware that allows multiple V
 5. Compare the output with the example given in the subject.
 6. Briefly explain how LVM works and what it is all about.  
 
-### SUDO
+## SUDO
 1. Check that the "sudo" program is properly installed on the VM.
 2. Assign the new user to the sudo group.
 3. The subject imposes strict rules for sudo. Explain the value and operation of sudo.
@@ -60,7 +63,7 @@ Virtualization uses software to simulate virtual hardware that allows multiple V
 6. Check the contents of the files in this folder. (you should see a history of the commands used with sudo)
 7. Run a command via sudo & and see if the file(s) in the "/var/log/sudo/" folder have been updated.
 
-### UFW
+## UFW
 1. Check that the "UFW" program is properly installed on the VM.
 2. Check that it is working properly.
 3. Explain what is UFW and the value of using it.
@@ -68,7 +71,7 @@ Virtualization uses software to simulate virtual hardware that allows multiple V
 5. Add a new rules to open port 8080. Check that this one has been added by listing the active rules.
 6. Delete the new rule.
 
-### SSH
+## SSH
 1. Check that the "SSH" service is properly installed on the VM.
 2. Check that it is working properly.
 3. Explain what is SSH and the value of using it.
@@ -76,14 +79,14 @@ Virtualization uses software to simulate virtual hardware that allows multiple V
 5. Log in with the newly created user using SSH.
 6. Make sure that you cannot use SSH with the "root" user.
 
-### Script monitoring
+## Script monitoring
 1. Explain how the script works by showing the code.
 2. Explain what "corn" is.
 3. Explain how you set up the script so that it runs every 10 minutes from when the server starts.
 4. Ensure that this script runs every minute.
 5. Make the script stop running when the server has started up. (without modifying the script itself)
 
-## Q&A
+# Q&A
 
 ### What is VirtualBox?
 
