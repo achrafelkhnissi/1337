@@ -46,6 +46,21 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 ## Simple setup
 
 #### 1. Pay attention to the password chosen, it must follow the rules imposed in the subject.
+
+1. Password Age:
+- `sudo vim /etc/login.defs`
+- Password expire every 30 days: `PASS_MAX_DAYS	30`
+- The minimum number of days between password change: `PASS_MIN_DAYS 2`
+- Send a warning to a user 7 days before password expire: `PASS_WARN_AGE 7`
+2. Password Strength:
+- `sudo vim /etc/pam.d/common-password`
+- `minlen=10`: passowrd minimum length is 10.
+- `ucredit=-1 dcredit=-1`: It must contain at least an uppercase character and a numeric character.
+- `maxrepeat=3`: To only allow 3 consecutive identical characters.
+- `reject_username`: To reject the password if it contains the username in some form.
+- `difok=7`: The number of change required in the new password from the old password is 7.
+- `enforce_for_root`: Implement the same policy on root.
+
 #### 2. Check that the UFW service is started.
 #### 3. Check that the SSH service is started.
 #### 4. Check that the chosen OS is Debian or CentOS.
