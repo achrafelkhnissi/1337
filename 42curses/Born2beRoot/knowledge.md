@@ -18,7 +18,7 @@
 ### Project overview
 1. How the virtual machine work?
 2. What is the basic differences between CentOS and Debian?
-### 3. What is the purpose of virtual machines?
+##### 3. What is the purpose of virtual machines?
 
 The main purpose of VMs is to operate multiple operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. \
 Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
