@@ -34,6 +34,9 @@
 	- [MariaDB](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#mariadb)
 	- [PHP](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#php)
 	- [WordPress](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#wordpress)
+4. [File Transfer Protocol (FTP)](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#file-transfer-protocol-ftp)
+	- [Installing & Configuring FTP](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#installing--configuring-ftp)
+	- [Connecting to Server via FTP](https://github.com/achrafelkhnissi/1337/blob/master/42curses/Born2beRoot/Installation_and_setup.md#connecting-to-server-via-ftp)
 
 ## Knowledge
 
