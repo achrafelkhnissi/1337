@@ -43,6 +43,8 @@ The main purpose of VMs is to operate multiple operating systems at the same tim
 AppArmor provides Mandatory Access Control (MAC) security. In fact, AppAmor allows the system administrator to restrict the actions that processes can perform. For example, if an installed application can take photos by accessing the camera application, but the administrator denies this privilege, the application will not be able to access the camera application. If a vulnerability occurs (some of the restricted tasks are performed), AppArmor blocks the application so that the damage does not spread to the rest of the system. \
 In AppArmor, processes are restricted by profiles. Profiles can work in complain-mode and in enforce-mode. In enforce mode, AppArmor prohibits applications from performing restricted tasks. In complain-mode, AppArmor allows applications to do these tasks, but creates a registry entry to display the complaint.
 
+- To check AppArmor status: `sudo aa-status`
+
 ## Simple setup
 
 #### 1. Pay attention to the password chosen, it must follow the rules imposed in the subject.
@@ -62,9 +64,21 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 - `enforce_for_root`: Implement the same policy on root.
 
 #### 2. Check that the UFW service is started.
+
+- `sudo service ufw status`
+- `sudo ufw status`
+
 #### 3. Check that the SSH service is started.
+
+- `sudo service ssh status`
+
 #### 4. Check that the chosen OS is Debian or CentOS.
+
+- `head -n 2 /etc/os-release`
+
 #### 5. Check that a user with your login is present on the VM.
+
+-  `awk -F: '{ print $1}' /etc/passwd`
 
 ## User
 
