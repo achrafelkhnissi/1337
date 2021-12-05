@@ -17,19 +17,19 @@
 
 ## Project overview
 
-### 1. How the virtual machine work?
+#### 1. How the virtual machine work?
 
 Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
 
-### 2. What is the basic differences between CentOS and Debian?
-### 3. What is the purpose of virtual machines?
+#### 2. What is the basic differences between CentOS and Debian?
+#### 3. What is the purpose of virtual machines?
 
 The main purpose of VMs is to operate multiple operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. \
 
-### 4. If you chose CentOS, Then what is SELinux and DNF are?
-### 5. If you chose Debian, Then what is the difference between aptitude and apt?
-### 6. What APPArmor is?
-### 7. The script must display information all every 10 minutes.
+#### 4. If you chose CentOS, Then what is SELinux and DNF are?
+#### 5. If you chose Debian, Then what is the difference between aptitude and apt?
+#### 6. What APPArmor is?
+#### 7. The script must display information all every 10 minutes.
 
 ## Simple setup
 1. Pay attention to the password chosen, it must follow the rules imposed in the subject.
