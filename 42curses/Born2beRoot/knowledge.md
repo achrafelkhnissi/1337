@@ -18,7 +18,11 @@
 ### Project overview
 1. How the virtual machine work?
 2. What is the basic differences between CentOS and Debian?
-3. What is the purpose of virtual machines?
+### 3. What is the purpose of virtual machines?
+
+The main purpose of VMs is to operate multiple operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. \
+Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
+
 4. If you chose CentOS, Then what is SELinux and DNF are?
 5. If you chose Debian, Then what is the difference between aptitude and apt?
 6. What APPArmor is?
@@ -91,7 +95,7 @@ A virtual machine (VM) is a virtual environment that works like a computer insid
 
 ### What's the purpose of virtual machines & how does it work?
 
-operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. \
+The main purpose of VMs is to operate multiple operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. \
 Virtualization uses software to simulate virtual hardware that allows multiple VMs to run on a single machine. The physical machine is known as the host while the VMs running on it are called guests. This process is managed by software known as a hypervisor.
 
 ### What is a hypervisor?
@@ -124,7 +128,7 @@ CentOS is a free downstream rebuild of the commercial Red Hat Enterprise Linux d
 
 ### What is TTY mode?
 
-When requiretty is set, sudo must be run from a logged-in terminal session (a tty). This prevents sudo from being used from daemons or other detached processes like cronjobs or webserver plugins. It also means you can't run it directly from an ssh call without setting up a terminal session.\
+When requiretty is set, sudo must be run from a logged-in terminal session (a tty). This prevents sudo from being used from daemons or other detached processes like cronjobs or webserver plugins. It also means you can't run it directly from an ssh call without setting up a terminal session.
 
 This can prevent certain kinds of escalation attacks. For example, if I have a way to modify the crontab for a user who has NOPASSWD sudo permissions, I could use that to kick off a job as root. With requiretty, I can't do that...
 
