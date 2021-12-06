@@ -1,57 +1,51 @@
-#include <stdio.h>
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/03 18:37:57 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/10/06 09:45:11 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-int	*ft_range(int min, int max);
-
-int	main(void)
+int	arr_size(int min, int max)
 {
-	int	*arr;
 	int	i;
 
 	i = 0;
-	arr = ft_range(10, 30);
-	while (i < 20)
-		printf("%d ", arr[i++]);
-	putchar('\n');
-	return (0);
-}
-
-int	*ft_range(int min, int max)
-{
-	int	len;
-	int	*range;
-	int	i;
-
 	if (min >= max)
-		return (0);
-	i = 0;
-	len = max - min;
-	range = (int *) malloc(len * 4);
-	if (!range)
-		return (NULL);
-	while (i < len && min < max)
-		range[i++] = min++;
-	return (range);
-}
-
-/*
-int	*ft_range(int min, int max)
-{
-	int *p;
-	int i;
-
-	if (min >= max)
-		return (0);
-	p = malloc(max - min);
-	if (p == NULL)
-		return (0);
-	i = 0;
+		return (-1);
 	while (min < max)
 	{
-		p[i] = min;
 		i++;
 		min++;
 	}
-	return (p);
+	return (i);
 }
-*/
+
+int	*ft_range(int min, int max)
+{
+	int	*arr;
+	int	i;
+	int	len;
+
+	i = 0;
+	len = arr_size(min, max);
+	if (len < 0)
+		return (0);
+	arr = malloc(sizeof(int) * len);
+	if (!arr)
+		return (0);
+	while (min < max)
+	{
+		arr[i] = min;
+		i++;
+		min++;
+	}
+	return (arr);
+}

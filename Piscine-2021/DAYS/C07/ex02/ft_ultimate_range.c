@@ -1,71 +1,54 @@
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/04 13:28:09 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/12/06 22:47:28 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-int	ft_ultimate_range(int **range, int min, int max);
-int	*ft_range(int min, int max);
-void	test_ultimate_range_function(int min, int max);
-void	print_test(int *test, int size);
-
-int		main(void)
+int	arr_size(int min, int max)
 {
-	test_ultimate_range_function(3, 5);
-	test_ultimate_range_function(0, 11);
-	test_ultimate_range_function(8, 2);
-	test_ultimate_range_function(2, 2);
-	test_ultimate_range_function(10, 20);
-	test_ultimate_range_function(20, 15);
-	test_ultimate_range_function(99, 99);
-	test_ultimate_range_function(1, 12);
-}
-
-
-void	print_test(int *test, int size)
-{
-	int i;
-
-	for (i = 0; i < size - 1; i++)
-	{
-		printf("%d - ", test[i]);
-	}
-	if (size > 0)
-		printf("%d\n", test[size - 1]);
-}
-
-int	*ft_range(int min, int max)
-{
-	int	*p;
 	int	i;
 
-	if (min >= max)
-		return (0);
-	p = malloc(max - min);
-	if (p == NULL)
-		return (0);
 	i = 0;
+	if (min >= max)
+		return (-1);
 	while (min < max)
 	{
-		p[i] = min;
 		i++;
 		min++;
 	}
-	return (p);
+	return (i);
 }
 
 int	ft_ultimate_range(int **range, int min, int max)
 {
-	*range = ft_range(min, max);
-	if (*range == NULL)
+	int	i;
+	int	len;
+	int	*tab;
+
+	i = 0;
+	len = arr_size(min, max);
+	if (len < 0)
+	{
+		*range = NULL;
 		return (0);
-	return (max - min);
-}
+	}
+	tab = malloc(sizeof(int) * len);
+	if (!tab)
+		return (-1);
+	while (i < len)
+	{
+		tab[i] = min;
+		min++;
+		i++;
+	}
+	*range = tab;
+	return (len);
 
-void	test_ultimate_range_function(int min, int max)
-{
-	int size;
-	int *test;
-
-	size = ft_ultimate_range(&test, min, max);
-	printf("\nsize = %d\n", size);
-	print_test(test, size);
-	free(test);
-}

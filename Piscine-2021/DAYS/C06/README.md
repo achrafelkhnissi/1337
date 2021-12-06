@@ -1,12 +1,11 @@
-# LIST OF DAY06 EXERCISES
+# LIST OF C06 EXERCISES
 
 |Exercise  |Description |Solution                     
 |----------|------------|---------
-|[ex00](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex00/libft) | [libft](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex00/README.md) | [libft](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex00/libft)
-|[ex01](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex01) | [print program name](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex01/README.md) | [ft_print_program_name.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex01/ft_print_program_name.c)
-|[ex02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex02) | [print params](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex02/README.md) | [ft_print_params.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex02/ft_print_params.c)
-|[ex03](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex03) | [rev params](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex03/README.md) | [ft_rev_params.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex03/ft_rev_params.c)
-|[ex04](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex04) | [sort params](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex04/README.md) | [ft_sort_params.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY06/ex04/ft_sort_params.c)
+|[ex00](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex00) | [print program name](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex0-/README.md) | [ft_print_program_name.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex00/ft_print_program_name.c)
+|[ex01](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex01) | [print params](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex01/README.md) | [ft_print_params.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex01/ft_print_params.c)
+|[ex02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex02) | [rev params](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex02/README.md) | [ft_rev_params.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex02/ft_rev_params.c)
+|[ex03](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex03) | [sort params](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex03/README.md) | [ft_sort_params.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex03/ft_sort_params.c)
 
 ## How to create a static libarary
 ![pic alt](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/static_vs_dynamic1.png)

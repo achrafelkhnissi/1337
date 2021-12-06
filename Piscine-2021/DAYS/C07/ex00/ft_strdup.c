@@ -1,32 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/03 18:27:55 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/12/06 22:46:43 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
-#include <stdio.h>
-
-char	*ft_strdup(char *src);
-
-int	main(void)
-{
-	char	*name;
-	char	*copy;
-
-	name = "Future is loading!";
-	copy = ft_strdup(name);
-	printf("copy = %s\n", copy);
-	return (0);
-}
 
 char	*ft_strdup(char *src)
 {
 	char	*copy;
-	int	len;
-	int	i;
+	int		i;
 
 	i = 0;
-	len = 0;
-	while (src[len])
-		len++;
-	copy = (char *) malloc(len + 1);
+	while (src[i])
+		i++;
+	copy = malloc((sizeof(char) * i) + 1);
 	if (!copy)
 		return (NULL);
+	i = 0;
 	while (src[i])
 	{
 		copy[i] = src[i];
@@ -35,4 +32,3 @@ char	*ft_strdup(char *src)
 	copy[i] = '\0';
 	return (copy);
 }
-
