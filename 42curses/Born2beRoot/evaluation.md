@@ -35,7 +35,12 @@ The main purpose of VMs is to operate multiple operating systems at the same tim
 #### 5. If you chose Debian, Then what is the difference between aptitude and apt?
 
 - In Debian-based OS distributions, the default package manager we can use is dpkg. This tool allows us to install, remove and manage programs on our operating system. However, in most cases, these programs come with a list of dependencies that must be installed for the main program to function properly. One option is to manually install these dependencies. However, APT (Advanced Package Tool), which is a tool that uses dpkg, can be used to install all the necessary dependencies when installing a program. So now we can install a useful program with a single command. 
-- APT can work with different back-ends and fron-ends to make use of its services. One of them is apt-get, which allows us to install and remove packages. Along with apt-get, there are also many tools like apt-cache to manage programs. In this case, apt-get and apt-cache are used by apt. Thanks to apt we can install .deb programs easily and without worrying about dependencies. But in case we want to use a graphical interface, we will have to use aptitude. Aptitude also does better control of dependencies, allowing the user to choose between different dependencies when installing a program.
+- APT (Advanced Packaging Tool) can work with different back-ends and fron-ends to make use of its services. One of them is apt-get, which allows us to install and remove packages. Along with apt-get, there are also many tools like apt-cache to manage programs. In this case, apt-get and apt-cache are used by apt. Thanks to apt we can install .deb programs easily and without worrying about dependencies. But in case we want to use a graphical interface, we will have to use aptitude. Aptitude also does better control of dependencies, allowing the user to choose between different dependencies when installing a program.
+- The most obvious difference is that aptitude provides a terminal menu interface (much like Synaptic in a terminal), whereas apt-get does not.
+- Apart from main difference being that Aptitude is a high-level package manager while APT is lower-level package manager which can be used by other higher-level package managers
+- While apt lacks UI, Aptitude has a text-only and interactive UI
+- Aptitude has a better package management than apt
+- More: https://www.tecmint.com/difference-between-apt-and-aptitude/
 
 #### 6. What APPArmor is?
 
@@ -350,3 +355,4 @@ A virtual file system or virtual filesystem switch is an abstract layer on top o
 - How to change visudo editor from nano to vim?: https://askubuntu.com/questions/539243/how-to-change-visudo-editor-from-nano-to-vim
 - How to add jobs to cron: https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 - 42cursus - Born2beRoot: https://github.com/ayoub0x1/born2beroot
+- The difference between apt and aptitude: https://www.tecmint.com/difference-between-apt-and-aptitude/
