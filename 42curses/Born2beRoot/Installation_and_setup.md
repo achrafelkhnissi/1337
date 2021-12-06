@@ -111,12 +111,13 @@
 - Verify sudopowers: `sudo -v`
 - From here on out, run root-privileged commands via prefix `sudo`
 - Configuring sudo: `sudo visudo`:
+	- To change visudo edirot from nano to vim: `sudo update-alternatives --config editor`
 	- To limit authentication using sudo to 3 attempts in the event of an incorrect password: `Defaults	passwd_tries=3`
-	- To add a custom error message in the event of an incorrect password: `Defaults badpass_message="<custo-error-message>"`
+	- To add a custom error message in the event of an incorrect password: `Defaults badpass_message="<custo-error-message>"` or `Defaults	insults`
 	- To archive all sudo inputs & outputs to `/var/log/sudo`: `Defaults	log_input, log_output` && `Defaults	logfile=/var/log/sudo/sudo.log` && `Defaults iolog_dir="/var/log/sudo"`
 	- To require TTV: `Defaults requiretty`
 	- To set sudo paths: `Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"`
-
+- U can delete a user using `userdel` command and delete a group using `groupdel` command.
 ### SSH
 - Install openssh-server: `sudo apt install openssh-server`
 - Verify installation: `dpkg -l | grep ssh`
@@ -162,7 +163,7 @@
 ```
 password        requisite                       pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
 ```
-
+- To set the minimum number of days between password change: 
 #### Creating a new user
 - Create a new user: `sudo adduser <username>`
 - Verify whether user was successfully created: `getent passwd <username>`

@@ -97,6 +97,7 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 #### 5. Check if that user belongs to the "evaluating" group.
 - `sudo getent group evaluating`
 #### 6. Explain the advantages of this password policy as well as the advantages and disadvantages of its implementation.
+In theory, the main benefit of password complexity rules is that they enforce the use of unique passwords that are harder to crack. The more requirements you enforce, the higher the number of possible combinations of letters, numbers, and characters.
 
 ## Hostname and partitions
 #### 1. Check that the hostname of the machine is correctly formatted.
