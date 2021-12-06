@@ -12,7 +12,6 @@
 # **************************************************************************** #
 ```
 
-
 # Evaluation
 
 ## Project overview
@@ -29,7 +28,7 @@ CentOS is a free downstream rebuild of the commercial Red Hat Enterprise Linux d
 
 #### 3. What is the purpose of virtual machines?
 
-The main purpose of VMs is to operate multiple operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. \
+The main purpose of VMs is to operate multiple operating systems at the same time, from the same piece of hardware. Without virtualization, operating multiple systems — like Windows and Linux — would require two separate physical units. 
 
 #### 4. If you chose CentOS, Then what is SELinux and DNF are?
 
@@ -244,8 +243,6 @@ This can prevent certain kinds of escalation attacks. For example, if I have a w
 
 - The Device Mapper is a framework provided by the Linux Kernel for mapping  physical block dvices
 - You can view block devices informations with the lsblk command.
-- Block Devices:
-- Character Devices:
 - Using the `ls -l /dev/` command: The first character in the first column, i.e 'c', tells an informed user the type of the file, in this case a character device. For 'b' for block devices, 'd' for directories, '-' for ordinary files, 'l' for Symbolic link files (links on any regular files), 'p' Named pipe (a mechanism for interprocess communication), 's' for socket (used for interprocess communication).
 
 ### What is ports?
