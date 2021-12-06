@@ -1,13 +1,28 @@
-#ifndef FT_CAT_H 
-#define FT_CAT_H 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_cat.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/10 07:52:47 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/12/06 22:30:28 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <unistd.h>
-#include <errno.h>
+#ifndef FT_CAT_H
+# define FT_CAT_H
+
 #include <fcntl.h>
+#include <libgen.h>
+#include <sys/errno.h>
+#include <stdio.h>
+#include <unistd.h>
 
-void	ft_puterr(char *err);
-void	stdin_to_stdout(void);
-int	ft_cat(char *file);
-int	ft_strlen(char *str);
+void	in_to_out(void);
+int	ft_strcmp(char *s1, char *s2);
+void	ft_putstr(char *str);
+void	ft_putchar(char c);
+void	ft_cat(char *file_name);
 
 #endif

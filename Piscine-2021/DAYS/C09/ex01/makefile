@@ -1,10 +1,23 @@
-CC=gcc
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/10/07 10:25:35 by ael-khni          #+#    #+#              #
+#    Updated: 2021/12/06 22:40:20 by ael-khni         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+CC=GCC
+FLAGS	= -Wall -Werror -Wextra -I./includes
 AR=ar crs
 RM=rm -rf
-FLAG=-Wall -Wextra -Werror
-HEADER=-I includes
-SRC=$(addprefix srcs/, $(addsuffix .c, ft_putchar ft_swap ft_putstr ft_strlen ft_strcmp))
-OBJ=$(notdir $(SRC:.c=.o))
+FILES 	= srcs/ft_putchar srcs/ft_strcmp \
+		  srcs/ft_putstr srcs/ft_swap srcs/ft_strlen
+SRC		= $(FILES:=.c)
+OBJ		= $(FILES:=.o)
 LIB=libft.a
 
 .PHONY: all clean fclean re
@@ -12,11 +25,10 @@ LIB=libft.a
 all: $(LIB)
 
 $(LIB): $(OBJ)
-	$(AR) $@ $?
-	$(RM) $(OBJ)
+	$(AR) $(LIB) $(OBJ)
 
-$(OBJ): $(SRC)
-	$(CC) $(HEADER) $(FLAG) -c $?
+%.o: %.c
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJ)
@@ -25,3 +37,5 @@ fclean: clean
 	$(RM) $(LIB)
 
 re: fclean all
+
+

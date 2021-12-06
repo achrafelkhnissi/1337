@@ -1,12 +1,10 @@
-## Exercise 00: ft_split_whitespaces
-- Create a function that splits a string of characters into words.
-- Separators are spaces, tabs, and line breaks.
-- This function returns an array where each box contains a character-string's address represented by a word. The last element of this array should be equal to 0 to emphasise the end of the array.
-- There can't be any empty strings in your array. Draw the necessary conclusions.
-- The given string can't be modified.
-- Here's how it should be prototyped:
-```C
-	char	**ft_split_whitespaces(char *str);
+## Exercise 00: ft.h
+- Create your __ft.h__ file.
+- It contains all prototypes of all the following functions.
+```c
+void	ft_putchar(char c);
+void	ft_swap(int *a, int *b);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
+int		ft_strcmp(char *s1, char *s2);
 ```
-- Allowed functions: __malloc__
-

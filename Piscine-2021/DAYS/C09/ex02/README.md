@@ -1,1 +1,1 @@
-## Exercise 02: ft_strjoin
+## Exercise 02: ft_split

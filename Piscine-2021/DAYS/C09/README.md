@@ -1,11 +1,11 @@
-# DAY09 EXERCISES
+# C09 EXERCISES
 
 
 |Exercise  |Description |Solution                     
 |----------|------------|---------
-|[ex00](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex00/) | [libft](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex00/README.md) | [libft_creator.sh](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex00/libft_creator.sh)
-|[ex01](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex01) | [Makefile](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex01/README.md) | [Makefile](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex01/makefile)
-|[ex02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex02) | [strjoin](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex02/README.md) | [ft_strjoin.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/DAY09/ex02/ft_strjoin.c)
+|[ex00](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C09/ex00/) | [libft](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C09/ex00/README.md) | [libft_creator.sh](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C09/ex00/libft_creator.sh)
+|[ex01](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C09/ex01) | [Makefile](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C09/ex01/README.md) | [Makefile](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C099/ex01/makefile)
+|[ex02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C09/ex02) | [split](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C09/ex02/README.md) | [ft_split.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C09/ex02/ft_split.c)
 
 ## Makefile
 ### Useful sources

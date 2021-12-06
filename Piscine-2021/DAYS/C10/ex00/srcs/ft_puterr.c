@@ -1,7 +1,19 @@
-#include "../includes/display_file.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_puterr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/07 19:05:23 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/12/06 22:25:29 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-void	ft_puterr(char *err)
+#include <unistd.h>
+
+void	ft_puterr(char *str)
 {
-	while(*err)
-		write(STDERR_FILENO, err++, 1);
+	while (*str)
+		write(2, str++, 1);
 }

@@ -1,20 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/10 07:51:48 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/12/06 22:29:43 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/ft_cat.h"
 
 int	main(int ac, char **av)
 {
 	int	i;
-	int	return_value;
 
 	i = 1;
-	return_value = 0;
 	if (ac == 1)
-		stdin_to_stdout();
+		in_to_out();
 	else
 	{
 		while (i < ac)
-			if(ft_cat(av[i++]) == 1)
-				return_value = 1;
+		{
+			if (ft_strcmp(av[i], "-") == 0)
+				in_to_out();
+			else
+				ft_cat(av[i]);
+			i++;
+		}
 	}
-	return (return_value);
-}
+	return (0);
 

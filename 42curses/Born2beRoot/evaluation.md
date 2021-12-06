@@ -174,7 +174,7 @@ There are three different techniques that SSH uses to encrypt:
 
 ## Script monitoring
 #### 1. Explain how the script works by showing the code.
-#### 2. Explain what "corn" is.
+#### 2. Explain what "cron" is.
 - Linux task manager that allows us to execute commands at a certain time. We can automate some tasks just by telling cron what command we want to run at a specific time. For example, if we want to restart our server every day at 4:00 am, instead of having to wake up at that time, cron will do it for us.
 - The cron command line utility, also known as cron job is a job scheduler on unix-like operating systems.
 ```

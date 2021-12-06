@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   in_to_out.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/10/10 07:51:32 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/12/06 22:28:46 by ael-khni         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../includes/ft_cat.h"
 
-void	stdin_to_stdout(void)
+void	in_to_out(void)
 {
 	char	c;
 
-	while (read(STDIN_FILENO, &c, 1) > 0)
-		write(STDOUT_FILENO, &c, 1);
+	while (read(0, &c, 1))
+		ft_putchar(c);
 }

@@ -1,12 +1,12 @@
-# LIST OF DAY12 EXERCISES
+# LIST OF C10 EXERCISES
 
 |Exercise        |Description                    |Solution                     |
 |-------------|-------------------------------|-----------------------------|
-|[ex00](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex00)      |[display file](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex00/README.md)          |[display_file.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex00/srcs/display_file.c) |
-|[ex01](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex01)     |[cat](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex01/README.md)  |[ft_cat.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex01/srcs/ft_cat.c)  |
-|[ex02](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex02)   |[tail](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex02/README.md)           |[ft_tail.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex02/srcs/ft_tail.c)         |
-|[ex03](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex03)   |[hexdump](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex03/README.md)           |[ft_hexdump.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex03/srcs/ft_hexdump.c)      |
-|[ex04](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex04)   |[last](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex04/README.md)        |[ft_last.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/DAY12/ex04/srcs/ft_last.c)  |
+|[ex00](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex00)      |[display file](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex00/README.md)          |[display_file.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex00/srcs/display_file.c) |
+|[ex01](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex01)     |[cat](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex01/README.md)  |[ft_cat.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex01/srcs/ft_cat.c)  |
+|[ex02](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex02)   |[tail](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex02/README.md)           |[ft_tail.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex02/srcs/ft_tail.c)         |
+|[ex03](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex03)   |[hexdump](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex03/README.md)           |[ft_hexdump.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex03/srcs/ft_hexdump.c)      |
+|[ex04](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex04)   |[last](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex04/README.md)        |[ft_last.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex04/srcs/ft_last.c)  |
 
 
 ## System Calls
