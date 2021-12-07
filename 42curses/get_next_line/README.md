@@ -37,15 +37,16 @@ _Note: Files suffixed with *_bonus* are exact copies of corresponding files._
 
 **Functions in `get_next_line.c`**
 
-* `ft_free_null`	- free and null a pointer.
-* `ft_cpy_exc_buff`	- copy read excess (string after \n) to static variable (buffer).
-* `ft_buff2line`	- copy read line from buffer.
+* `get_reminder`	- gets the reminder after the newline.
+* `check_newline`	- returns the index of the newline if found else returns -1.
+* `ft_strlen`		- find length of string.
 * `get_next_line`	- main function.
 
 **Functions in `get_next_line_utils.c`**
 
-* `ft_strlen`		- find length of string.
 * `ft_strdup`		- save a copy of a string (with malloc).
+* `ft_calloc`		- allocates X size of memory and set it to 0.
+* `ft_strjoin`		- Joins 2 strings togather.
 
 ## 🛠️ Usage
 
