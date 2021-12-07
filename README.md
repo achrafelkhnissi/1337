@@ -74,7 +74,7 @@ students, without teachers. It can be done, and it works.
 	* Computer graphics
 	* Assembly language
 
--- among others (find below the complete [curriculum](https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md#-42s-galaxy-curriculum)).
+-- among others (find it in the complete [curriculum](https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md#-42s-galaxy-curriculum)).
 
 ### Soft-skills
 
