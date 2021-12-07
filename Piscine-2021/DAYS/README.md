@@ -16,5 +16,5 @@
 - [C09]() - [Makefile](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C09/README.md)
 - [C10]() - [File Manipulation](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/README.md)
 - [C11]() - [Pointer to Functions](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C11/README.md)
-- [C12]() - [Linked List](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C11/README.md)
-- [C13]() - [Binary Tree](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C11/README.md)
+- [C12]() - [Linked List](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C12/README.md)
+- [C13]() - [Binary Tree](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C13/README.md)
