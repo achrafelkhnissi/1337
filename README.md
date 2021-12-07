@@ -19,7 +19,7 @@
 
 <p align="center">
 	<b><i>Projects developed at <a href="https://www.133.ma/">1337 Khouribga </a> programming school.</i></b><br>
-	Start date: 20/jan/2020 - the very first 42 class of South America!
+	Start date: 01/Nov/2021 - The 4th promo!
 </p>
 
 
