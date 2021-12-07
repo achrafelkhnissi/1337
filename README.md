@@ -74,7 +74,7 @@ students, without teachers. It can be done, and it works.
 	* Computer graphics
 	* Assembly language
 
--- among others (find below the complete [curriculum](#-42s-galaxy-curriculum)).
+-- among others (find below the complete [curriculum](https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md#-42s-galaxy-curriculum)).
 
 ### Soft-skills
 
@@ -94,6 +94,7 @@ students, without teachers. It can be done, and it works.
 		demands excellent time management skills and resiliency for not "drowning" amid the
 		massive load of work demanded by the program.
 
+<!--
 ## 🌌 42's galaxy (curriculum)
 
 **42cursus** comprises two groups of projects: the first one being known as _"inner circle"_ and the second one, _"outer treks"_ - due to the **Holy Graph** layout (see image below).
@@ -114,3 +115,5 @@ The table below presents the cursus curriculum in the chronological order in whi
 |01		|[get_next_line](https://github.com/achrafelkhnissi/1337/tree/master/42curses/get_next_line)|C						|882 XP			|![Project Score - get_next_line](https://badge42.herokuapp.com/api/project/ael-khni/get_next_line)	|level 1 - 57%	|
 |02		|[ft_printf](https://github.com/achrafelkhnissi/1337/tree/master/42curses/ft_printf)|C						|882 XP			|![Project Score - ft_printf](https://badge42.herokuapp.com/api/project/ael-khni/ft_printf)	|level 1 - 98%	|
 |03		|[born2beroot](https://github.com/achrafelkhnissi/1337/tree/master/42curses/Born2beRoot)			|Sysadmin				|577 XP			|![Project Score - netwhat](https://badge42.herokuapp.com/api/project/ael-khni/tree/master/born2beroot)	|level - %	|
+
+-->
