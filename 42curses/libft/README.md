@@ -7,14 +7,6 @@
 	For further information about 42cursus and its projects, please refer to <a href="https://github.com/achrafelkhnissi/1337/tree/master/42curses"><b>42cursus repo</b></a>.
 </p>
 
-<p align="center">
-	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/achrafelkhnissi/1337/42curses/libft?color=blueviolet" />
-	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/ael-khni/42cursus-00-Libft?color=blueviolet" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/ael-khni/42cursus-00-Libft?color=blue" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/ael-khni/42cursus-00-Libft?color=blue" />
-	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ael-khni/42cursus-00-Libft?color=brightgreen" />
-</p>
-
 <h3 align="center">
 	<a href="#%EF%B8%8F-about">About</a>
 	<span> · </span>
