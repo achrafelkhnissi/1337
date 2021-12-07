@@ -58,9 +58,7 @@ students, without teachers. It can be done, and it works.
 <img src ="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/3y_edu_program.png" width="800">
 </p>
 
-\* For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine repo](https://github.com/appinha/42sp-piscine).
-
-[![Photo of a 42saopaulo's lab](42saopaulo.jpg)](https://www.42sp.org.br/)
+\* For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine repo](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
 
 ## 🛠️ Skills developed at 42cursus
 
