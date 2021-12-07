@@ -1,4 +1,4 @@
-## Exercise 01: ft_putnbr
+## Exercise 02: ft_putnbr
 
 - Create a function that displays the number entered as a parameter. The function has to be able to display all possible values within an __int__ type variable.
 - Here's how it should be prototyped:

@@ -1,4 +1,4 @@
-## Exercise 20: ft_putnbr_base
+## Exercise 04: ft_putnbr_base
 - Create a function that displays a number in a base system onscreen.
 - This number is given in the shape of an int, and the radix in the shape of a string of characters.
 - The base-system contains all useable symbols to display that number:

@@ -1,4 +1,4 @@
-## Exercise 08: ft_atoi
+## Exercise 03: ft_atoi
 + Reproduce the behavior of the function atoi (man atoi).
 + Here's how it should be prototyped:
 ```C

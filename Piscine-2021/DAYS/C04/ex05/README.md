@@ -1,4 +1,4 @@
-## Exercise 21: ft_atoi_base
+## Exercise 05: ft_atoi_base
 - Create a function that returns a number. This number is shaped as a string of characters.
 - The string of characters reveals the number in a specific base, given as a second paramter.
 - The function must handle negative numbers.
