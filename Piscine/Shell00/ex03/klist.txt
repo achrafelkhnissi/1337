@@ -1,5 +1,0 @@
-Credentials cache: API:4E22EC9B-0F16-455D-B4D1-36A65081D15F
-        Principal: ael-khni@1337.MA
-
-  Issued                Expires               Principal
-Sep 20 13:39:46 2021  Sep 20 23:39:46 2021  krbtgt/1337.MA@1337.MA
