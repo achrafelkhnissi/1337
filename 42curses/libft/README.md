@@ -38,21 +38,21 @@ For detailed information, refer to the [**subject of this project**](https://git
 
 ### Functions from `<ctype.h>` library
 
-* [`ft_isascii`](libft/srcs/is/ft_isascii.c)			- test for ASCII character.
-* [`ft_isalnum`](libft/srcs/is/ft_isalnum.c)			- alphanumeric character test.
-* [`ft_isalpha`](libft/srcs/is/ft_isalpha.c)			- alphabetic character test.
-* [`ft_islower`](libft/srcs/is/ft_islower.c) *	- lower-case character test.
-* [`ft_isupper`](libft/srcs/is/ft_isupper.c) *	- upper-case character test.
-* [`ft_isdigit`](libft/srcs/is/ft_isdigit.c)			- decimal-digit character test.
-* [`ft_isxdigit`](libft/srcs/is/ft_isxdigit.c) *	- hexadecimal-digit character test.
-* [`ft_isprint`](libft/srcs/is/ft_isprint.c)			- printing character test (space character inclusive).
-* [`ft_isgraph`](libft/srcs/is/ft_isgraph.c) *	- printing character test (space character exclusive).
-* [`ft_isspace`](libft/srcs/is/ft_isspace.c) *	- white-space character test.
-* [`ft_isblank`](libft/srcs/is/ft_isblank.c) *	- space or tab character test.
-* [`ft_ispunct`](libft/srcs/is/ft_ispunct.c) *	- punctuation character test.
-* [`ft_iscntrl`](libft/srcs/is/ft_iscntrl.c) *	- control character test.
-* [`ft_tolower`](libft/srcs/to/ft_tolower.c)			- upper case to lower case letter conversion.
-* [`ft_toupper`](libft/srcs/to/ft_toupper.c)			- lower case to upper case letter conversion.
+* [`ft_isascii`](libft/ft_isascii.c)			- test for ASCII character.
+* [`ft_isalnum`](libft/ft_isalnum.c)			- alphanumeric character test.
+* [`ft_isalpha`](libft/ft_isalpha.c)			- alphabetic character test.
+* [`ft_islower`](libft/ft_islower.c) *	- lower-case character test.
+* [`ft_isupper`](libft/ft_isupper.c) *	- upper-case character test.
+* [`ft_isdigit`](libft/ft_isdigit.c)			- decimal-digit character test.
+* [`ft_isxdigit`](libftft_isxdigit.c) *	- hexadecimal-digit character test.
+* [`ft_isprint`](libft/ft_isprint.c)			- printing character test (space character inclusive).
+* [`ft_isgraph`](libft/ft_isgraph.c) *	- printing character test (space character exclusive).
+* [`ft_isspace`](libft/ft_isspace.c) *	- white-space character test.
+* [`ft_isblank`](libft/ft_isblank.c) *	- space or tab character test.
+* [`ft_ispunct`](libft/ft_ispunct.c) *	- punctuation character test.
+* [`ft_iscntrl`](libft/ft_iscntrl.c) *	- control character test.
+* [`ft_tolower`](libft/ft_tolower.c)			- upper case to lower case letter conversion.
+* [`ft_toupper`](libft/ft_toupper.c)			- lower case to upper case letter conversion.
 
 ### Functions from `<stdlib.h>` library
 
