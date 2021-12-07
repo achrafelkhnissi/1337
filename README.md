@@ -112,9 +112,7 @@ The table below presents the cursus curriculum in the chronological order in whi
 
 |CIRCLE	|PROJECT							|TECHNOLOGY				|EXPERIENCE		|STATUS						|ATTAINED LEVEL	|
 |:-:	|:--								|:--					|--:			|:-:						|:--			|
-|00		|[Libft](https://github.com/appinha/42cursus-00-Libft)|C						|462 XP			|![Project Score - Libft](https://badge42.herokuapp.com/api/project/apuchill/Libft)	|level 1 - 3%	|
-|:dizzy:|									|						|**= 462 XP**	|							|				|
-|01		|[netwhat](01-netwhat/)			|Networks				|462 XP			|![Project Score - netwhat](https://badge42.herokuapp.com/api/project/apuchill/netwhat)	|level 1 - 23%	|
-|01		|[get_next_line](https://github.com/appinha/42cursus-01-get_next_line)|C						|882 XP			|![Project Score - get_next_line](https://badge42.herokuapp.com/api/project/apuchill/get_next_line)	|level 1 - 69%	|
-|01		|[ft_printf](https://github.com/appinha/42cursus-01-ft_printf)|C						|882 XP			|![Project Score - ft_printf](https://badge42.herokuapp.com/api/project/apuchill/ft_printf)	|level 2 - 5%	|
-|:dizzy:|									|						|**= 2.226 XP**	|							|				|
+|00		|[Libft](https://github.com/achrafelkhnissi/1337/42curses/libft)|C						|462 XP			|![Project Score - Libft](https://badge42.herokuapp.com/api/project/ael-khni/Libft)	|level 1 - 3%	|
+|01		|[born2beroot](born2beroot/)			|Sysadmin				|462 XP			|![Project Score - netwhat](https://badge42.herokuapp.com/api/project/ael-khni/born2beroot)	|level 1 - 23%	|
+|01		|[get_next_line](https://github.com/achrafelkhnissi/1337/42curses/get_next_line)|C						|882 XP			|![Project Score - get_next_line](https://badge42.herokuapp.com/api/project/ael-khni/get_next_line)	|level 1 - 69%	|
+|01		|[ft_printf](https://github.com/achrafelkhnissi/1337/tree/master/42curses/ft_printf)|C						|882 XP			|![Project Score - ft_printf](https://badge42.herokuapp.com/api/project/ael-khni/ft_printf)	|level 2 - 5%	|
