@@ -4,7 +4,7 @@
 
 <p align="center">
 	<b><i>Development repo for 42cursus' libft project</i></b><br>
-	For further information about 42cursus and its projects, please refer to <a href="https://github.com/ael-khni/42cursus"><b>42cursus repo</b></a>.
+	For further information about 42cursus and its projects, please refer to <a href="https://github.com/achrafelkhnissi/1337/tree/master/42curses"><b>42cursus repo</b></a>.
 </p>
 
 <p align="center">
