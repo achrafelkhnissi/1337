@@ -18,7 +18,7 @@
 </h1>
 
 <p align="center">
-	<b><i>Projects developed at <a href="https://www.133.ma/">42 1337 Khouribga </a> programming school.</i></b><br>
+	<b><i>Projects developed at <a href="https://www.133.ma/">1337 Khouribga </a> programming school.</i></b><br>
 	Start date: 20/jan/2020 - the very first 42 class of South America!
 </p>
 
