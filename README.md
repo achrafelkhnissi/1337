@@ -14,7 +14,7 @@
 ---
 
 <h1 align="center">
-	42cursus
+	1337
 </h1>
 
 <p align="center">
