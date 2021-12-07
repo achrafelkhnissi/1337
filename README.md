@@ -96,8 +96,8 @@ students, without teachers. It can be done, and it works.
 
 
 ## Table of content
-### 1. [Piscine](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021)
-### 2. [42Cursus](https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md)
+1. [Piscine](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021)
+2. [42Cursus](https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md)
 <!--
 ## 🌌 42's galaxy (curriculum)
 
