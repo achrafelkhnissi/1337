@@ -22,6 +22,11 @@
 	Start date: 01/Nov/2021 - The 4th promo!
 </p>
 
+<h3 align="center">
+	<a href="https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021">About</a>
+	<span> · </span>
+	<a href="https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md">Testing</a>
+</h3>
 
 <p align="center">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/achrafelkhnissi/1337?color=blueviolet" />
@@ -95,9 +100,6 @@ students, without teachers. It can be done, and it works.
 		massive load of work demanded by the program.
 
 
-## Table of content
-1. [Piscine](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021)
-2. [42Cursus](https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md)
 <!--
 ## 🌌 42's galaxy (curriculum)
 
