@@ -63,8 +63,6 @@ students, without teachers. It can be done, and it works.
 <img src ="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/3y_edu_program.png" width="800">
 </p>
 
-#### For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine repo](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
-
 ## 🛠️ Skills developed at 1337
 
 ### Hard-skills
@@ -98,6 +96,8 @@ students, without teachers. It can be done, and it works.
 		The school is open 24/7. Thus, the cadets are free to work whenever they want, which
 		demands excellent time management skills and resiliency for not "drowning" amid the
 		massive load of work demanded by the program.
+
+#### For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine repo](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
 
 
 <!--
