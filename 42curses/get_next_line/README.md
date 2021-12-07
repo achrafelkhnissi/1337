@@ -109,7 +109,7 @@ _Usage example_
 * [charMstr/GNL_lover](https://github.com/charMstr/GNL_lover)
 * [Mazoise/42TESTERS-GNL](https://github.com/Mazoise/42TESTERS-GNL)
 
-
+### Notes
 - static keyword
 	- Making a global variable/function static: only visible within its own translation unit.
 	- static (local variable): presistent across function calls and only visible within its function. 
