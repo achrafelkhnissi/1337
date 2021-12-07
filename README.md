@@ -63,7 +63,7 @@ students, without teachers. It can be done, and it works.
 <img src ="https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/3y_edu_program.png" width="800">
 </p>
 
-\* For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine repo](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
+* For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine repo](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
 
 ## 🛠️ Skills developed at 1337
 
