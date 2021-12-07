@@ -10,10 +10,6 @@
 <h3 align="center">
 	<a href="#%EF%B8%8F-about">About</a>
 	<span> · </span>
-	<a href="#-index">Index</a>
-	<span> · </span>
-	<a href="#%EF%B8%8F-usage">Usage</a>
-	<span> · </span>
 	<a href="#-testing">Testing</a>
 </h3>
 
@@ -31,23 +27,14 @@
 * [`ft_isascii`](ft_isascii.c)		- test for ASCII character.
 * [`ft_isalnum`](ft_isalnum.c)		- alphanumeric character test.
 * [`ft_isalpha`](ft_isalpha.c)		- alphabetic character test.
-* [`ft_islower`](ft_islower.c) *	- lower-case character test.
-* [`ft_isupper`](ft_isupper.c) *	- upper-case character test.
 * [`ft_isdigit`](ft_isdigit.c)		- decimal-digit character test.
-* [`ft_isxdigit`](ft_isxdigit.c) *	- hexadecimal-digit character test.
 * [`ft_isprint`](ft_isprint.c)		- printing character test (space character inclusive).
-* [`ft_isgraph`](ft_isgraph.c) *	- printing character test (space character exclusive).
-* [`ft_isspace`](ft_isspace.c) *	- white-space character test.
-* [`ft_isblank`](ft_isblank.c) *	- space or tab character test.
-* [`ft_ispunct`](ft_ispunct.c) *	- punctuation character test.
-* [`ft_iscntrl`](ft_iscntrl.c) *	- control character test.
 * [`ft_tolower`](ft_tolower.c)		- upper case to lower case letter conversion.
 * [`ft_toupper`](ft_toupper.c)		- lower case to upper case letter conversion.
 
 ### Functions from `<stdlib.h>` library
 
 * [`ft_atoi`](ft_atoi.c)		- convert ASCII string to integer.
-* [`ft_atof`](ft_atof.c) *		- convert ASCII string to integer.
 * [`ft_calloc`](ft_calloc.c)	- memory allocation.
 
 ### Functions from `<strings.h>` library
@@ -63,47 +50,27 @@
 ### Functions from `<string.h>` library
 
 * [`ft_strlen`](ft_strlen.c)				- find length of string.
-* [`ft_strlen_2`](ft_strlen_2.c) *				- find length of 2D array (i.e. splitted string).
 * [`ft_strchr`](ft_strchr.c)				- locate character in string (first occurrence).
 * [`ft_strrchr`](ft_strrchr.c)			- locate character in string (last occurence).
-* [`ft_strstr`](ft_strstr.c) *		- locate a substring in a string.
 * [`ft_strnstr`](ft_strnstr.c)			- locate a substring in a string (size-bounded).
-* [`ft_strcmp`](ft_strcmp.c) *		- compare strings.
-* [`ft_strncmp`](ft_strncmp.c) *			- compare strings (size-bounded).
+* [`ft_strncmp`](ft_strncmp.c)			- compare strings (size-bounded).
 * [`ft_strnrcmp`](ft_strnrcmp.c)			- reversely compare strings (size-bounded).
-* [`ft_strcpy`](ft_strcpy.c) *		- copy strings.
-* [`ft_strncpy`](ft_strncpy.c) *	- copy strings (size-bounded).
 * [`ft_strdup`](ft_strdup.c)				- save a copy of a string (with malloc).
-* [`ft_strndup`](ft_strndup.c) *	- save a copy of a string (with malloc, size-bounded).
-* [`ft_strcat`](ft_strcat.c) *		- concatenate strings (s2 into s1).
-* [`ft_strncat`](ft_strncat.c) *	- concatenate strings (s2 into s1, size-bounded).
 * [`ft_strlcpy`](ft_strlcpy.c)			- size-bounded string copying.
 * [`ft_strlcat`](ft_strlcat.c)			- size-bounded string concatenation.
 
-### Functions from `<math.h>` library
-
-* [`ft_sqrt`](ft_sqrt.c) *	- square root function.
-* [`ft_pow`](ft_pow.c) *	- power function.
-
 ### Non-standard functions
 
-* [`ft_swap`](ft_swap.c) *			- swap value of two integers.
-* [`ft_putchar`](ft_putchar.c) *	- output a character to stdout.
 * [`ft_putchar_fd`](ft_putchar_fd.c)		- output a character to given file.
-* [`ft_putstr`](ft_putstr.c) *		- output string to stdout.
 * [`ft_putstr_fd`](ft_putstr_fd.c)		- output string to given file.
-* [`ft_putendl`](ft_putendl.c) *	- output string to stdout with newline.
 * [`ft_putendl_fd`](ft_putendl_fd.c)		- output string to given file with newline.
-* [`ft_putnbr`](ft_putnbr.c) *		- output integer to stdout.
 * [`ft_putnbr_fd`](ft_putnbr_fd.c)		- output integer to given file.
 * [`ft_itoa`](ft_itoa.c)					- convert integer to ASCII string.
 * [`ft_substr`](ft_substr.c)				- extract substring from string.
 * [`ft_strtrim`](ft_strtrim.c)			- trim beginning and end of string with the specified characters.
 * [`ft_strjoin`](ft_strjoin.c)			- concatenate two strings into a new string (with malloc).
 * [`ft_split`](ft_split.c)				- split string, with specified character as delimiter, into an array of strings.
-* [`ft_split_free`](ft_split_free.c) *				- free splitted string.
 * [`ft_strmapi`](ft_strmapi.c)			- create new string from modifying string with specified function.
-* [`ft_ftoa_rnd`](ft_ftoa_rnd.c)			- convert float to ASCII string.
 
 ### Linked list functions
 
@@ -118,61 +85,6 @@
 * [`ft_lstmap`](ft_lstmap.c)				- apply function to content of all list's elements into new list.
 
 _Note: functions marked with * are bonus functions (not mandatory by the project's subject)._
-
-## 📑 Index
-
-`@root`
-
-* [**📁 libft:**](libft/) updated source code, refactored for use in other projects; includes [`get_next_line`](https://github.com/appinha/42cursus-01-get_next_line) and [`printf`](https://github.com/appinha/42cursus-01-ft_printf) functions.
-* **📁 submX folder(s):** source code submitted to the cursus (including failed and succeeded submissions).
-* [**📁 testing:**](testing/) my own testing program.
-
-## 🛠️ Usage
-
-### Requirements
-
-The library is written in C language and thus needs the **`gcc` compiler** and some standard **C libraries** to run.
-
-### Instructions
-
-**1. Compiling the library**
-
-To compile the library, run:
-
-```shell
-$ cd path/to/libft && make
-```
-
-**2. Using it in your code**
-
-To use the library functions in your code, simply include its header:
-
-```C
-#include "libft.h"
-```
-
-and, when compiling your code, add the required flags:
-
-```shell
--lft -L path/to/libft.a -I path/to/libft.h
-```
-
-## 📋 Testing
-
-**1. First, configure the path to the libft folder in the Makefile (inside `/testing/`):**
-
-```Makefile
-#############################
-## Path to Libft directory ##
-#############################
-DIR		= ../
-```
-
-**2. Then run:**
-
-```shell
-make t
-```
 
 ### Third-party testers
 
