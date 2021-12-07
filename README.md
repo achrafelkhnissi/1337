@@ -12,6 +12,7 @@
   /* ********************************************************************************* */
 ```
 ---
+
 <p align="center">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/achrafelkhnissi/1337?color=blueviolet" />
 	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/achrafelkhnissi/1337?color=blueviolet" />
@@ -19,8 +20,11 @@
 	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/achrafelkhnissi/1337?color=blue" />
 	<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/achrafelkhnissi/1337?color=brightgreen" />
 </p>
+
 ---
+
 ![1337](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/1337.jpg)
+
 ---
 ## About 42 && 1337 School :
 
