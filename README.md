@@ -23,9 +23,9 @@
 </p>
 
 <h3 align="center">
-	<a href="https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021">About</a>
+	<a href="https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021">Piscine</a>
 	<span> · </span>
-	<a href="https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md">Testing</a>
+	<a href="https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md">Cursus</a>
 </h3>
 
 <p align="center">
