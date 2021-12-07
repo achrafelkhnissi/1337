@@ -284,6 +284,8 @@ WordPress is a content management system (CMS) that allows you to host and build
 - Lighttpd
 
 ### What is lighttpd, MariaDB, and PHP?
+- Lighttpd: Lighttpd (pronounced "lighty") lighttpd is an open-source web server optimized for speed-critical environments while remaining standards-compliant, secure and flexible.
+- MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system, intended to remain free and open-source software under the GNU General Public License.
 
 ### What is sha1 format?
 
