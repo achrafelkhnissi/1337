@@ -137,6 +137,7 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 #### 2. Assign the new user to the sudo group.
 - Assign new user to sudo group: `sudo adduser <username> sudo`
 #### 3. The subject imposes strict rules for sudo. Explain the value and operation of sudo.
+Implementing a strong password policy is so important because it protects against a range of attacks. Automated password-guessing bots have become sophisticated. If hackers have managed to find the email associated with a WordPress account, they could use this software to brute force their way into the account.
 #### 4. Show the implementation of the rules imposed by the subject.
 #### 5. Verify that "/var/log/sudo/" forlder exists and has at least one file.
 #### 6. Check the contents of the files in this folder. (you should see a history of the commands used with sudo)
