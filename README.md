@@ -13,6 +13,16 @@
 ```
 ---
 
+<h1 align="center">
+	42cursus
+</h1>
+
+<p align="center">
+	<b><i>Projects developed at <a href="https://www.42sp.org.br/">42 São Paulo</a> programming school.</i></b><br>
+	Start date: 20/jan/2020 - the very first 42 class of South America!
+</p>
+
+
 <p align="center">
 	<img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/achrafelkhnissi/1337?color=blueviolet" />
 	<img alt="Number of lines of code" src="https://img.shields.io/tokei/lines/github/achrafelkhnissi/1337?color=blueviolet" />
