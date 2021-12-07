@@ -94,6 +94,10 @@ students, without teachers. It can be done, and it works.
 		demands excellent time management skills and resiliency for not "drowning" amid the
 		massive load of work demanded by the program.
 
+
+## Table of content
+### 1. [Piscine](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021)
+### 2. [42Cursus](https://github.com/achrafelkhnissi/1337/blob/master/42curses/README.md)
 <!--
 ## 🌌 42's galaxy (curriculum)
 
