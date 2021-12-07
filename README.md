@@ -60,7 +60,7 @@ students, without teachers. It can be done, and it works.
 
 \* For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine repo](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
 
-## 🛠️ Skills developed at 42cursus
+## 🛠️ Skills developed at 1337
 
 ### Hard-skills
 
