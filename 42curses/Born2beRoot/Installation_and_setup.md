@@ -267,10 +267,8 @@ $ sudo mkdir /home/<username>/ftp
 $ sudo mkdir /home/<username>/ftp/files
 $ sudo chown nobody:nogroup /home/<username>/ftp
 $ sudo chmod a-w /home/<username>/ftp
-<~~~>
-user_sub_token=$USER
-local_root=/home/$USER/ftp
-<~~~>
+$ user_sub_token=$USER
+$ local_root=/home/$USER/ftp
 ```
 
 - To prevent user from accessing files or using commands outside the directory tree, uncomment: `114 $chroot_local_user=YES`
@@ -278,11 +276,9 @@ local_root=/home/$USER/ftp
 ```
 $ sudo vi /etc/vsftpd.userlist
 $ echo <username> | sudo tee -a /etc/vsftpd.userlist
-<~~~>
-userlist_enable=YES
-userlist_file=/etc/vsftpd.userlist
-userlist_deny=NO
-<~~~>
+$ enable=YES
+$ userlist_file=/etc/vsftpd.userlist
+$ userlist_deny=NO
 ```
 
 ### Connecting to Server via FTP
