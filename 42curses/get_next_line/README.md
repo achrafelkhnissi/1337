@@ -11,10 +11,6 @@
 	<a href="#%EF%B8%8F-about">About</a>
 	<span> · </span>
 	<a href="#-index">Index</a>
-	<span> · </span>
-	<a href="#%EF%B8%8F-usage">Usage</a>
-	<span> · </span>
-	<a href="#-testing">Testing</a>
 </h3>
 
 ---
@@ -76,33 +72,10 @@ If you're on Linux, you may as well need the following flags:
 -D ARG_MAX="sysconf(_SC_ARG_MAX)" -D OPEN_MAX=1024
 ```
 
-## 📋 Testing
-
-**1. Configuring**
-
-First, open the [`Makefile`](testing/Makefile) inside `/testing/` and configure the path to the `get_next_line` folder:
-
-```Makefile
-GNL_FOLDER	= ../get_next_line
-```
-
-**2. Running:**
-
-For basic testing, run:
-
-```shell
-make
-```
-
-For other tests, check all available rules in the [`Makefile`](testing/Makefile).
-
-```shell
-make buf5000
-```
-_Usage example_
 
 ### Third-party testers
 
+* [gnlTester](https://github.com/Tripouille/gnlTester)
 * [mrjvs/42cursus_gnl_tests](https://github.com/mrjvs/42cursus_gnl_tests)
 * [Hellio404/Get_Next_Line_Tester](https://github.com/Hellio404/Get_Next_Line_Tester)
 * [saarikoski-jules/gnl_unit_tests](https://github.com/saarikoski-jules/gnl_unit_tests)
