@@ -23,8 +23,8 @@ The table below presents the cursus curriculum in the chronological order in whi
 
 |CIRCLE	|PROJECT							|TECHNOLOGY				|EXPERIENCE		|STATUS						|ATTAINED LEVEL	|
 |:-:	|:--								|:--					|--:			|:-:						|:--			|
-|00		|[Libft](https://github.com/achrafelkhnissi/1337/tree/master/42curses/libft)|C						|462 XP			|![Project Score - Libft](https://badge42.herokuapp.com/api/project/ael-khni/Libft)	|level 1 - 6%	|
-|01		|[get_next_line](https://github.com/achrafelkhnissi/1337/tree/master/42curses/get_next_line)|C						|882 XP			|![Project Score - get_next_line](https://badge42.herokuapp.com/api/project/ael-khni/get_next_line)	|level 1 - 57%	|
-|02		|[ft_printf](https://github.com/achrafelkhnissi/1337/tree/master/42curses/ft_printf)|C						|882 XP			|![Project Score - ft_printf](https://badge42.herokuapp.com/api/project/ael-khni/ft_printf)	|level 1 - 98%	|
+|00		|[Libft](https://github.com/achrafelkhnissi/1337/tree/master/42curses/libft)| C	- Libraries					|462 XP			|![Project Score - Libft](https://badge42.herokuapp.com/api/project/ael-khni/Libft)	|level 1 - 6%	|
+|01		|[get_next_line](https://github.com/achrafelkhnissi/1337/tree/master/42curses/get_next_line)| C	- Static variables					|882 XP			|![Project Score - get_next_line](https://badge42.herokuapp.com/api/project/ael-khni/get_next_line)	|level 1 - 57%	|
+|02		|[ft_printf](https://github.com/achrafelkhnissi/1337/tree/master/42curses/ft_printf)| C	- Variadic functions					|882 XP			|![Project Score - ft_printf](https://badge42.herokuapp.com/api/project/ael-khni/ft_printf)	|level 1 - 98%	|
 |03		|[born2beroot](https://github.com/achrafelkhnissi/1337/tree/master/42curses/Born2beRoot)			|Sysadmin				|577 XP			|![Project Score - born2beroot](https://badge42.herokuapp.com/api/project/ael-khni/Born2beroot)	|level 2 - 22%	|
-|04		|[minitalk](https://github.com/achrafelkhnissi/1337/tree/master/42curses/minitalk)			|Sysadmin				|1142  XP			|![Project Score - born2beroot](https://badge42.herokuapp.com/api/project/ael-khni/minitalk)	|level  - %	|
+|04		|[minitalk](https://github.com/achrafelkhnissi/1337/tree/master/42curses/minitalk)			| C - Signals				|1142  XP			|![Project Score - born2beroot](https://badge42.herokuapp.com/api/project/ael-khni/minitalk)	|level  - %	|
