@@ -213,7 +213,7 @@ Reload privilege tables now? [Y/n] Y
 - Create new database user and grant them full privileges on the newly-created database: ` GRANT ALL PRIVILEGES ON database-name.* to 'username'@'localhost' IDENTIFIED BY 'password';`
 - Flush the privileges: `FLUSH PRIVILEGES;`
 - Exit MariaDB shell: `exit`
-- Verify whether database user was successfully created: `mariadb -u <username> ] -p` (then enter the password from previous step)
+- Verify whether database user was successfully created: `mariadb -u <username> -p` (then enter the password from previous step)
 - Confirm whether database user has access to the database: `SHOW DATABASES;`
 ```
 MariaDB [(none)]> SHOW DATABASES;
