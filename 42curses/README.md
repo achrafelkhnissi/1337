@@ -15,7 +15,7 @@ The **inner circle** is the basic curriculum, with all projects being mandatory 
 
 The **outer treks** is a collection of diverse project trails in subjects ranging from operational systems to web development which allows cadets to specialize on whatever subject they prefer.
 
-![42's galaxy](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/Screen%20Shot%202021-12-07%20at%203.31.58%20AM.png)
+![42's galaxy](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/holy-graph.png)
 
 The table below presents the cursus curriculum in the chronological order in which it was (or is to be) completed by me - projects order and corresponding attained level may vary among students.
 
