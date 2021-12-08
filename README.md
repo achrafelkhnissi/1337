@@ -41,8 +41,9 @@
 ![1337](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/1337.jpg)
 
 ---
-## About 42 && 1337 School :
+## About 1337 School :
 
+1337 is a part of 42 network. \
 42 is a global education initiative that offers a new way of learning technology:
 no teachers, no classrooms, students learning from their fellow students (peer to peer
 learning), with a methodology that develops both computing and life skills. The 42 cursus is
