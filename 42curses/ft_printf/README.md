@@ -11,8 +11,6 @@
 <h3 align="center">
 	<a href="#%EF%B8%8F-about">About</a>
 	<span> · </span>
-	<a href="#-index">Index</a>
-	<span> · </span>
 	<a href="#%EF%B8%8F-usage">Usage</a>
 	<span> · </span>
 	<a href="#-testing">Testing</a>
@@ -32,14 +30,6 @@
 ### Mandatory
 
 * **format specifiers** - `cspdiuxX%`
-
-## 📑 Index
-
-`@root`
-
-* [**📁 ft_printf:**](ft_printf/) source code developed for the project.
-* [**📁 testing:**](testing/) my own testing program.
-
 
 ## 🛠️ Usage
 
@@ -91,6 +81,7 @@ make
 
 ### Third-party testers
 
+* [printfTester](https://github.com/Tripouille/printfTester)
 * [gavinfielder/pft](https://github.com/gavinfielder/pft)
 * [Mazoise/42TESTERS-PRINTF](https://github.com/Mazoise/42TESTERS-PRINTF)
 * [HappyTramp/ft_printf_test](https://github.com/HappyTramp/ft_printf_test)
