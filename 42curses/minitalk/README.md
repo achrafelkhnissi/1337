@@ -34,7 +34,3 @@ Keep in mind:
 - [`usleep`](https://man7.org/linux/man-pages/man3/usleep.3.html)
 - [`exit`](https://man7.org/linux/man-pages/man3/exit.3.html)
 
-## Compilation
-
-1. Clone repo including [`libft`](../../../42-libft) submodule via `git clone --recursive https://github.com/hanshazairi/42-minitalk.git`.
-2. Compile files into `server` & `client` executables via `make -C 42-minitalk`.
