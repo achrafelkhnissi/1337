@@ -193,6 +193,8 @@ $ sudo lighty-enable-mod fastcgi
 $ sudo lighty-enable-mod fastcgi-php
 $ sudo service lighttpd force-reload
 ``` 
+- Check the lighty status: `systemctl status lighttpd.service` 
+- In case it failed to activate/start user: `sudo apt install --reinstall lighttpd`
 
 ### MariaDB 
 
