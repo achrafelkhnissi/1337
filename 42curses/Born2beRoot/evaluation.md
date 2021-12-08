@@ -101,8 +101,8 @@ In AppArmor, processes are restricted by profiles. Profiles can work in complain
 #### 5. Check if that user belongs to the "evaluating" group.
 - `sudo getent group evaluating`
 #### 6. Explain the advantages of this password policy as well as the advantages and disadvantages of its implementation.
-In theory, the main benefit of password complexity rules is that they enforce the use of unique passwords that are harder to crack. The more requirements you enforce, the higher the number of possible combinations of letters, numbers, and characters.
-
+In theory, the main benefit of password complexity rules is that they enforce the use of unique passwords that are harder to crack. The more requirements you enforce, the higher the number of possible combinations of letters, numbers, and characters. \
+Implementing a strong password policy is so important because it protects against a range of attacks. Automated password-guessing bots have become sophisticated. If hackers have managed to find the email associated with a WordPress account, they could use this software to brute force their way into the account.
 ## Hostname and partitions
 #### 1. Check that the hostname of the machine is correctly formatted.
 - Check partitions: `lsblk`
@@ -137,6 +137,12 @@ By using LVM, we can expand the storage of any partition (now known as a logical
 #### 2. Assign the new user to the sudo group.
 - Assign new user to sudo group: `sudo adduser <username> sudo`
 #### 3. The subject imposes strict rules for sudo. Explain the value and operation of sudo.
+- Setting the limit to 3 attempts in the event of an incorrect password to prevent bruteforcing.
+- We archieve each action of sudo to keep track of the commands executed using sudo.
+- The TTY mode has to be enabled to restrict the apps from running sudo in background processes.
+- This is the path used for every command run with sudo, it has two importances:
+	- Used when a system administrator does not trust sudo users to have a secure PATH environment variable
+	- To separate “root path” and “user path”, only users defined by exempt_group are not affected by this setting.
 #### 4. Show the implementation of the rules imposed by the subject.
 #### 5. Verify that "/var/log/sudo/" forlder exists and has at least one file.
 #### 6. Check the contents of the files in this folder. (you should see a history of the commands used with sudo)
@@ -223,6 +229,9 @@ When requiretty is set, sudo must be run from a logged-in terminal session (a tt
 
 This can prevent certain kinds of escalation attacks. For example, if I have a way to modify the crontab for a user who has NOPASSWD sudo permissions, I could use that to kick off a job as root. With requiretty, I can't do that...
 
+### What is deamons
+In multitasking computer operating systems, a daemon is a computer program that runs as a background process, rather than being under the direct control of an interactive user.
+
 <!--
 ### What is CentOS?
 
@@ -275,6 +284,8 @@ WordPress is a content management system (CMS) that allows you to host and build
 - Lighttpd
 
 ### What is lighttpd, MariaDB, and PHP?
+- Lighttpd: Lighttpd (pronounced "lighty") lighttpd is an open-source web server optimized for speed-critical environments while remaining standards-compliant, secure and flexible.
+- MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system, intended to remain free and open-source software under the GNU General Public License.
 
 ### What is sha1 format?
 

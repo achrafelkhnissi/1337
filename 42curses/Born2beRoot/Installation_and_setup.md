@@ -111,7 +111,7 @@
 - Verify sudopowers: `sudo -v`
 - From here on out, run root-privileged commands via prefix `sudo`
 - Configuring sudo: `sudo visudo`:
-	- To change visudo edirot from nano to vim: `sudo update-alternatives --config editor`
+	- To change visudo editor from nano to vim: `sudo update-alternatives --config editor`
 	- To limit authentication using sudo to 3 attempts in the event of an incorrect password: `Defaults	passwd_tries=3`
 	- To add a custom error message in the event of an incorrect password: `Defaults badpass_message="<custo-error-message>"` or `Defaults	insults`
 	- To archive all sudo inputs & outputs to `/var/log/sudo`: `Defaults	log_input, log_output` && `Defaults	logfile=/var/log/sudo/sudo.log` && `Defaults iolog_dir="/var/log/sudo"`
@@ -193,6 +193,8 @@ $ sudo lighty-enable-mod fastcgi
 $ sudo lighty-enable-mod fastcgi-php
 $ sudo service lighttpd force-reload
 ``` 
+- Check the lighty status: `systemctl status lighttpd.service` 
+- In case it failed to activate/start use: `sudo apt install --reinstall lighttpd`
 
 ### MariaDB 
 
@@ -213,7 +215,7 @@ Reload privilege tables now? [Y/n] Y
 - Create new database user and grant them full privileges on the newly-created database: ` GRANT ALL PRIVILEGES ON database-name.* to 'username'@'localhost' IDENTIFIED BY 'password';`
 - Flush the privileges: `FLUSH PRIVILEGES;`
 - Exit MariaDB shell: `exit`
-- Verify whether database user was successfully created: `mariadb -u <username> ] -p` (then enter the password from previous step)
+- Verify whether database user was successfully created: `mariadb -u <username> -p` (then enter the password from previous step)
 - Confirm whether database user has access to the database: `SHOW DATABASES;`
 ```
 MariaDB [(none)]> SHOW DATABASES;
@@ -265,10 +267,8 @@ $ sudo mkdir /home/<username>/ftp
 $ sudo mkdir /home/<username>/ftp/files
 $ sudo chown nobody:nogroup /home/<username>/ftp
 $ sudo chmod a-w /home/<username>/ftp
-<~~~>
-user_sub_token=$USER
-local_root=/home/$USER/ftp
-<~~~>
+$ user_sub_token=$USER
+$ local_root=/home/$USER/ftp
 ```
 
 - To prevent user from accessing files or using commands outside the directory tree, uncomment: `114 $chroot_local_user=YES`
@@ -276,11 +276,9 @@ local_root=/home/$USER/ftp
 ```
 $ sudo vi /etc/vsftpd.userlist
 $ echo <username> | sudo tee -a /etc/vsftpd.userlist
-<~~~>
-userlist_enable=YES
-userlist_file=/etc/vsftpd.userlist
-userlist_deny=NO
-<~~~>
+$ enable=YES
+$ userlist_file=/etc/vsftpd.userlist
+$ userlist_deny=NO
 ```
 
 ### Connecting to Server via FTP

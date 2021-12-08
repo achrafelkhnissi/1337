@@ -18,7 +18,7 @@
 </h1>
 
 <p align="center">
-	<b><i>Projects developed at <a href="https://www.133.ma/">1337 Khouribga </a> programming school.</i></b><br>
+	<b><i>Projects developed at <a href="https://www.1337.ma/">1337 Khouribga </a> programming school.</i></b><br>
 	Start date: 01/Nov/2021 - The 4th promo!
 </p>
 
@@ -41,20 +41,16 @@
 ![1337](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/1337.jpg)
 
 ---
-## About 42 && 1337 School :
+## About 1337 School :
 
-This project is a programming bootcamp concerning 1337 school, it lasts roughly 
-4 weeks, working 7 days a week, day and night. (error 404 sleep will never be found)
-These bootcamp covers the basics of programming so there's no need to have any experience at
-all. People will try and will fail, over and over again. This trial-and-error
-process is necessary in order to find solutions to different problems that 
-once thought impossible. People learn in groups with other
-students, without teachers. It can be done, and it works.
+1337 is a part of 42 network. \
+42 is a global education initiative that offers a new way of learning technology:
+no teachers, no classrooms, students learning from their fellow students (peer to peer
+learning), with a methodology that develops both computing and life skills. The 42 cursus is
+free for whoever is approved in its selection process* - the so-called "Piscine" - becoming
+thus "cadets" (42's students).
 
-> If you're going through hell, keep going. ― Winston Churchill
-
-> keep this in mind!
-
+#### For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
 ----
 
 ## Education Program
@@ -97,7 +93,7 @@ students, without teachers. It can be done, and it works.
 		demands excellent time management skills and resiliency for not "drowning" amid the
 		massive load of work demanded by the program.
 
-#### For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine repo](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
+
 
 
 <!--
