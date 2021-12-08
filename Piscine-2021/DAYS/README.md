@@ -13,7 +13,7 @@
 - [C06]() - [Argc & Argv](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C06/README.md)
 - [C07]() - [Memory Allocation](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C07/README.md)
 - [C08]() - [Header & Structure](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C08/README.md)
-- [C09]() - [Makefile](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C09/README.md)
+- [C09]() - [Makefile & Static Libraries](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C09/README.md)
 - [C10]() - [File Manipulation](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/README.md)
 - [C11]() - [Pointer to Functions](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C11/README.md)
 - [C12]() - [Linked List](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C12/README.md)
