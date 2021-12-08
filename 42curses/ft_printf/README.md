@@ -13,8 +13,6 @@
 	<span> · </span>
 	<a href="#%EF%B8%8F-usage">Usage</a>
 	<span> · </span>
-	<a href="#-testing">Testing</a>
-	<span> · </span>
 	<a href="#-useful-links">Useful Links</a>
 </h3>
 
@@ -59,24 +57,6 @@ and, when compiling your code, add the required flags:
 
 ```shell
 -lftprintf -L path/to/libftprintf.a -I path/to/ft_printf.h
-```
-
-## 📋 Testing
-
-**1. Configuring**
-
-First, open the [`Makefile`](testing/Makefile) inside `/testing/` and configure the path to the `ft_printf` folder:
-
-```Makefile
-PROJECT_DIR	= ../ft_printf/
-```
-
-Then, configure the tests to your needs in the [`/testing/main.c`](testing/main.c) file.
-
-**2. Running:**
-
-```shell
-make
 ```
 
 ### Third-party testers
