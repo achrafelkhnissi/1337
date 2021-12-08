@@ -7,4 +7,5 @@
 |[ex02](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex02) | [rev params](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex02/README.md) | [ft_rev_params.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex02/ft_rev_params.c)
 |[ex03](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex03) | [sort params](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex03/README.md) | [ft_sort_params.c](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021/DAYS/C06/ex03/ft_sort_params.c)
 
-
+## Resources
+- https://www.learncpp.com/cpp-tutorial/command-line-arguments/
