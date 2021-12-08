@@ -14,7 +14,7 @@
 ---
 ![1337](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/imgs/1337.jpg)
 ---
-## About 42 && 1337 School :
+## About 1337 Piscine:
 
 This project is a programming bootcamp concerning 1337 school, it lasts roughly 
 4 weeks, working 7 days a week, day and night. (error 404 sleep will never be found)
