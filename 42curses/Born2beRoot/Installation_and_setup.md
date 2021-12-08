@@ -111,7 +111,7 @@
 - Verify sudopowers: `sudo -v`
 - From here on out, run root-privileged commands via prefix `sudo`
 - Configuring sudo: `sudo visudo`:
-	- To change visudo edirot from nano to vim: `sudo update-alternatives --config editor`
+	- To change visudo editor from nano to vim: `sudo update-alternatives --config editor`
 	- To limit authentication using sudo to 3 attempts in the event of an incorrect password: `Defaults	passwd_tries=3`
 	- To add a custom error message in the event of an incorrect password: `Defaults badpass_message="<custo-error-message>"` or `Defaults	insults`
 	- To archive all sudo inputs & outputs to `/var/log/sudo`: `Defaults	log_input, log_output` && `Defaults	logfile=/var/log/sudo/sudo.log` && `Defaults iolog_dir="/var/log/sudo"`
