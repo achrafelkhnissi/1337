@@ -49,7 +49,7 @@ learning), with a methodology that develops both computing and life skills. The 
 free for whoever is approved in its selection process* - the so-called "Piscine" - becoming
 thus "cadets" (42's students).
 
-#### For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine repo](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
+#### For further information about 42's **selection process** (the "Piscine"), please visit the [C Piscine](https://github.com/achrafelkhnissi/1337/tree/master/Piscine-2021).
 ----
 
 ## Education Program
