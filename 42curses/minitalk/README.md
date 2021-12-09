@@ -1,3 +1,23 @@
+<h1 align="center">
+	42cursus' ft_printf
+</h1>
+
+<p align="center">
+	<b><i>Development repo for 42cursus' ft_printf project</i></b><br>
+	For further information about 42cursus and its projects, please refer to <a href="https://github.com/achrafelkhnissi/1337/42curses"><b>42cursus repo</b></a>.
+</p>
+
+
+<h3 align="center">
+	<a href="#%EF%B8%8F-about">About</a>
+	<span> · </span>
+	<a href="#%EF%B8%8F-usage">Usage</a>
+	<span> · </span>
+	<a href="#-useful-links">Useful Links</a>
+</h3>
+
+---
+
 ## Project Information
 
 ### About
@@ -51,9 +71,9 @@ The following is a list of all signals with names as in the include file `<signa
 
 |     name     |       default action      |    description                                       |   
 |--------------|---------------------------|------------------------------------------------------|
-|     sighup   |       terminate process   |    terminal line hangup                              |     	
-|     sigint   |       terminate process   |    interrupt program                                 |     	
-|     sigquit  |       create core image   |    quit program                                      |  	
+|     SIGHUP   |       terminate process   |    terminal line hangup                              |     	
+|     SIGINT   |       terminate process   |    interrupt program                                 |     	
+|     SIGQUIT  |       create core image   |    quit program                                      |  	
 |     sigill   |       create core image   |    illegal instruction                               |      	
 |     sigtrap  |       create core image   |    trace trap                                        |         
 |     sigabrt  |       create core image   |    abort(3) call (formerly sigiot)                   |          
