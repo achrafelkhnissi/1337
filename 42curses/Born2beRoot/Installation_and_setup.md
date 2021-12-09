@@ -147,6 +147,7 @@
 - To set password to expire every 30 days replace `160 PASS_MAX_DAYS 99999` with `160 PASS_MAX_DAYS 30`
 - To set minimum number of days between password changes to 2 days replace `161 PASS_MIN_DAYS 0` with `161 PASS_MAX_DAYS 2`
 - To send user a warning message 7 days before password expire: `162 PASS_WARN_AGE 7`
+- Note that you have to change password age for `root` and your `<login>42` account using: `sudo chage <username>`
 
 #### Password Strength
 - To set up policies in relation to password strength, install: `sudo apt install libpam-pwquality`
