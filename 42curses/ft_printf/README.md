@@ -11,11 +11,7 @@
 <h3 align="center">
 	<a href="#%EF%B8%8F-about">About</a>
 	<span> · </span>
-	<a href="#-index">Index</a>
-	<span> · </span>
 	<a href="#%EF%B8%8F-usage">Usage</a>
-	<span> · </span>
-	<a href="#-testing">Testing</a>
 	<span> · </span>
 	<a href="#-useful-links">Useful Links</a>
 </h3>
@@ -32,14 +28,6 @@
 ### Mandatory
 
 * **format specifiers** - `cspdiuxX%`
-
-## 📑 Index
-
-`@root`
-
-* [**📁 ft_printf:**](ft_printf/) source code developed for the project.
-* [**📁 testing:**](testing/) my own testing program.
-
 
 ## 🛠️ Usage
 
@@ -71,26 +59,9 @@ and, when compiling your code, add the required flags:
 -lftprintf -L path/to/libftprintf.a -I path/to/ft_printf.h
 ```
 
-## 📋 Testing
-
-**1. Configuring**
-
-First, open the [`Makefile`](testing/Makefile) inside `/testing/` and configure the path to the `ft_printf` folder:
-
-```Makefile
-PROJECT_DIR	= ../ft_printf/
-```
-
-Then, configure the tests to your needs in the [`/testing/main.c`](testing/main.c) file.
-
-**2. Running:**
-
-```shell
-make
-```
-
 ### Third-party testers
 
+* [printfTester](https://github.com/Tripouille/printfTester)
 * [gavinfielder/pft](https://github.com/gavinfielder/pft)
 * [Mazoise/42TESTERS-PRINTF](https://github.com/Mazoise/42TESTERS-PRINTF)
 * [HappyTramp/ft_printf_test](https://github.com/HappyTramp/ft_printf_test)
