@@ -174,6 +174,7 @@ There are three different techniques that SSH uses to encrypt:
 - Symmetric encryption: a method that uses the same secret key for both encryption and decryption of a message, for both the client and the host. Anyone who knows the password can access the message that has been transmitted.
 - Asymmetric encryption: uses two separate keys for encryption and decryption. These are known as the public key and the private key. Together, they form the public-private key pair.
 - Hashing: another form of cryptography used by SSH. Hash functions are made in a way that they don't need to be decrypted. If a client has the correct input, they can create a cryptographic hash and SSH will check if both hashes are the same.
+- [How Does SSH work?](https://monovm.com/blog/what-is-ssh-port/#How-does-SSH-work?-%5BA-Complete-Guide)
 #### 4. Verify that the SSH service only uses port 4242.
 #### 5. Log in with the newly created user using SSH.
 #### 6. Make sure that you cannot use SSH with the "root" user.
