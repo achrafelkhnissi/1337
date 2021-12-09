@@ -9,11 +9,11 @@
 
 
 <h3 align="center">
-	<a href="#%EF%B8%8F-about">About</a>
+	<a href="#about">About</a>
 	<span> · </span>
 	<a href="#intro-to-signals">Signals</a>
 	<span> · </span>
-	<a href="#-useful-links">Useful Links</a>
+	<a href="#resources">Resources</a>
 </h3>
 
 ---
@@ -74,20 +74,19 @@ The following is a list of all signals with names as in the include file `<signa
 |     SIGHUP   |       terminate process   |    terminal line hangup                              |     	
 |     SIGINT   |       terminate process   |    interrupt program                                 |     	
 |     SIGQUIT  |       create core image   |    quit program                                      |  	
-|     sigill   |       create core image   |    illegal instruction                               |      	
-|     sigtrap  |       create core image   |    trace trap                                        |         
-|     sigabrt  |       create core image   |    abort(3) call (formerly sigiot)                   |          
-|     sigemt   |       create core image   |    emulate instruction executed                      |        
-|     sigfpe   |       create core image   |    floating-point exception                          |              
-|     sigkill  |       terminate process   |    kill program                                      |         
-|     sigbus   |       create core image   |    bus error                                         |         
-|     sigsegv  |       create core image   |    segmentation violation                            |             
-|     sigsys   |       create core image   |    non-existent system call invoked                  |          
-|     sigpipe  |       terminate process   |    write on a pipe with no reader                    |        
-|     sigalrm  |       terminate process   |    real-time timer expired                           |             
-|     sigterm  |       terminate process   |    software termination signal                       |       
-|     sigurg   |       discard signal      |    urgent condition present on socket                |           
-|     sigstop  |       stop process        |    stop (cannot be caught or ignored)                |          
+|     SIGILL   |       create core image   |    illegal instruction                               |      	
+|     SIGABRT  |       create core image   |    abort(3) call (formerly sigiot)                   |          
+|     SIGEMT   |       create core image   |    emulate instruction executed                      |        
+|     SIGFPE   |       create core image   |    floating-point exception                          |              
+|     SIGKILL  |       terminate process   |    kill program                                      |         
+|     SIGBUS   |       create core image   |    bus error                                         |         
+|     SIGSEGV  |       create core image   |    segmentation violation                            |             
+|     SIGSYS   |       create core image   |    non-existent system call invoked                  |          
+|     SIGPIPE  |       terminate process   |    write on a pipe with no reader                    |        
+|     SIGALRM  |       terminate process   |    real-time timer expired                           |             
+|     SIGTERM  |       terminate process   |    software termination signal                       |       
+|     SIGURG   |       discard signal      |    urgent condition present on socket                |           
+|     SIGSTOP  |       stop process        |    stop (cannot be caught or ignored)                |          
 |     SIGTSTP  |       stop process        |    stop signal generated from keyboard               | 
 |     SIGCONT  |       discard signal      |    continue after stop                               |   
 |     SIGCHLD  |       discard signal      |    child status has changed                          |
@@ -96,7 +95,7 @@ The following is a list of all signals with names as in the include file `<signa
 |     SIGIO    |       discard signal      |    I/O is possible on a descriptor (see fcntl(2))    |         
 |     SIGXCPU  |       terminate process   |    cpu time limit exceeded (see setrlimit(2))        |         
 |     SIGXFSZ  |       terminate process   |    file size limit exceeded (see setrlimit(2))       |            
-|     SIGVTALrM|       terminate process   |    virtual time alarm (see setitimer(2))             |          
+|     SIGVTALRM|       terminate process   |    virtual time alarm (see setitimer(2))             |          
 |     SIGPROF  |       terminate process   |    profiling timer alarm (see setitimer(2))          |               
 |     SIGWINCH |       discard signal      |    Window size change                                |     
 |     SIGINFO  |       discard signal      |    status request from keyboard                      |      
@@ -104,7 +103,12 @@ The following is a list of all signals with names as in the include file `<signa
 |     SIGUSR2  |       terminate process   |    User defined signal 2                             |              
 
 
-### Notes
+## Notes
 - getpid(): gets process ID
 - SIGINT: its a signal that by default interrupt the process the tells it to end.
 - signal(): takes two arguments, 1. process 2. pointer to a funtion. and execute the function rather than its default behavior! (as far as i know for now)
+
+## Resources
+- [Signal (IPC)](https://en.wikipedia.org/wiki/Signal_(IPC))
+- [Process (computing)](https://en.wikipedia.org/wiki/Process_(computing))
+- [Thread (computing)](https://en.wikipedia.org/wiki/Thread_(computing))
