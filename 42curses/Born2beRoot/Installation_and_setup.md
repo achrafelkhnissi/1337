@@ -40,12 +40,12 @@
 ## Born2beRoot
 
 1. Basic Configuration:
-	- Hotname: ael-khni42 (login42)
-	- Domain name: ael-khni1337.net
-	- Root password: theDARKsideofme4-
-	- Full name for the new user: Achraf El Khnissi
-	- Username for your account: ael-khni
-	- Password for the new user: Leet1337+
+	- Hotname: <login>42
+	- Domain name: anything..
+	- Root password: <StrongPasswd1>
+	- Full name for the new user: <your name>
+	- Username for your account: <login>
+	- Password for the new user: <StrongPasswd2>
 2. Partition disks:
 	- Manual
 	- SCSI3 (0, 0, 0) (sda) - 32.2 GB ATA VBOX HARDDISK
