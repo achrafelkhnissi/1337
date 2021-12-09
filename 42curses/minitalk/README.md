@@ -54,7 +54,7 @@ Keep in mind:
 - [`usleep`](https://man7.org/linux/man-pages/man3/usleep.3.html)
 - [`exit`](https://man7.org/linux/man-pages/man3/exit.3.html)
 
-### Intro to signals
+## Intro to signals
 
 Signals are standardized messages sent to a running program to trigger specific behavior, such as quitting or error handling. They are a limited form of inter-process communication (IPC), typically used in POSIX-compliant operating systems. \
 When a signal is sent. the operating system interrupts the target process normal flow of executing to deliver the signal. Execution can be interrupted during any non-atomic instruction. If the process has previously registered a signal handler,  that routine is executed. Otherwise, the default signal handler is executed. \
@@ -65,7 +65,10 @@ There are two types of signals:
 - __None-Maskable__: Signals which cannot be changed or ignored by the user. These typically occurs when the user is signaled for non-recoverable hardware errors.
 
 #### Handling signals
-Signal handlers can be installed with the [`signal(2)`](https://man7.org/linux/man-pages/man7/signal.7.html) or [`sigaction(2)`](https://man7.org/linux/man-pages/man2/sigaction.2.html) system calls. If a signal handler is not installer for a particular signal, the fefault handler is user. Otherwise the signal is intercepted and the signal handler is invoked.
+Signal handlers can be installed with the [`signal(2)`](https://man7.org/linux/man-pages/man7/signal.7.html) or [`sigaction(2)`](https://man7.org/linux/man-pages/man2/sigaction.2.html) system calls. If a signal handler is not installer for a particular signal, the fefault handler is user. Otherwise the signal is intercepted and the signal handler is invoked. \
+
+The signals are defined in the header file signal.h as a macro constant. Signal name has started with a “SIG” and followed by a short description of the signal. So, every signal has a unique numeric value. Your program should always use the name of the signals, not the signals number. The reason is signal number can differ according to system but meaning of names will be standard. \
+The macro NSIG is the total number of signal defined. The value of NSIG is one greater than the total number of signal defined (All signal numbers are allocated consecutively).
 
 The following is a list of all signals with names as in the include file `<signal.h>`:
 
@@ -104,6 +107,17 @@ The following is a list of all signals with names as in the include file `<signa
      SIGUSR2         terminate process       User defined signal 2
 ```
 
+## Notes
+- getpid(): gets process ID
+- SIGINT: its a signal that by default interrupt the process the tells it to end.
+- signal(): takes two arguments, 1. process 2. pointer to a funtion. and execute the function rather than its default behavior! (as far as i know for now)
+
+## Resources
+- [Signal (IPC)](https://en.wikipedia.org/wiki/Signal_(IPC))
+- [Process (computing)](https://en.wikipedia.org/wiki/Process_(computing))
+- [Thread (computing)](https://en.wikipedia.org/wiki/Thread_(computing))
+- [How to use signal handlers in C](https://linuxhint.com/signal_handlers_c_programming_language/)
+
 <!--
 
 |     name     |       default action      |    description                                       |   
@@ -141,12 +155,3 @@ The following is a list of all signals with names as in the include file `<signa
 
 -->
 
-## Notes
-- getpid(): gets process ID
-- SIGINT: its a signal that by default interrupt the process the tells it to end.
-- signal(): takes two arguments, 1. process 2. pointer to a funtion. and execute the function rather than its default behavior! (as far as i know for now)
-
-## Resources
-- [Signal (IPC)](https://en.wikipedia.org/wiki/Signal_(IPC))
-- [Process (computing)](https://en.wikipedia.org/wiki/Process_(computing))
-- [Thread (computing)](https://en.wikipedia.org/wiki/Thread_(computing))
