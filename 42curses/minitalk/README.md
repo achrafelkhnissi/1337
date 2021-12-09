@@ -66,7 +66,6 @@ There are two types of signals:
 
 #### Handling signals
 Signal handlers can be installed with the [`signal(2)`](https://man7.org/linux/man-pages/man7/signal.7.html) or [`sigaction(2)`](https://man7.org/linux/man-pages/man2/sigaction.2.html) system calls. If a signal handler is not installer for a particular signal, the fefault handler is user. Otherwise the signal is intercepted and the signal handler is invoked. \
-
 The signals are defined in the header file signal.h as a macro constant. Signal name has started with a “SIG” and followed by a short description of the signal. So, every signal has a unique numeric value. Your program should always use the name of the signals, not the signals number. The reason is signal number can differ according to system but meaning of names will be standard. \
 The macro NSIG is the total number of signal defined. The value of NSIG is one greater than the total number of signal defined (All signal numbers are allocated consecutively).
 
