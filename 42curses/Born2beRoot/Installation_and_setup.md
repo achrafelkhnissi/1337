@@ -153,7 +153,7 @@
 - To set up policies in relation to password strength, install: `sudo apt install libpam-pwquality`
 - Verify installation: `dpkg -l | grep libmap-pwquality`
 - Configure password strength policy via: `sudo vim /etc/pam.d/common-password`
-- Specifically the followin line: `25 password		requisite	pam_pwquality.so rety=3`
+- Specifically the followin line: `25 password		requisite	pam_pwquality.so retry=3`
 - To set password minimum length to 10 characters, add the following option to the above line: `minlen=10`
 - To require password to contain at least an uppercase character and a numeric character: `ucredit=-1 dcredit=-1`
 - To set a maximum of 3 consecutive identical characters: `maxrepeat=3`
