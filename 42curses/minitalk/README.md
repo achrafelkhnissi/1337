@@ -77,7 +77,7 @@ Keep in mind:
 - Add reception acknowledgement system
 - Support Unicode characters
 
-### Allowed Functions
+### Allowed Functions (manual)
 - [`write`](https://man7.org/linux/man-pages/man2/write.2.html)
 - [`ft_printf`](https://github.com/achrafelkhnissi/1337/tree/master/42curses/ft_printf) and any equivalent YOU coded
 - [`signal`](https://man7.org/linux/man-pages/man2/signal.2.html)
