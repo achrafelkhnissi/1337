@@ -40,6 +40,7 @@ struct sigaction
 
 ## sigemptyset()
 ```c
+int sigemptyset(sigset_t *set); 
 ```
 > __sigemptyset()__: initializes the signal set given bye __set__ to empty, with all signals excluded from the set.
 ## sigaddset()
