@@ -145,50 +145,10 @@ The following is a list of all signals with names as in the include file `<signa
 ```
 
 ## Notes
-- getpid(): gets process ID
-- SIGINT: its a signal that by default interrupt the process the tells it to end.
-- signal(): takes two arguments, 1. process 2. pointer to a funtion. and execute the function rather than its default behavior! (as far as i know for now)
+- For some reason i failed to implement this part `The server confirms every signal received by sending a signal to the client.` if you have any idea pleae contact me.
 
 ## Resources
 - [Signal (IPC)](https://en.wikipedia.org/wiki/Signal_(IPC))
 - [Process (computing)](https://en.wikipedia.org/wiki/Process_(computing))
 - [Thread (computing)](https://en.wikipedia.org/wiki/Thread_(computing))
 - [How to use signal handlers in C](https://linuxhint.com/signal_handlers_c_programming_language/)
-
-<!--
-
-|     name     |       default action      |    description                                       |   
-|--------------|---------------------------|------------------------------------------------------|
-|     SIGHUP   |       terminate process   |    terminal line hangup                              |     	
-|     SIGINT   |       terminate process   |    interrupt program                                 |     	
-|     SIGQUIT  |       create core image   |    quit program                                      |  	
-|     SIGILL   |       create core image   |    illegal instruction                               |      	
-|     SIGABRT  |       create core image   |    abort(3) call (formerly sigiot)                   |          
-|     SIGEMT   |       create core image   |    emulate instruction executed                      |        
-|     SIGFPE   |       create core image   |    floating-point exception                          |              
-|     SIGKILL  |       terminate process   |    kill program                                      |         
-|     SIGBUS   |       create core image   |    bus error                                         |         
-|     SIGSEGV  |       create core image   |    segmentation violation                            |             
-|     SIGSYS   |       create core image   |    non-existent system call invoked                  |          
-|     SIGPIPE  |       terminate process   |    write on a pipe with no reader                    |        
-|     SIGALRM  |       terminate process   |    real-time timer expired                           |             
-|     SIGTERM  |       terminate process   |    software termination signal                       |       
-|     SIGURG   |       discard signal      |    urgent condition present on socket                |           
-|     SIGSTOP  |       stop process        |    stop (cannot be caught or ignored)                |          
-|     SIGTSTP  |       stop process        |    stop signal generated from keyboard               | 
-|     SIGCONT  |       discard signal      |    continue after stop                               |   
-|     SIGCHLD  |       discard signal      |    child status has changed                          |
-|     SIGTTIN  |       stop process        |    background read attempted from control terminal   |         
-|     SIGTTOU  |       stop process        |    background write attempted to control terminal    |       
-|     SIGIO    |       discard signal      |    I/O is possible on a descriptor (see fcntl(2))    |         
-|     SIGXCPU  |       terminate process   |    cpu time limit exceeded (see setrlimit(2))        |         
-|     SIGXFSZ  |       terminate process   |    file size limit exceeded (see setrlimit(2))       |            
-|     SIGVTALRM|       terminate process   |    virtual time alarm (see setitimer(2))             |          
-|     SIGPROF  |       terminate process   |    profiling timer alarm (see setitimer(2))          |               
-|     SIGWINCH |       discard signal      |    Window size change                                |     
-|     SIGINFO  |       discard signal      |    status request from keyboard                      |      
-|     SIGUSR1  |       terminate process   |    User defined signal 1                             |      
-|     SIGUSR2  |       terminate process   |    User defined signal 2                             |              
-
--->
-
