@@ -37,8 +37,25 @@ Create a communication program - in C - in the form of a client and server. The 
 
 This communication should only be done using Unix signals. Only two signals can be used SIGUSR1 and SIGUSR2. The executable files are named client and server.
 
-1. 
-
+1. [Unix Processes](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/unix_processes.md)
+2. [Unix Signals](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/unix_signals.md)
+3. [Used Function & their brief explaination!](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md)
+	- [`signal()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#signal)
+	- [`sigaction()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#sigaction)
+	- [`struct sigaction`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#struct-sigaction)
+	- [`sigemptyset()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#sigemptyset)
+	- [`sigaddset()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#sigaddset)
+	- [`getpid()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#getpid)
+	- [`kill()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#kill)
+	- [`pause()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#pause)
+	- [`sleep()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#sleep)
+	- [`usleep()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#usleep)
+4. [minitalk explained!](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md)
+	- [STEP 1: Make server receive a signal from client](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#step-1-make-server-receive-a-signal-from-client)
+	- [STEP 2: Convert ASCII character to Binary character](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#step-2-convert-ascii-character-to-binary-character)
+	- [STEP 3: Convert Binary character to ASCII character](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#step-3-convert-binary-character-to-ascii-character)
+	- [STEP 4: Sending a string from client to server](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#step-4-sending-a-string-from-client-to-server)
+	- [LINKS](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#links)
 ## Project Information
 
 ### About
