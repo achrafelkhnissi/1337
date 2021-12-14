@@ -1,27 +1,48 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_minitalk.h                                      :+:      :+:    :+:   */
+/*   ft_putnbr_u.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/09 16:02:30 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/14 08:14:40 by ael-khni         ###   ########.fr       */
+/*   Created: 2021/11/23 17:12:30 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/23 17:13:04 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_MINITALK_H
-#define FT_MINITALK_H
+#include "ft_printf.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <signal.h>
-#include <unistd.h>
-#include "ft_printf/ft_printf.h"
+static int	num_len_u(unsigned int n)
+{
+	int	i;
 
-#define RED "\033[0;31m"
-#define	GREEN "\033[0;32m"
-#define	YELLOW "\033[0;33m"
-#define END "\033[0m"
+	i = 0;
+	if (n <= 0)
+		i++;
+	while (n)
+	{
+		n /= 10;
+		i++;
+	}
+	return (i);
+}
 
-#endif
+int	ft_putnbr_u(unsigned int n)
+{
+	unsigned int	nb;
+
+	nb = n;
+	if (n < 0)
+	{
+		ft_putchar('-');
+		nb *= -1;
+	}
+	if (nb < 10)
+		ft_putchar(nb + '0');
+	else
+	{
+		ft_putnbr(nb / 10);
+		ft_putnbr(nb % 10);
+	}
+	return (num_len_u(n));
+}

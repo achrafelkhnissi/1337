@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_minitalk.h                                      :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/09 16:02:30 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/14 08:14:40 by ael-khni         ###   ########.fr       */
+/*   Created: 2021/11/04 13:42:21 by ael-khni          #+#    #+#             */
+/*   Updated: 2021/11/23 16:09:15 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_MINITALK_H
-#define FT_MINITALK_H
+#include "ft_printf.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <signal.h>
-#include <unistd.h>
-#include "ft_printf/ft_printf.h"
+int	ft_putstr(char *s)
+{
+	int	len;
 
-#define RED "\033[0;31m"
-#define	GREEN "\033[0;32m"
-#define	YELLOW "\033[0;33m"
-#define END "\033[0m"
-
-#endif
+	len = 0;
+	if (s == NULL)
+		return (ft_putstr("(null)"));
+	while (*s)
+	{
+		write(1, s++, 1);
+		len++;
+	}
+	return (len);
+}

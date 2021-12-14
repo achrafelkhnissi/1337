@@ -6,82 +6,86 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 16:02:02 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/10 14:46:50 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/14 07:45:32 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_minitalk.h"
 
-int	byte[8];
-
 void	display_banner(int pid)
 {
-	ft_printf("\n\t%s███╗   ███╗██╗███╗   ██╗██╗████████╗ █████╗ ██╗     ██╗  ██╗%s\n", YELLOW, END);
-	ft_printf("\t%s██╔████╔██║██║██╔██╗ ██║██║   ██║   ███████║██║     █████╔╝%s \n", YELLOW, END);
-	ft_printf("\t%s██║╚██╔╝██║██║██║╚██╗██║██║   ██║   ██╔══██║██║     ██╔═██╗%s \n", YELLOW, END);
-	ft_printf("\t%s██║ ╚═╝ ██║██║██║ ╚████║██║   ██║   ██║  ██║███████╗██║  ██╗%s\n", YELLOW, END);
-	ft_printf("\t%s╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝%s\n", YELLOW, END);
-
-	ft_printf("%s\n\tPID: %d%s\n", RED, pid, END);
-	ft_printf("\t⊱ ────────────────────── {.⋅ ✯ ⋅.} ─────────────────────── ⊰\n\n");
+	ft_printf("\n\t%s███╗   ███╗██╗███╗   ██╗██╗████████╗ █████╗ ██╗     ██╗██╗\
+			%s\n", YELLOW, END);
+	ft_printf("\t%s██╔████╔██║██║██╔██╗ ██║██║   ██║   ███████║██║     █████╔╝\
+			%s \n", YELLOW, END);
+	ft_printf("\t%s██║╚██╔╝██║██║██║╚██╗██║██║   ██║   ██╔══██║██║     ██╔═██╗\
+			%s \n", YELLOW, END);
+	ft_printf("\t%s██║ ╚═╝ ██║██║██║ ╚████║██║   ██║   ██║  ██║███████╗██║  ██╗\
+			%s\n", YELLOW, END);
+	ft_printf("\t%s╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝\
+			%s\n", YELLOW, END);
+	ft_printf("%s\n\t\tPID: %d%s\t\t\t%sBy: ael-khni%s\n", RED, pid, END, 
+			YELLOW, END);
+	ft_printf("\t⊱ ────────────────────── {.⋅ ✯ ⋅.} ─────────────────────── ⊰\
+			\n\n");
 }
 
-int	ft_power(int nb, int power)
+void	extended_action(char *c, int *received, int *client_pid, int *i)
 {
-	int	res;
-
-	res = 1;
-	if (power < 0)
-		return (0);
-	while (power > 0)
+	ft_printf("%c", *c);
+	if (*c == '\0')
 	{
-		res *= nb;
-		power--;
+		ft_printf("\n%s%d signal recieved from client PID: %d%s\n",
+			GREEN, *received, *client_pid, END);
+		*received = 0;
+		*c = 0;
+		kill(*client_pid, SIGUSR1);
+		return ;
 	}
-	return (res);
+	*i = 0;
 }
 
-int bin_to_char(int *byte)
+void	action(int sig, siginfo_t *info, void *context)
 {
-	int res;
-	int i;
-	int	j;
-
-	i = 8;
-	res = 0;
-	j = 0;
-	while (i--)
-		res += byte[j++] * ft_power(2, i);
-	return (res);
-}
-
-void	func(int sig)
-{
+	static int	client_pid;
 	static int	i;
-	int c;
+	static char	c;
+	static int	received;
+	static int	current_pid;
 
-	if (sig == SIGUSR1)
-		byte[i++] = 0;
-	else
-		byte[i++] = 1;
-	if (i == 8)
+	(void)context;
+	if (!client_pid)
+		client_pid = info->si_pid;
+	current_pid = info->si_pid;
+	if (client_pid != current_pid)
 	{
-		c = bin_to_char(byte);	
-		ft_printf("%c", c);
+		client_pid = current_pid;
 		i = 0;
+		c = 0;
+		received = 0;
 	}
+	c |= (sig == SIGUSR2);
+	received++;
+	i++;
+	if (i == 8)
+		extended_action(&c, &received, &client_pid, &i);
+	c <<= 1;
 }
 
 int	main(void)
 {
-	int	pid;
+	int					pid;
+	struct sigaction	act;
 
 	pid = getpid();
 	display_banner(pid);
+	act.sa_sigaction = action;
+	sigemptyset(&act.sa_mask);
+	act.sa_flags = SA_SIGINFO;
 	while (1)
 	{
-		signal(SIGUSR1, func);
-		signal(SIGUSR2, func);
+		sigaction(SIGUSR1, &act, 0);
+		sigaction(SIGUSR2, &act, 0);
 		pause();
 	}
 	return (0);
