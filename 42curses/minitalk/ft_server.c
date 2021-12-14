@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 16:02:02 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/14 07:45:32 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/14 09:19:20 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ void	display_banner(int pid)
 			%s\n", YELLOW, END);
 	ft_printf("\t%s╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝\
 			%s\n", YELLOW, END);
-	ft_printf("%s\n\t\tPID: %d%s\t\t\t%sBy: ael-khni%s\n", RED, pid, END, 
-			YELLOW, END);
+	ft_printf("%s\n\t\tPID: %d%s\t\t\t%sBy: ael-khni%s\n", RED, pid, END,
+		YELLOW, END);
 	ft_printf("\t⊱ ────────────────────── {.⋅ ✯ ⋅.} ─────────────────────── ⊰\
 			\n\n");
 }
