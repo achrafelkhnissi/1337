@@ -6,7 +6,7 @@
 #    By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/23 15:38:53 by ael-khni          #+#    #+#              #
-#    Updated: 2021/12/14 09:08:20 by ael-khni         ###   ########.fr        #
+#    Updated: 2021/12/14 09:16:21 by ael-khni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,12 +41,12 @@ _INFO		=	[$(YELLOW)INFO$(RESET)]
 
 all: $(LIBFTPRINTF) $(CLIENT) $(SERVER)
 
-$(SERVER):
+$(SERVER): $(INC)
 	@ $(CC) $(CFLAGS) -c $(SRC_S) -o $(OBJ_S)
 	@ $(CC) $(CFLAGS) $(LIBFTPRINTF) -o $@ $(OBJ_S)
 	@printf "$(_SUCCESS) server ready.\n"
 
-$(CLIENT):
+$(CLIENT): $(INC)
 	@ $(CC) $(CFLAGS) -c $(SRC_C) -o $(OBJ_C)
 	@ $(CC) $(CFLAGS) $(LIBFTPRINTF) -o $@ $(OBJ_C)
 	@printf "$(_SUCCESS) client ready.\n"
