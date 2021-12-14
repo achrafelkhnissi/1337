@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 16:02:02 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/14 09:19:20 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/14 09:36:11 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,12 @@ void	display_banner(int pid)
 			\n\n");
 }
 
+void	signal_error(void)
+{
+	ft_printf("\n%sserver: unexpected error.%s\n", RED, END);
+	exit(EXIT_FAILURE);
+}
+
 void	extended_action(char *c, int *received, int *client_pid, int *i)
 {
 	ft_printf("%c", *c);
@@ -39,7 +45,8 @@ void	extended_action(char *c, int *received, int *client_pid, int *i)
 			GREEN, *received, *client_pid, END);
 		*received = 0;
 		*c = 0;
-		kill(*client_pid, SIGUSR1);
+		if (kill(*client_pid, SIGUSR1) == -1)
+			signal_error();
 		return ;
 	}
 	*i = 0;

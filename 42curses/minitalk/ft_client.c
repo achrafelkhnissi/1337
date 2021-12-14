@@ -6,13 +6,19 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 20:38:27 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/14 09:18:51 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/14 09:35:17 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_minitalk.h"
 
 static int	g_sent;
+
+void	signal_error(void)
+{
+	ft_printf("\n%sserver: unexpected error.%s\n", RED, END);
+	exit(EXIT_FAILURE);
+}
 
 void	char_to_bin(unsigned char c, int pid)
 {
@@ -22,9 +28,15 @@ void	char_to_bin(unsigned char c, int pid)
 	while (bit < 8)
 	{
 		if (c & 128)
-			kill(pid, SIGUSR2);
+		{
+			if (kill(pid, SIGUSR2) == -1)
+				signal_error();
+		}
 		else
-			kill(pid, SIGUSR1);
+		{
+			if (kill(pid, SIGUSR1) == -1)
+				signal_error();
+		}
 		c <<= 1;
 		bit++;
 		g_sent++;
