@@ -6,33 +6,32 @@
 #    By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/23 15:38:53 by ael-khni          #+#    #+#              #
-#    Updated: 2021/12/14 10:30:44 by ael-khni         ###   ########.fr        #
+#    Updated: 2021/12/14 12:44:04 by ael-khni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-	# Library Name #
+# Binary Name:
 NAME	=
 CLIENT	=	client
 SERVER	=	server
 
-	# libft Variables #
+#ft_printf Variables:
 LIBFTPRINTF	=	ft_printf/libftprintf.a
 LIBFTPRINTF_DIR	=	ft_printf
 
 
-	# Mandatory Variables #
 SRC_C	=	ft_client.c
 SRC_S	=	ft_server.c
 OBJ_S	=	ft_server.o
 OBJ_C	=	ft_client.o
 INC		=	ft_minitalk.h
 
-	# Compiling Variables #
+#Compiling Variables:
 CC			=	gcc
 CFLAG		=	-Wall -Wextra -Werror
 RM			=	rm -rf
 
-	# Colors #
+#Colors:
 GREEN		=	\e[38;5;118m
 YELLOW		=	\e[38;5;226m
 RESET		=	\e[0m
