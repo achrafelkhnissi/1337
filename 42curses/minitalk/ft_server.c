@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 16:02:02 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/14 09:36:11 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/14 09:41:32 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,5 @@ int	main(void)
 		sigaction(SIGUSR2, &act, 0);
 		pause();
 	}
-	return (0);
+	return (EXIT_FAILURE);
 }

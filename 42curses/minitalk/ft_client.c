@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 20:38:27 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/14 09:35:17 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/14 09:40:54 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ void	recieved(int sig)
 {
 	if (sig == SIGUSR1)
 		ft_printf("%s%d signal sent successfully!%s\n", GREEN, g_sent, END);
-	exit(1);
+	exit(EXIT_SUCCESS);
 }
 
 int	main(int ac, char **av)
@@ -74,10 +74,9 @@ int	main(int ac, char **av)
 		server_pid = atoi(av[1]);
 		ft_printf("%sText currently sending.. %s\n", YELLOW, END);
 		sent_text(av[2], server_pid);
-		sleep(3);
 	}
 	else
 		ft_printf("%susage: ./client <server_pid> <text to send>%s\n",
 			RED, END);
-	return (0);
+	return (EXIT_FAILURE);
 }
