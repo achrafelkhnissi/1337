@@ -1,3 +1,14 @@
+```
+				███╗   ███╗██╗███╗   ██╗██╗████████╗ █████╗ ██╗     ██╗██╗			
+				██╔████╔██║██║██╔██╗ ██║██║   ██║   ███████║██║     █████╔╝			 
+				██║╚██╔╝██║██║██║╚██╗██║██║   ██║   ██╔══██║██║     ██╔═██╗			 
+				██║ ╚═╝ ██║██║██║ ╚████║██║   ██║   ██║  ██║███████╗██║  ██╗			
+				╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝			
+
+					PID: 78418			By: ael-khni
+				⊱ ────────────────────── {.⋅ ✯ ⋅.} ─────────────────────── ⊰	
+```
+
 <h1 align="center">
 	42cursus' minitalk 
 </h1>
@@ -20,14 +31,31 @@
 
 ## Table of content
 
-> he purpose of this project is to code a small data exchange program using Unix signals.
+> The purpose of this project is to code a small data exchange program using Unix signals.
 
 Create a communication program - in C - in the form of a client and server. The server is the first one to be launched, having to display its PID after. The client will take as parameters the server PID and the string to be sent. Once the string has been received by the server, this one should display it.
 
 This communication should only be done using Unix signals. Only two signals can be used SIGUSR1 and SIGUSR2. The executable files are named client and server.
 
-1. 
-
+1. [Unix Processes](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/unix_processes.md)
+2. [Unix Signals](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/unix_signals.md)
+3. [Used Function & their brief explaination!](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md)
+	- [`signal()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#signal)
+	- [`sigaction()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#sigaction)
+	- [`struct sigaction`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#struct-sigaction)
+	- [`sigemptyset()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#sigemptyset)
+	- [`sigaddset()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#sigaddset)
+	- [`getpid()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#getpid)
+	- [`kill()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#kill)
+	- [`pause()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#pause)
+	- [`sleep()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#sleep)
+	- [`usleep()`](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/used_funcitons.md#usleep)
+4. [minitalk explained!](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md)
+	- [STEP 1: Make server receive a signal from client](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#step-1-make-server-receive-a-signal-from-client)
+	- [STEP 2: Convert ASCII character to Binary character](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#step-2-convert-ascii-character-to-binary-character)
+	- [STEP 3: Convert Binary character to ASCII character](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#step-3-convert-binary-character-to-ascii-character)
+	- [STEP 4: Sending a string from client to server](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#step-4-sending-a-string-from-client-to-server)
+	- [LINKS](https://github.com/achrafelkhnissi/1337/blob/master/42curses/minitalk/README/minitalk.md#links)
 ## Project Information
 
 ### About
@@ -49,7 +77,7 @@ Keep in mind:
 - Add reception acknowledgement system
 - Support Unicode characters
 
-### Allowed Functions
+### Allowed Functions (manual)
 - [`write`](https://man7.org/linux/man-pages/man2/write.2.html)
 - [`ft_printf`](https://github.com/achrafelkhnissi/1337/tree/master/42curses/ft_printf) and any equivalent YOU coded
 - [`signal`](https://man7.org/linux/man-pages/man2/signal.2.html)
@@ -117,50 +145,15 @@ The following is a list of all signals with names as in the include file `<signa
 ```
 
 ## Notes
-- getpid(): gets process ID
-- SIGINT: its a signal that by default interrupt the process the tells it to end.
-- signal(): takes two arguments, 1. process 2. pointer to a funtion. and execute the function rather than its default behavior! (as far as i know for now)
+- For some reason i failed to implement this part `The server confirms every signal received by sending a signal to the client.` if you have any idea pleae contact me.
 
 ## Resources
 - [Signal (IPC)](https://en.wikipedia.org/wiki/Signal_(IPC))
 - [Process (computing)](https://en.wikipedia.org/wiki/Process_(computing))
 - [Thread (computing)](https://en.wikipedia.org/wiki/Thread_(computing))
 - [How to use signal handlers in C](https://linuxhint.com/signal_handlers_c_programming_language/)
-
-<!--
-
-|     name     |       default action      |    description                                       |   
-|--------------|---------------------------|------------------------------------------------------|
-|     SIGHUP   |       terminate process   |    terminal line hangup                              |     	
-|     SIGINT   |       terminate process   |    interrupt program                                 |     	
-|     SIGQUIT  |       create core image   |    quit program                                      |  	
-|     SIGILL   |       create core image   |    illegal instruction                               |      	
-|     SIGABRT  |       create core image   |    abort(3) call (formerly sigiot)                   |          
-|     SIGEMT   |       create core image   |    emulate instruction executed                      |        
-|     SIGFPE   |       create core image   |    floating-point exception                          |              
-|     SIGKILL  |       terminate process   |    kill program                                      |         
-|     SIGBUS   |       create core image   |    bus error                                         |         
-|     SIGSEGV  |       create core image   |    segmentation violation                            |             
-|     SIGSYS   |       create core image   |    non-existent system call invoked                  |          
-|     SIGPIPE  |       terminate process   |    write on a pipe with no reader                    |        
-|     SIGALRM  |       terminate process   |    real-time timer expired                           |             
-|     SIGTERM  |       terminate process   |    software termination signal                       |       
-|     SIGURG   |       discard signal      |    urgent condition present on socket                |           
-|     SIGSTOP  |       stop process        |    stop (cannot be caught or ignored)                |          
-|     SIGTSTP  |       stop process        |    stop signal generated from keyboard               | 
-|     SIGCONT  |       discard signal      |    continue after stop                               |   
-|     SIGCHLD  |       discard signal      |    child status has changed                          |
-|     SIGTTIN  |       stop process        |    background read attempted from control terminal   |         
-|     SIGTTOU  |       stop process        |    background write attempted to control terminal    |       
-|     SIGIO    |       discard signal      |    I/O is possible on a descriptor (see fcntl(2))    |         
-|     SIGXCPU  |       terminate process   |    cpu time limit exceeded (see setrlimit(2))        |         
-|     SIGXFSZ  |       terminate process   |    file size limit exceeded (see setrlimit(2))       |            
-|     SIGVTALRM|       terminate process   |    virtual time alarm (see setitimer(2))             |          
-|     SIGPROF  |       terminate process   |    profiling timer alarm (see setitimer(2))          |               
-|     SIGWINCH |       discard signal      |    Window size change                                |     
-|     SIGINFO  |       discard signal      |    status request from keyboard                      |      
-|     SIGUSR1  |       terminate process   |    User defined signal 1                             |      
-|     SIGUSR2  |       terminate process   |    User defined signal 2                             |              
-
--->
-
+- [signals](https://people.kth.se/~johanmon/ose/assignments/signals.pdf)
+- [How to Write Advanced Signal Handlers in UNIX](https://www.oracle.com/technical-resources/articles/it-infrastructure/dev-signal-handlers-studio.html)
+- [sigaction() - IBM docs](https://www.ibm.com/docs/en/i/7.2?topic=ssw_ibm_i_72/apis/sigactn.htm)
+- [What is the difference between sigaction and signal?](https://stackoverflow.com/questions/231912/what-is-the-difference-between-sigaction-and-signal)
+- [What is sigaction in C?](https://jameshfisher.com/2017/01/13/c-sigaction/)

@@ -12,6 +12,8 @@
 # **************************************************************************** #
 ```
 
+## [INSTALLATION VIDEO](https://www.youtube.com/watch?v=2w-2MX5QrQw)
+
 ## VirtualBox 101
 
 1. New: To create a new virtual OS
