@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 20:38:27 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/15 13:10:34 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/15 13:41:57 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static int	g_sent;
 
 void	signal_error(void)
 {
-	ft_printf("\n%sserver: unexpected error.%s\n", RED, END);
+	ft_printf("\n%sclient: unexpected error.%s\n", RED, END);
 	exit(EXIT_FAILURE);
 }
 
