@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/12 18:19:40 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/15 16:08:54 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/15 18:17:09 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,9 @@
 int	deal_key(int key, void *param)
 {
 	(void)param;
-	printf("Key: %d\n", key);
+	printf("[%sINFO%s] Key number: %d\n", YELLOW, END, key);
+	if (key == 53)
+		exit(0);
 	//you can put your code here ex: mlx_pixel_put..
 	return (0);
 }
@@ -32,8 +34,9 @@ int main(void)
 {
 	void	*mlx_ptr;
 	void	*win_ptr;
-	t_data	img_ptr;
-
+	//t_data	img_ptr;
+	
+	display_banner();
 	mlx_ptr = mlx_init(); 
 	/* mlx_init is a function that will establish a connection to the correct
 	 * graphical sysytem and will return a void* which holds the locaiton of
@@ -45,17 +48,20 @@ int main(void)
 	 * we have just created. We can give the window height, width and a titile.
 	 * We then will have to call mlx_loop to initiate the window rendering.*/
 
-	img_ptr.img = mlx_new_image(mlx_ptr, 400, 400); /* Check the note on mlx_pixel_put */
+	//img_ptr.img = mlx_new_image(mlx_ptr, 400, 400); /* Check the note on mlx_pixel_put */
 	/* After creating an image, we can call 'mlx_get_data_addr', we pass
 	 * 'bits_per_pixel', 'line_length', and 'endian' by reference. The will
 	 * then be set accordingly for the *current* data address */
 
-	img_ptr.addr = mlx_get_data_addr(img_ptr.img, &img_ptr.bits_per_pixel,
-		&img_ptr.line_length, &img_ptr.endian);
+	//img_ptr.addr = mlx_get_data_addr(img_ptr.img, &img_ptr.bits_per_pixel,
+	//	&img_ptr.line_length, &img_ptr.endian);
 
-	my_mlx_pixel_put(&img_ptr, 50, 50, 0x00FF0000);
-
-	mlx_put_image_to_window(mlx_ptr, win_ptr, img_ptr.img, 50, 50);
+	int	x = 0;
+	int y = 0;
+	int	i = -1;
+	while (++i < 400)
+		mlx_pixel_put(mlx_ptr, win_ptr, x++, y++, 0x00FF00);
+	//mlx_put_image_to_window(mlx_ptr, win_ptr, img_ptr.img, 50, 50);
 	
 	/*
 	mlx_pixel_put(mlx_ptr, win_ptr, 200, 200, 0xFFFFFF);

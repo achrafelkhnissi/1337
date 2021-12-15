@@ -6,13 +6,11 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 20:38:27 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/15 13:53:31 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/15 18:44:34 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_minitalk.h"
-
-static int	g_sent;
 
 void	signal_error(void)
 {
@@ -56,14 +54,15 @@ void	sent_text(char *str, int pid)
 
 void	recieved(int sig)
 {
+	static int	sent;
+
 	if (sig == SIGUSR1)
 	{
-		++g_sent;
-		ft_printf("%s%d signal sent successfully!%s\n", GREEN, g_sent, END);
+		ft_printf("%s%d signal sent successfully!%s\n", GREEN, ++sent, END);
 		exit(EXIT_SUCCESS);
 	}
 	if (sig == SIGUSR2)
-		++g_sent;
+		++sent;
 }
 
 int	main(int ac, char **av)

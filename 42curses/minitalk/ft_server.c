@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 16:02:02 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/15 13:10:15 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/15 18:44:55 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	signal_error(void)
 	exit(EXIT_FAILURE);
 }
 
-void	extended_action(char *c, int *received, int *client_pid, int *i)
+void	extended_action(char *c, int *received, int *client_pid, int *bit)
 {
 	ft_printf("%c", *c);
 	if (*c == '\0')
@@ -49,13 +49,13 @@ void	extended_action(char *c, int *received, int *client_pid, int *i)
 			signal_error();
 		return ;
 	}
-	*i = 0;
+	*bit = 0;
 }
 
 void	action(int sig, siginfo_t *info, void *context)
 {
 	static int	client_pid;
-	static int	i;
+	static int	bit;
 	static char	c;
 	static int	received;
 	static int	current_pid;
@@ -67,15 +67,15 @@ void	action(int sig, siginfo_t *info, void *context)
 	if (client_pid != current_pid)
 	{
 		client_pid = current_pid;
-		i = 0;
+		bit = 0;
 		c = 0;
 		received = 0;
 	}
 	c |= (sig == SIGUSR2);
 	received++;
-	i++;
-	if (i == 8)
-		extended_action(&c, &received, &client_pid, &i);
+	bit++;
+	if (bit == 8)
+		extended_action(&c, &received, &client_pid, &bit);
 	c <<= 1;
 	usleep(100);
 	kill(client_pid, SIGUSR2);

@@ -6,7 +6,7 @@
 #    By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/15 14:11:39 by ael-khni          #+#    #+#              #
-#    Updated: 2021/12/15 14:27:42 by ael-khni         ###   ########.fr        #
+#    Updated: 2021/12/15 16:45:19 by ael-khni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ RM		= rm -rf
 INCLUDE	= -I /usr/local/include
 LIBMLX	= -L /usr/local/lib
 
-FILES	= main
+FILES	= main display_banner
 SRC		= $(FILES:=.c)
 OBJ		= $(FILES:=.o)
 HEADER	= so_long.h
