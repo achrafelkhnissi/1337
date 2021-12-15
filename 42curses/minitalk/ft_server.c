@@ -77,6 +77,8 @@ void	action(int sig, siginfo_t *info, void *context)
 	if (i == 8)
 		extended_action(&c, &received, &client_pid, &i);
 	c <<= 1;
+	usleep(100);
+	kill(client_pid, SIGUSR2);
 }
 
 int	main(void)

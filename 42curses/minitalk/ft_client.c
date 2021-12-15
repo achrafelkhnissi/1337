@@ -39,7 +39,7 @@ void	char_to_bin(unsigned char c, int pid)
 		}
 		c <<= 1;
 		bit++;
-		g_sent++;
+		pause();
 		usleep(100);
 	}
 }
@@ -57,8 +57,13 @@ void	sent_text(char *str, int pid)
 void	recieved(int sig)
 {
 	if (sig == SIGUSR1)
+	{
+		g_sent++;
 		ft_printf("%s%d signal sent successfully!%s\n", GREEN, g_sent, END);
-	exit(EXIT_SUCCESS);
+		exit(EXIT_SUCCESS);
+	}
+	if (sig == SIGUSR2)
+		g_sent++;
 }
 
 int	main(int ac, char **av)
