@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 20:38:27 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/15 13:41:57 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/15 13:53:31 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ int	main(int ac, char **av)
 		ft_printf("%sclient pid: %d%s\n", RED, client_pid, END);
 		signal(SIGUSR1, recieved);
 		signal(SIGUSR2, recieved);
-		server_pid = atoi(av[1]);
+		server_pid = ft_atoi(av[1]);
 		ft_printf("%sText currently sending.. %s\n", YELLOW, END);
 		sent_text(av[2], server_pid);
 	}

@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 15:56:55 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/23 17:31:19 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/15 13:52:58 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int	ft_putchar(char c);
 int	ft_putstr(char *s);
 int	ft_putnbr_base(unsigned int nbr, char Xx);
 int	ft_putaddr(void *addr);
+int	ft_atoi(const char *str);
 
 #endif
