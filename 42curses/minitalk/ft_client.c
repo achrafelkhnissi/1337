@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/09 20:38:27 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/12/14 09:40:54 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/15 13:10:34 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,12 +58,12 @@ void	recieved(int sig)
 {
 	if (sig == SIGUSR1)
 	{
-		g_sent++;
+		++g_sent;
 		ft_printf("%s%d signal sent successfully!%s\n", GREEN, g_sent, END);
 		exit(EXIT_SUCCESS);
 	}
 	if (sig == SIGUSR2)
-		g_sent++;
+		++g_sent;
 }
 
 int	main(int ac, char **av)
@@ -74,8 +74,9 @@ int	main(int ac, char **av)
 	client_pid = getpid();
 	if (ac == 3)
 	{
-		ft_printf("%sclinet pid: %d%s\n", RED, client_pid, END);
+		ft_printf("%sclient pid: %d%s\n", RED, client_pid, END);
 		signal(SIGUSR1, recieved);
+		signal(SIGUSR2, recieved);
 		server_pid = atoi(av[1]);
 		ft_printf("%sText currently sending.. %s\n", YELLOW, END);
 		sent_text(av[2], server_pid);

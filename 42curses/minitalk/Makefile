@@ -6,7 +6,7 @@
 #    By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/23 15:38:53 by ael-khni          #+#    #+#              #
-#    Updated: 2021/12/14 12:44:04 by ael-khni         ###   ########.fr        #
+#    Updated: 2021/12/15 13:19:21 by ael-khni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SERVER	=	server
 LIBFTPRINTF	=	ft_printf/libftprintf.a
 LIBFTPRINTF_DIR	=	ft_printf
 
-
+#minitalk variables
 SRC_C	=	ft_client.c
 SRC_S	=	ft_server.c
 OBJ_S	=	ft_server.o
