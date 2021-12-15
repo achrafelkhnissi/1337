@@ -18,7 +18,7 @@
 
 1. New: To create a new virtual OS
 	- Name: descriptive name of the virtual machine
-	- Machine Folder: The destination folder for the new virtual machine image.
+	- Machine Folder: The destination folder for the new virtual machine image. (note: do not forget to choose goinfree path)
 	- Type: Linux
 	- Version: Debian (64-bit)
 2. Memory size: Select of RAM to be allocated.
