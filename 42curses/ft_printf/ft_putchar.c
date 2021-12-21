@@ -6,14 +6,14 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:41:29 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/23 15:46:39 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/21 12:20:55 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(char c)
+void	ft_putchar(char c, int *len)
 {
 	write(1, &c, 1);
-	return (1);
+	(*len)++;
 }

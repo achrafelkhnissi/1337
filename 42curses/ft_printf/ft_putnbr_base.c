@@ -6,28 +6,13 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 14:08:45 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/23 17:30:28 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/21 12:21:57 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	hex_len(unsigned int n)
-{
-	int	i;
-
-	i = 0;
-	if (!n)
-		i++;
-	while (n)
-	{
-		n /= 16;
-		i++;
-	}
-	return (i);
-}
-
-int	ft_putnbr_base(unsigned int nbr, char Xx)
+void	ft_putnbr_base(unsigned int nbr, char Xx, int *len)
 {
 	unsigned int	base_len;
 	char			*base;
@@ -38,11 +23,10 @@ int	ft_putnbr_base(unsigned int nbr, char Xx)
 	else
 		base = "0123456789ABCDEF";
 	if (nbr < base_len)
-		ft_putchar(base[nbr % base_len]);
+		ft_putchar(base[nbr % base_len], len);
 	else
 	{
-		ft_putnbr_base(nbr / base_len, Xx);
-		ft_putnbr_base(nbr % base_len, Xx);
+		ft_putnbr_base(nbr / base_len, Xx, len);
+		ft_putnbr_base(nbr % base_len, Xx, len);
 	}
-	return (hex_len(nbr));
 }

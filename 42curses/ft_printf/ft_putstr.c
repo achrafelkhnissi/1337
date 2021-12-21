@@ -6,23 +6,19 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 13:42:21 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/23 16:09:15 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/21 12:32:01 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putstr(char *s)
+void	ft_putstr(char *s, int *len)
 {
-	int	len;
-
-	len = 0;
 	if (s == NULL)
-		return (ft_putstr("(null)"));
-	while (*s)
+		ft_putstr("(null)", len);
+	while (s && *s)
 	{
-		write(1, s++, 1);
-		len++;
+		ft_putchar(*s, len);
+		s++;
 	}
-	return (len);
 }

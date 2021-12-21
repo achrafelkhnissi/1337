@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/20 19:54:56 by ael-khni          #+#    #+#             */
-/*   Updated: 2021/11/23 17:06:51 by ael-khni         ###   ########.fr       */
+/*   Updated: 2021/12/21 12:24:23 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,21 @@
 static void	check_flags(va_list args, const char format, int *len)
 {
 	if (format == 'd' || format == 'i')
-		*len += ft_putnbr(va_arg(args, int));
+		ft_putnbr(va_arg(args, int), len);
 	else if (format == 'u')
-		*len += ft_putnbr_u(va_arg(args, unsigned int));
+		ft_putnbr_u(va_arg(args, unsigned int), len);
 	else if (format == 'c')
-		*len += ft_putchar((char)va_arg(args, int));
+		ft_putchar((char)va_arg(args, int), len);
 	else if (format == 's')
-		*len += ft_putstr(va_arg(args, char *));
+		ft_putstr(va_arg(args, char *), len);
 	else if (format == '%')
-		*len += ft_putchar(format);
+		ft_putchar(format, len);
 	else if (format == 'x')
-		*len += ft_putnbr_base(va_arg(args, int), format);
+		ft_putnbr_base(va_arg(args, int), format, len);
 	else if (format == 'X')
-		*len += ft_putnbr_base(va_arg(args, int), format);
+		ft_putnbr_base(va_arg(args, int), format, len);
 	else if (format == 'p')
-		*len += ft_putaddr(va_arg(args, void *));
+		ft_putaddr(va_arg(args, void *), len);
 }
 
 int	ft_printf(const char *format, ...)
@@ -37,8 +37,8 @@ int	ft_printf(const char *format, ...)
 	va_list	args;
 	int		len;
 
-	va_start(args, format);
 	len = 0;
+	va_start(args, format);
 	while (*format)
 	{
 		if (*format == '%')
@@ -47,7 +47,7 @@ int	ft_printf(const char *format, ...)
 			check_flags(args, *format, &len);
 		}
 		else
-			len += ft_putchar(*format);
+			ft_putchar(*format, &len);
 		format++;
 	}
 	va_end(args);
