@@ -8,6 +8,7 @@
 |[ex03](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex03)   |[hexdump](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex03/README.md)           |[ft_hexdump.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex03/srcs/ft_hexdump.c)      |
 |[ex04](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex04)   |[last](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex04/README.md)        |[ft_last.c](https://github.com/achrafelkhnissi/1337/blob/master/Piscine-2021/DAYS/C10/ex04/srcs/ft_last.c)  |
 
+## Note: I didn't push C10 exercises. thus I'm not sure if there's no error regardless moulinette or not! if u found any error don't hesitate to report it [here](https://github.com/achrafelkhnissi/1337/issues)
 
 ## System Calls
 - System calls are functions in the OS code which programs can invoke using a special instruction, these functions are the primary means by which the OS exposes functionality to programs so tat programs can use freatures or hardware like read/write data on a storage device or send/receive data across the network.
