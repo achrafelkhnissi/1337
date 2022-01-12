@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:55:17 by ael-khni          #+#    #+#             */
-/*   Updated: 2022/01/10 18:43:37 by ael-khni         ###   ########.fr       */
+/*   Updated: 2022/01/12 09:19:51 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,6 +108,7 @@ void	get_map(char *file_name, t_program *game);
 void	check_map(char *file_name, t_program *game);
 void	check_dir(char *file_name);
 int		check_characters(t_program game);
+int		check_player(t_program game);
 int		check_ecp(t_program game);
 int		check_extention(const char *haystack, const char *needle);
 int		check_rectangular(t_program game);
@@ -125,6 +126,7 @@ void	err_rectangular(t_program *game, char *file_name);
 void	err_characters(t_program *game, char *file_name);
 void	err_walls(t_program *game, char *file_name);
 void	err_ecp(t_program *game, char *file_name);
+void	err_player(t_program *game, char *file_name);
 
 /* get_next_line functions */
 char	*func(char **line, char **tmp, int nl);

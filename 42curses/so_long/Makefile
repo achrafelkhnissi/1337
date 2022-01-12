@@ -6,7 +6,7 @@
 #    By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/15 14:11:39 by ael-khni          #+#    #+#              #
-#    Updated: 2022/01/11 09:28:17 by ael-khni         ###   ########.fr        #
+#    Updated: 2022/01/12 09:23:04 by ael-khni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ FILES	= main srcs/display_banner \
 		  srcs/parser/check_extention srcs/parser/ft_strcmp srcs/parser/check_ecp \
 		  srcs/parser/check_walls srcs/parser/check_rectangular srcs/parser/get_map \
 		  srcs/parser/ft_strchr srcs/parser/map_error srcs/parser/map_len \
-		  srcs/parser/check_characters srcs/parser/check_dir \
+		  srcs/parser/check_characters srcs/parser/check_dir srcs/parser/check_player \
 		  srcs/parser/get_collectibles srcs/parser/ft_strlen srcs/parser/get_player_position \
 		  srcs/window srcs/rendering srcs/player_moves \
 		  srcs/moves srcs/ft_free srcs/free_map

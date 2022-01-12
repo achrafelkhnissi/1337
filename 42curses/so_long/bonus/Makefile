@@ -6,7 +6,7 @@
 #    By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/15 14:11:39 by ael-khni          #+#    #+#              #
-#    Updated: 2022/01/10 18:51:38 by ael-khni         ###   ########.fr        #
+#    Updated: 2022/01/12 09:19:14 by ael-khni         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ BONUS_FILES	= main srcs_bonus/display_banner \
 		  srcs_bonus/parser_bonus/check_extention srcs_bonus/parser_bonus/ft_strcmp srcs_bonus/parser_bonus/check_ecp \
 		  srcs_bonus/parser_bonus/check_walls srcs_bonus/parser_bonus/check_rectangular srcs_bonus/parser_bonus/get_map \
 		  srcs_bonus/parser_bonus/ft_strchr srcs_bonus/parser_bonus/map_error srcs_bonus/parser_bonus/map_len \
-		  srcs_bonus/parser_bonus/check_characters srcs_bonus/parser_bonus/check_dir \
+		  srcs_bonus/parser_bonus/check_characters srcs_bonus/parser_bonus/check_dir srcs_bonus/parser_bonus/check_player \
 		  srcs_bonus/parser_bonus/get_collectibles srcs_bonus/parser_bonus/ft_strlen srcs_bonus/parser_bonus/get_player_position \
 		  srcs_bonus/window srcs_bonus/rendering srcs_bonus/player_moves srcs_bonus/ft_swap \
 		  srcs_bonus/moves srcs_bonus/ft_free srcs_bonus/enemy_moves srcs_bonus/ft_itoa \

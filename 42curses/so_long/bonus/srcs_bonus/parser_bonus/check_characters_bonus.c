@@ -6,7 +6,7 @@
 /*   By: ael-khni <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 17:42:08 by ael-khni          #+#    #+#             */
-/*   Updated: 2022/01/11 08:41:02 by ael-khni         ###   ########.fr       */
+/*   Updated: 2022/01/12 09:10:41 by ael-khni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,23 @@ int	check_characters(t_program game)
 {
 	int	row;
 	int	col;
+	int	player;
 
 	row = 0;
+	player = 0;
 	while (game.map.map[row] != NULL)
 	{
 		col = 0;
 		while (game.map.map[row][col] != '\n' && game.map.map[row][col] != '\0')
 		{
-			if (!in_set(game.map.map[row][col]))
+			if (game.map.map[row][col] == 'P')
+				player++;
+			if (!in_set(game.map.map[row][col]) || player > 1)
+			{
+				if (player > 1)
+					return (2);
 				return (0);
+			}
 			col++;
 		}
 		row++;
