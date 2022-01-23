@@ -144,8 +144,6 @@ The following is a list of all signals with names as in the include file `<signa
      31    SIGUSR2      terminate process    User defined signal 2
 ```
 
-## Notes
-- For some reason i failed to implement this part `The server confirms every signal received by sending a signal to the client.` if you have any idea pleae contact me.
 
 ## Resources
 - [Signal (IPC)](https://en.wikipedia.org/wiki/Signal_(IPC))
