@@ -48,6 +48,12 @@ The project will make you sort data on a stack, with a limited set of instructio
 * [`rrb`](srcs/operations/rrb_reverse_rotate_b.c) - reverse rotate __b__: shift down all elements of stack __b__ by 1. the last element beoomes the first one.
 * [`rrr`](srcs/operations/rrr_rra_rrb.c) - rrr: reverse rotate __a__ and reverse rotate __b__ at the same time.
 
+## TESTING
+- Change the `<number_of_random_args>` with any number u want!
+```bash
+make test ARG=<number_or_random_args>
+```
+
 ## RESOURCES
 
 - [medium - understanding push_swap](https://medium.com/@jamierobertdawson/push-swap-the-least-amount-of-moves-with-two-stacks-d1e76a71789a)
