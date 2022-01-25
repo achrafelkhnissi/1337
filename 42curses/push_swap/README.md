@@ -13,9 +13,13 @@ BANNER
 
 
 <h3 align="center">
-	<a href="#about">About</a>
+	<a href="#summary">Summary</a>
 	<span> · </span>
 	<a href="#resources">Resources</a>
+	<span> · </span>
+	<a href="#rules">Rules</a>
+	<span> · </span>
+	<a href="#operations">Operations</a>
 </h3>
 
 ---
