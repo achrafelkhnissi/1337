@@ -62,6 +62,48 @@ To play you can use some of the makefile rules, or execute the file _so_long_ if
 | ``make re`` | makes ``fclean`` and ``make`` again. |
 | `` make play`` | Allows you to play all maps one at a time. To play the next map just press ``esc``. |
 
+### Installing the MLX library
+
+* ``Linux``
+
+If you're not using a MacOS device from 42, you'll need to install the libraries manually. Please refer to the [official github](https://github.com/42Paris/minilibx-linux) for more details. To install it, do the following (requires root access):
+
+```shell
+git clone https://github.com/42Paris/minilibx-linux.git
+cd minilibx-linux/
+make
+sudo cp mlx.h /usr/include
+sudo cp libmlx.a /usr/lib
+```
+
+* ``MacOS``
+
+To install the library, you will need to first install a package manager like homebrew (check [here](https://brew.sh/)) to then install the X11 package with ``brew install Xquartz``. After that you must extract the minilibx file called ``minilibx_opengl.tgz``. then install it to your system with the following commands (requires sudo as well):
+
+```shell
+cd minilibx_opengl
+make
+sudo cp mlx.h /usr/local/include
+sudo cp libmlx.a /usr/local/lib
+sudo reboot
+```
+Note: A reboot is necessary to ensure that the ``Xquartz`` is working properly. You can test if it is by running a test example with the command ``xeyes``.
+
+### Installing the manuals
+
+If you want quick access to the mlx manuals, it is recommended that you copy the files from the ``man`` folder in [minilibx-linux](https://github.com/42Paris/minilibx-linux) to your system manuals:
+
+* ``Linux``
+```shell
+sudo cp man/man3/* /usr/share/man/man3/
+```
+Note: Depending on your Linux configuration, to get the manuals working (e.g. ``man mlx``) you will need to individually gzip all the manual files you just copied, e.g. ``sudo gzip /usr/share/man/man3/mlx.3``.
+
+* ``MacOS``
+```shell
+sudo cp man/man3/* /usr/X11/share/man/man3
+```
+
 ## Resources
 - [42 Docs - MinilibX](https://harm-smits.github.io/42docs/libs/minilibx)
 - [MinilibX - Tutorial](https://gontjarow.github.io/MiniLibX/)
