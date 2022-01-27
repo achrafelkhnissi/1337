@@ -1,6 +1,3 @@
-```
-BANNER
-```
 
 <h1 align="center">
 	42cursus' push_swap
