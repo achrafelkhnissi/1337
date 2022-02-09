@@ -1,52 +1,30 @@
-#include <stdio.h>
+#include <unistd.h>
 
-void	ft_union(char *av1, char *av2);
-int	exist(char c, char *str, int index);
+#define SIZE 255
+
+void	put_uniq(char *s, int *exist)
+{
+	while (*s)
+	{
+		if (!exist[(int)*s])
+		{
+			write(1, s, 1);
+			exist[(int)*s] = 1;
+		}
+		s++;
+	}
+}
 
 int	main(int ac, char **av)
 {
-	int	len;
-
-	len = 0;
 	if (ac == 3)
-		ft_union(av[1], av[2]);
-	putchar('\n');
-	return (0);
-}
-
-void	ft_union(char *av1, char *av2)
-{
-	int	i;
-	int	len;
-
-	i = 0;
-	while (av1[i])
 	{
-		if (!exist(av1[i], av1, i))
-			putchar(av1[i]);
-		i++;
+		int exist[SIZE] = {0};
+		char *s1 = av[1];
+		char *s2 = av[2];
+		put_uniq(s1, exist);
+		put_uniq(s2, exist);
 	}
-	len = i;
-	i = 0;
-	while (av2[i])
-	{
-		if (!exist(av2[i], av2, i))
-			if (!exist(av2[i], av1, len))
-				putchar(av2[i]);
-		i++;
-	}
-}
-
-int	exist(char c, char *str, int index)
-{
-	int	i;
-	
-	i = 0;
-	while (i < index)
-	{
-		if (c == str[i])
-			return (1);
-		i++;
-	}
+	write(1, "\n", 1);
 	return (0);
 }
