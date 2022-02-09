@@ -12,7 +12,7 @@
 
 #include <unistd.h>
 
-void    put_uniq(char *s, int *exist, int size)
+void    put_uniq(char *s, int *exist)
 {
     while (*s)
     {
