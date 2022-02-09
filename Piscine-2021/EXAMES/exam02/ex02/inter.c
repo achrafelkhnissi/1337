@@ -1,53 +1,24 @@
-#include <stdio.h>
-
-void	inter(char *av1, char *av2);
+#include <unistd.h>
 
 int	main(int ac, char **av)
 {
-	int	len;
-
-	len = 0;
 	if (ac == 3)
-		inter(av[1], av[2]);
-	putchar('\n');
-	return (0);
-}
-
-int	exist(char c, char *str, int j)
-{
-	int	i;
-	
-	i = 0;
-	while (i < j)
 	{
-		if (c == str[i])
-			return (1);
-		i++;
-	}
-	return (0);
-}
-
-void	inter(char *av1, char *av2)
-{
-	int	i;
-	int	j;
-
-	i = 0;
-	while (av1[i])
-	{
-		j = 0;
-		if (!exist(av1[i], av1, i))
+		int exist[255] = {0};
+		char	*s1 = av[1];
+		char	*s2 = av[2];
+		while (*s2)
+			exist[(int)*s2++] = 1;
+		while (*s1)
 		{
-			while (av2[j])
+			if (exist[(int)*s1])
 			{
-				if (av1[i] == av2[j])
-				{
-					putchar(av1[i]);
-					break;			
-				}
-				j++;
+				write(1, s1, 1);
+				exist[(int)*s1] = 0;
 			}
+			s1++;
 		}
-		i++;
 	}
+	write(1, "\n", 1);
+	return (0);
 }
