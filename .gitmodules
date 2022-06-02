@@ -25,3 +25,6 @@
 [submodule "42curses/so_long"]
 	path = 42curses/so_long
 	url = https://github.com/achrafelkhnissi/so_long
+[submodule "42curses/cub3d"]
+	path = 42curses/cub3d
+	url = https://github.com/achrafelkhnissi/cub3d
