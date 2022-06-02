@@ -10,3 +10,6 @@
 [submodule "42curses/Philosophers"]
 	path = 42curses/Philosophers
 	url = https://github.com/achrafelkhnissi/Philosophers
+[submodule "42curses/ft_printf"]
+	path = 42curses/ft_printf
+	url = https://github.com/achrafelkhnissi/ft_printf
