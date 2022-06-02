@@ -1,9 +1,3 @@
-[submodule "42curses/42curses/minishell"]
-	path = 42curses/42curses/minishell
-	url = https://github.com/achrafelkhnissi/minishell
 [submodule "42curses/minishell"]
 	path = 42curses/minishell
 	url = https://github.com/achrafelkhnissi/minishell
-[submodule "42curses/Born2beroot"]
-	path = 42curses/Born2beroot
-	url = https://github.com/achrafelkhnissi/Born2beroot
