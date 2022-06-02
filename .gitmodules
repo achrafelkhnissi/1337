@@ -16,3 +16,6 @@
 [submodule "42curses/get_next_line"]
 	path = 42curses/get_next_line
 	url = https://github.com/achrafelkhnissi/get_next_line
+[submodule "42curses/minitalk"]
+	path = 42curses/minitalk
+	url = https://github.com/achrafelkhnissi/minitalk
