@@ -4,3 +4,6 @@
 [submodule "42curses/Born2beroot"]
 	path = 42curses/Born2beroot
 	url = https://github.com/achrafelkhnissi/Born2beroot
+[submodule "42curses/libft"]
+	path = 42curses/libft
+	url = https://github.com/achrafelkhnissi/libft
