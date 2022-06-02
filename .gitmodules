@@ -13,3 +13,6 @@
 [submodule "42curses/ft_printf"]
 	path = 42curses/ft_printf
 	url = https://github.com/achrafelkhnissi/ft_printf
+[submodule "42curses/get_next_line"]
+	path = 42curses/get_next_line
+	url = https://github.com/achrafelkhnissi/get_next_line
