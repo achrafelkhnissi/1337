@@ -22,3 +22,6 @@
 [submodule "42curses/push_swap"]
 	path = 42curses/push_swap
 	url = https://github.com/achrafelkhnissi/push_swap
+[submodule "42curses/so_long"]
+	path = 42curses/so_long
+	url = https://github.com/achrafelkhnissi/so_long
