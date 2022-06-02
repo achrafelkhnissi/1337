@@ -19,3 +19,6 @@
 [submodule "42curses/minitalk"]
 	path = 42curses/minitalk
 	url = https://github.com/achrafelkhnissi/minitalk
+[submodule "42curses/push_swap"]
+	path = 42curses/push_swap
+	url = https://github.com/achrafelkhnissi/push_swap
