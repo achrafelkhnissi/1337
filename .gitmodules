@@ -7,3 +7,6 @@
 [submodule "42curses/libft"]
 	path = 42curses/libft
 	url = https://github.com/achrafelkhnissi/libft
+[submodule "42curses/Philosophers"]
+	path = 42curses/Philosophers
+	url = https://github.com/achrafelkhnissi/Philosophers
