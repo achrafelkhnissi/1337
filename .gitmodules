@@ -28,3 +28,6 @@
 [submodule "42curses/cub3d"]
 	path = 42curses/cub3d
 	url = https://github.com/achrafelkhnissi/cub3d
+[submodule "42curses/CPP_Modules"]
+	path = 42curses/CPP_Modules
+	url = https://github.com/achrafelkhnissi/CPP_Modules
