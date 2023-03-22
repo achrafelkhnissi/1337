@@ -31,3 +31,6 @@
 [submodule "42curses/CPP_Modules"]
 	path = 42curses/CPP_Modules
 	url = https://github.com/achrafelkhnissi/CPP_Modules
+[submodule "42curses/webserv"]
+	path = 42curses/webserv
+	url = https://github.com/achrafelkhnissi/webserv
