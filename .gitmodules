@@ -34,3 +34,10 @@
 [submodule "42curses/webserv"]
 	path = 42curses/webserv
 	url = https://github.com/achrafelkhnissi/webserv
+[submodule "42curses/inception"]
+	path = 42curses/inception
+	url = https://github.com/achrafelkhnissi/inception
+[submodule "42curses/ft_transcendence"]
+	path = 42curses/ft_transcendence
+	url = https://github.com/achrafelkhnissi/ft_transcendence
+
